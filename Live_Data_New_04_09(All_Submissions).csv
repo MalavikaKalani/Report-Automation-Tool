@@ -1,0 +1,493 @@
+Status,Submission Num,Reimbursement RequestID,Submission Date,Inspector Name,Trip Days,Total Inspections,First Day,Last Day,Depart City,Depart State,Dest City,Dest State,Dest Zip,Miles Driven,Mileage Reimbursement,Total Reimbursement,Comments,Total Per Diem,Total Lodging,Total Lodging Taxes,Total Transportation,Has Receipts?,Receipts Included,
+Approved,11,897971,31-Mar-25,Kristopher Gray,1,1,18-Feb-25,18-Feb-25,Morton Grove,IL,,,,60,$7.00,$70.40,,$60.00,$0.00,$0.00,$10.40,No,Parking and Tolls,
+Approved,12,fa183a,31-Mar-25,Amanda Harper,1,1,19-Feb-25,19-Feb-25,"Sioux City, ",Iowa,,,,196,$102.20,$153.20,,$51.00,$0.00,$0.00,$102.20,No,None,
+Approved,13,5409da,31-Mar-25,Peter M Wade,1,1,18-Feb-25,18-Feb-25,ROCHESTER,NY,,,,0,$0.00,$60.00,,$60.00,$0.00,$0.00,$0.00,No,None,
+Approved,14,0d0044,31-Mar-25,Peter M Wade,1,1,19-Feb-25,19-Feb-25,ROCHESTER,NY,,,,0,$0.00,$60.00,,$60.00,$0.00,$0.00,$0.00,No,None,
+Approved,15,1ff293,31-Mar-25,Peter M Wade,1,1,20-Feb-25,20-Feb-25,ROCHESTER,NY,,,,0,$0.00,$60.00,,$60.00,$0.00,$0.00,$0.00,No,None,
+Approved,16,5a1239,31-Mar-25,David Crawford,1,1,20-Feb-25,20-Feb-25,MANITOU SPRINGS,CO,,,,146,$67.20,$136.20,,$69.00,$0.00,$0.00,$67.20,No,None,
+Resubmitted,17,9cd89a,31-Mar-25,Thomas Feehan,4,3,17-Feb-25,20-Feb-25,South Bend,IN,,,,582,$372.40,$963.42,,$280.00,$276.10,$34.92,$372.40,Yes,Lodging,
+Approved,18,cb29b1,31-Mar-25,Kristopher Gray,2,1,20-Feb-25,21-Feb-25,Northbrook,IL,Morton Grove,IL,60053,75.38,$17.77,$155.77,<div>Scattered site 2 day inspection</div>,$138.00,$0.00,$0.00,$17.77,No,None,
+Approved,19,5343b8,31-Mar-25,Bill Tsudama,1,1,17-Feb-25,18-Feb-25,Corralitos,CA,,,,186,$95.20,$309.54,,$64.50,$136.22,$13.62,$95.20,Yes,Lodging,
+Resubmitted,20,4fa0d7,31-Mar-25,Robert Davis,1,1,20-Feb-25,20-Feb-25,San Diego,CA,,,,216,$116.20,$417.20,<div>clutch failed on way home and had to get a tow truck for last 16 miles</div>,$51.00,$0.00,$0.00,$366.20,Yes,Ground Transportation,
+Approved,21,892124,31-Mar-25,Thomas Feehan,4,3,17-Feb-25,20-Feb-25,South Bend,IN,,,,582,$372.40,$921.42,,$238.00,$276.10,$34.92,$372.40,Yes,Lodging,
+Approved,22,ba6e89,31-Mar-25,Karyn Melton,2,1,17-Feb-25,18-Feb-25,Jonesboro,AR,,,,240,$133.00,$370.68,,$102.00,$110.00,$25.68,$133.00,Yes,Lodging,
+Approved,23,68abdb,31-Mar-25,Karyn Melton,2,1,20-Feb-25,21-Feb-25,Jonesboro,AR,,,,602,$386.40,$610.22,,$102.00,$107.10,$14.72,$386.40,Yes,Lodging,
+Duplicate,24,5dc2dc,31-Mar-25,Bill Tsudama,4,1,19-Feb-25,22-Feb-25,Corralitos,CA,,,,280,$161.00,$895.44,,$301.00,$387.00,$46.44,$161.00,Yes,Lodging,
+Approved,25,f5452f,31-Mar-25,Joseph Peter Cornell,4,3,17-Feb-25,20-Feb-25,Philadelphia,PA,,,,0,$0.00,"$1,604.06","<div>Gas was 13.43 and 52.81
+<br>Self Parking 24.00 per day 3 days total 
+<br>Lyft two rides 32.99 and 27.73</div>",$301.18,$468.00,$68.46,$766.42,Yes,"Lodging
+Car Rental",
+Approved,26,88b060,31-Mar-25,David Cianci,3,3,19-Feb-25,21-Feb-25,South Abington Township,PA,,,,827,$543.90,$834.70,<div>Tolls 101.80</div>,$189.00,$0.00,$0.00,$645.70,Yes,Parking and Tolls,
+Approved,27,1478bb,31-Mar-25,Andrew J Clay,1,1,20-Feb-25,20-Feb-25,Chippewa Falls,Wisconsin,,,,317,$186.90,$186.90,,$0.00,$0.00,$0.00,$186.90,No,None,
+Approved,28,b1448b,31-Mar-25,Andrew J Clay,1,1,21-Feb-25,21-Feb-25,Chippewa Falls,Wisconsin,,,,192,$99.40,$99.40,,$0.00,$0.00,$0.00,$99.40,No,None,
+Approved,29,df8241,31-Mar-25,Gregory Bradle,1,2,18-Feb-25,18-Feb-25,Eureka,IL,,,,153,$72.10,$123.10,,$51.00,$0.00,$0.00,$72.10,No,None,
+Approved,30,7f92f6,31-Mar-25,Gregory Bradle,1,2,20-Feb-25,20-Feb-25,Eureka,IL,,,,383,$233.10,$284.10,,$51.00,$0.00,$0.00,$233.10,No,None,
+Approved,31,325eb3,31-Mar-25,Amanda Harper,1,1,21-Feb-25,21-Feb-25,Sioux City,IA,,,,219,$118.30,$169.30,,$51.00,$0.00,$0.00,$118.30,No,None,
+Approved,32,148460,31-Mar-25,Amanda Harper,1,1,24-Feb-25,24-Feb-25,Sioux City,IA ,,,,200,$105.00,$165.00,,$60.00,$0.00,$0.00,$105.00,No,None,
+Approved,33,966698,31-Mar-25,Jordan Theodore,7,4,16-Feb-25,22-Feb-25,South Abington Township,PA,,,,2531,"$1,736.70","$2,864.92","<div>Summary of average additional expenses&#58;
+<br>1.	Round trip airfare&#58;&#160; $950
+<br>2.	Airport parking 7 days&#58; $420
+<br>3.	Rental car 7 days and fuel&#58; $760
+<br>Total expenses required instead of driving from home&#58; $2130 vs $1736 in mileage
+<br></div>",$450.50,$575.00,$96.12,"$1,743.30",Yes,"Lodging
+Parking and Tolls",
+Approved,34,6775aa,31-Mar-25,Clint Cave,5,7,17-Feb-25,21-Feb-25,Stamford,CT,,,,0,$0.00,"$1,377.00",<div>UBER - Travel to Rental Car Location&#58; $29.90 Receipt Attached</div>,$333.00,$512.00,$68.88,$463.12,Yes,"Lodging
+Car Rental
+Gas for Car Rental
+Ground Transportation",
+Approved,35,00b283,31-Mar-25,Amanda Harper,1,1,25-Feb-25,25-Feb-25,Sioux City,IA,,,,390,$238.00,$289.00,,$51.00,$0.00,$0.00,$238.00,No,None,
+Approved,36,a63de7,31-Mar-25,William Brooks III,3,3,18-Feb-25,21-Feb-25,Cleveland,OH,,,,880,$581.00,$734.00,,$153.00,$0.00,$0.00,$581.00,No,None,
+Approved,37,cffc6f,31-Mar-25,ROBERT DAVIS,1,1,20-Feb-25,20-Feb-25,SAN DIEGO,CA,,,,232,$127.40,$178.40,<div>removed towing fee as per instructions</div>,$51.00,$0.00,$0.00,$127.40,No,Ground Transportation,
+Resubmitted,38,1e93bc,31-Mar-25,Jordan Theodore,3,1,23-Feb-25,25-Feb-25,South Abington Township,Pa,,,,1018,$677.60,"$1,233.64","<div>Parking fee at each hotel, listed on hotel receipts ( $8.00 + $23.96 = $31.96)
+<br>Tolls &#58; 23.77</div>",$216.50,$249.66,$34.15,$733.33,Yes,"Lodging
+Parking and Tolls",
+Approved,39,7dc6e3,31-Mar-25,David Cianci,2,4,24-Feb-25,27-Feb-25,South Abington Township,Pa,,,,531,$336.70,$473.35,,$129.00,$0.00,$0.00,$344.35,No,Parking and Tolls,
+Approved,40,2bb279,31-Mar-25,Ronald W Johnson,3,8,24-Feb-25,26-Feb-25,Zachary,Louisiana,,,,220,$119.00,"$1,230.61","<div>The total rental car fee includes the $257.25 plus the car rental insurance expense of $33.00. total amount is $290.25. The $60 parking fee is the expense for parking my personal vehicle at the New Orleans International Airport. 
+<br>
+<br></div>",$200.00,$150.10,$24.12,$856.39,Yes,"Lodging
+Car Rental
+Gas for Car Rental
+Parking and Tolls
+Airfare",
+Approved,41,c05c32,31-Mar-25,Onesimo Garza lll,3,1,23-Feb-25,25-Feb-25,Mesick,Michigan,,,,884,$583.80,"$1,000.98",,$170.00,$214.00,$33.18,$583.80,Yes,"Lodging
+Ground Transportation",
+Approved,42,2cca26,31-Mar-25,David ,1,1,27-Feb-25,27-Feb-25,South Abington Township,Pa,,,,245,$136.50,$204.00,,$64.50,$0.00,$0.00,$139.50,No,None,
+Approved,43,cf4b33,31-Mar-25,Thomas Feehan,4,3,24-Feb-25,27-Feb-25,South Bend,Indiana,,,,303,$177.10,$781.96,,$238.00,$335.00,$31.86,$177.10,Yes,Lodging,
+Resubmitted,44,8a4d81,31-Mar-25,Caden,7,4,16-Feb-25,24-Feb-25,South Abington Township,Pa,,,,3849,"$2,659.30","$4,066.58","<div>Inspector traveled from Sunday, 2/16 - Monday, 2/24(home).&#160; He used his own car.&#160; Due to stating location, air flight would have been more costly, in addition to car rental. </div>",$459.00,$770.00,$144.14,"$2,693.44",Yes,"Lodging
+Parking and Tolls",
+Approved,45,ade161,31-Mar-25,Brent Aversano,1,1,28-Feb-25,28-Feb-25,Lake In The Hills,ILLINOIS,,,,112,$43.40,$97.20,,$51.00,$0.00,$0.00,$46.20,No,Parking and Tolls,
+Approved,46,c5fb1b,31-Mar-25,Jeff Margett,1,1,26-Feb-25,26-Feb-25,SNOHOMISH,WA,,,,242,$134.40,$185.40,,$51.00,$0.00,$0.00,$134.40,No,None,
+Approved,47,1d06d7,31-Mar-25,Bill Tsudama,3,3,19-Feb-25,21-Feb-25,Corralitos,CA,Corralitos,CA,95076-0216,284,$163.80,$820.73,,$215.00,$387.00,$54.93,$163.80,Yes,Lodging,
+Approved,48,ac48c0,31-Mar-25,William A Harding Jr ,4,2,25-Feb-25,28-Feb-25,Wilmington ,North Carolina ,,,,211,$112.70,$670.87,"<div>Hello, here is my travel expense for this week. I have completed two inspections for this week. </div>",$255.00,$256.50,$46.67,$112.70,Yes,Lodging,
+Approved,49,472e1b,31-Mar-25,Bill Tsudama,4,3,23-Feb-25,27-Feb-25,Corralitos,CA,,,,122,$50.40,$882.12,"<div>Concerning the hotel invoice, I did not realize that there was a price difference from the 1st nite to the rest.&#160; Therefore, I only used the first nite amount for the other 3 nites.</div>",$322.00,$462.56,$47.16,$50.40,Yes,Lodging,
+Approved,50,a4f7e0,31-Mar-25,Andrew J Clay,1,1,26-Feb-25,26-Feb-25,Chippewa Falls,Wisconsin,,,,378,$229.60,$229.60,,$0.00,$0.00,$0.00,$229.60,No,None,
+Approved,51,91545f,31-Mar-25,Peter M Wade,1,1,25-Feb-25,25-Feb-25,ROCHESTER,NY,,,,191,$98.70,$158.70,,$60.00,$0.00,$0.00,$98.70,No,None,
+Approved,52,38df89,31-Mar-25,Peter M Wade,1,1,26-Feb-25,26-Feb-25,ROCHESTER,NY,,,,142,$64.40,$124.40,,$60.00,$0.00,$0.00,$64.40,No,None,
+Approved,53,30a46f,31-Mar-25,Peter M Wade,1,1,28-Feb-25,28-Feb-25,ROCHESTER,NY,,,,140,$63.00,$123.00,,$60.00,$0.00,$0.00,$63.00,No,None,
+Approved,54,717405,31-Mar-25,Karyn Melton,5,5,23-Feb-25,27-Feb-25,Jonesboro,AR,,,,720,$469.00,"$1,275.52",,$306.00,$440.00,$60.52,$469.00,Yes,Lodging,
+Approved,55,26ed6c,31-Mar-25,Louis Jerome,4,6,25-Feb-25,28-Feb-25,Smithfield,UT,,,,734,$478.80,"$1,013.18",,$287.50,$228.60,$18.28,$478.80,Yes,Lodging,
+Processed,56,e9628c,31-Mar-25,HOMER WINDFIELD,7,6,21-Feb-25,28-Feb-25,JACKSON,MISSISSIPPI,HASTINGS,NEBRASKA,68901,1255,$843.50,"$2,013.06",<div>This trip involves week ends overnight stay.</div>,$459.00,$606.44,$79.12,$868.50,Yes,Lodging,
+Approved,57,d7674f,31-Mar-25,Joseph Peter Cornell,4,2,24-Feb-25,27-Feb-25,Philadelphia,PA,,,,0,$0.00,"$1,431.97","<div>UBER 38.65
+<br>Gas 38.52 
+<br>both under 75.00</div>",$292.00,$407.00,$54.20,$678.77,Yes,"Car Rental
+Lodging",
+Approved,58,a8724e,31-Mar-25,Joseph Peter Cornell,3,1,27-Feb-25,1-Mar-25,Philadelphia,PA,,,,0,$0.00,$868.90,,$200.00,$241.19,$26.51,$401.20,No,"Car Rental
+Lodging",
+Approved,60,84c825,31-Mar-25,William  Freeman,1,1,24-Feb-25,24-Feb-25,Little Rock,AR,,,,154,$72.80,$123.80,,$51.00,$0.00,$0.00,$72.80,No,None,
+Approved,61,4e4387,31-Mar-25,William Freeman,1,1,28-Feb-25,28-Feb-25,Little Rock,AR,,,,193,$100.10,$151.10,,$51.00,$0.00,$0.00,$100.10,No,None,
+Duplicate,62,5cde29,31-Mar-25,Clint Cave,6,7,23-Feb-25,28-Feb-25,Stamford,CT,,,,0,$0.00,"$1,936.55",<div>The rental car receipt is separate from the rental car insurance receipt. The hotel parking is $60 per night as seen on the lodging receipt. One of the inspections had no onsite parking. </div>,$506.00,$601.20,$98.90,$730.45,Yes,"Lodging
+Car Rental
+Gas for Car Rental
+Parking and Tolls",
+Approved,63,1608bb,31-Mar-25,Gregory Bradle,1,2,24-Feb-25,24-Feb-25,Eureka,IL,,,,401,$245.70,$296.70,,$51.00,$0.00,$0.00,$245.70,No,None,
+Approved,64,398a5a,31-Mar-25,Gregory Bradle,1,2,26-Feb-25,26-Feb-25,Eureka,IL,,,,183,$93.10,$144.10,,$51.00,$0.00,$0.00,$93.10,No,None,
+Approved,65,fbd664,31-Mar-25,Tacie Godwin,1,1,3-Mar-25,3-Mar-25,Irvington,AL,,,,221.6,$120.12,$171.12,,$51.00,$0.00,$0.00,$120.12,No,None,
+Approved,66,3384f4,31-Mar-25,Robert Davis,1,1,27-Feb-25,27-Feb-25,SAN DIEGO,CA,,,,256,$144.20,$208.70,,$64.50,$0.00,$0.00,$144.20,No,Ground Transportation,
+Approved,67,ea679a,31-Mar-25,Claston A Bernard,5,8,24-Feb-25,28-Feb-25,Gonzales,LA,,,,899,$594.30,$900.30,,$306.00,$0.00,$0.00,$594.30,No,None,
+Approved,68,b94e88,31-Mar-25,William Brooks III,5,8,24-Feb-25,28-Feb-25,Cleveland,OH,,,,564,$359.80,$851.03,,$298.00,$171.00,$22.23,$359.80,Yes,Lodging,
+Approved,69,9f5e99,31-Mar-25,Tacie Godwin,1,1,4-Mar-25,4-Mar-25,Irvington ,Al ,,,,288,$166.60,$217.60,,$51.00,$0.00,$0.00,$166.60,No,None,
+Approved,72,d5ba34,31-Mar-25,Chris Chamberlin,5,4,23-Feb-25,27-Feb-25,Union ,MS,,,,737,$480.90,"$1,035.84",,$315.00,$191.41,$48.53,$480.90,Yes,Lodging,
+Approved,73,df12aa,31-Mar-25,Amanda Harper,1,1,3-Mar-25,3-Mar-25,Sioux City,IA,,,,240,$133.00,$184.00,,$51.00,$0.00,$0.00,$133.00,No,None,
+Approved,74,ebeda9,31-Mar-25,Amanda Harper,1,1,4-Mar-25,4-Mar-25,Sioux City,IA,,,,197,$102.90,$153.90,,$51.00,$0.00,$0.00,$102.90,No,None,
+Approved,78,9e7a54,31-Mar-25,Jerry Peal,1,1,4-Mar-25,4-Mar-25,Alamo,TN,,,,180,$91.00,$142.00,,$51.00,$0.00,$0.00,$91.00,No,Ground Transportation,
+Approved,79,50e1a8,31-Mar-25,Peter F Vang Dean,1,2,24-Feb-25,24-Feb-25,St Paul,Minnesota,,,,229,$125.30,$125.30,"<div>Property #800010852 (first inspection) has two sites 60 miles apart&#58; first site in Red Wing, MN, 49 miles from home; second site in Winona, MN, 108 miles from home.&#160; </div>",$0.00,$0.00,$0.00,$125.30,No,None,
+Approved,80,70aad8,31-Mar-25,Ronald W Johnson,2,4,3-Mar-24,4-Mar-25,Zachary,Louisiana,,,,220,$119.00,"$1,063.43",<div>The rental car receipt charge and the rental car insurance charge was added together totaling $182.34. This expense will always be added together since there is no entry for rental car insurance expenses.</div>,$120.00,$94.00,$15.11,$834.32,Yes,"Lodging
+Car Rental
+Gas for Car Rental
+Parking and Tolls
+Airfare",
+Approved,81,d9d676,31-Mar-25,Thomas Feehan,2,1,3-Mar-25,4-Mar-25,South Bend,Indiana,,,,1023,$681.10,$885.99,,$102.00,$70.35,$11.50,$702.14,Yes,"Lodging
+Parking and Tolls",
+Approved,82,d02ff9,31-Mar-25,Andrew J Clay,1,1,3-Mar-25,3-Mar-25,Chippewa Falls,Wisconsin,,,,332,$197.40,$197.40,,$0.00,$0.00,$0.00,$197.40,No,None,
+Approved,83,79fa81,31-Mar-25,Andrew J Clay,1,1,4-Mar-25,4-Mar-25,Chippewa Falls,Wisconsin,,,,319,$188.30,$188.30,,$0.00,$0.00,$0.00,$188.30,No,None,
+Approved,84,88e492,31-Mar-25,Marcella Magnelli-Middleton,1,2,4-Mar-25,4-Mar-25,Land O Lakes,FL,,,,95,$31.50,$94.25,<div>Total mileage from my home to clearwater to Saint Petersburg is 51 miles.</div>,$60.00,$0.00,$0.00,$34.25,No,None,
+Approved,85,6a9ac6,31-Mar-25,Marcella Magnelli-Middleton,1,1,5-Mar-25,5-Mar-25,Land O Lakes,FL,,,,128,$54.60,$114.60,,$60.00,$0.00,$0.00,$54.60,No,None,
+Approved,88,90a5b9,31-Mar-25,Robert Davis,2,1,3-Mar-25,4-Mar-25,San Diego,CA,,,,350,$210.00,$393.71,,$83.00,$88.99,$11.72,$210.00,No,Ground Transportation,
+Approved,89,a435ec,31-Mar-25,Peter M Wade,1,1,4-Mar-25,4-Mar-25,ROCHESTER,NY,,,,142,$64.40,$115.40,,$51.00,$0.00,$0.00,$64.40,No,None,
+Approved,90,731a59,31-Mar-25,Peter M Wade,1,1,5-Mar-25,5-Mar-25,ROCHESTER,NY,,,,141,$63.70,$123.70,,$60.00,$0.00,$0.00,$63.70,No,None,
+Approved,93,847eee,31-Mar-25,Quenton Jackson,2,1,4-Mar-25,5-Mar-25,Zachary,LA,,,,1110,$742.00,$967.98,,$102.00,$107.80,$16.18,$742.00,No,Lodging,
+Approved,95,bfdede,31-Mar-25,Cynthia Williams,1,1,5-Mar-25,5-Mar-25,Indianapolis,IN,,,,170,$84.00,$135.00,,$51.00,$0.00,$0.00,$84.00,No,None,
+Approved,96,53daea,31-Mar-25,Cynthia  Williams,2,1,3-Mar-25,4-Mar-25,Indianapolis,Indiana,,,,252,$141.40,$252.40,<div>This was a 2-day inspection. I drove home and returned the next morning to complete the inspection.</div>,$111.00,$0.00,$0.00,$141.40,No,None,
+Approved,97,66a0f2,31-Mar-25,Cynthia Williams,1,1,24-Mar-25,24-Mar-25,Indianapolis,IN,,,,103,$37.10,$88.10,,$51.00,$0.00,$0.00,$37.10,No,None,
+Approved,98,90d963,31-Mar-25,Tacie Godwin,2,1,5-Mar-25,6-Mar-25,Irvington,Al,,,,600,$385.00,$487.00,,$102.00,$0.00,$0.00,$385.00,No,None,
+Approved,99,1720c0,31-Mar-25,Jeff Margett,1,1,5-Mar-25,5-Mar-25,SNOHOMISH,WA,,,,140,$63.00,$114.00,,$51.00,$0.00,$0.00,$63.00,No,None,
+Approved,100,05c739,31-Mar-25,Eric Aycock,1,1,5-Mar-25,5-Mar-25,Morrisonville,NY,,,,96,$32.20,$32.20,,$0.00,$0.00,$0.00,$32.20,No,None,
+Approved,101,056407,31-Mar-25,Eric Aycock,1,2,6-Mar-25,6-Mar-25,Morrisonville,NY,,,,79,$20.30,$110.00,,$64.50,$0.00,$0.00,$45.50,Yes,Parking and Tolls,
+Approved,104,ac5ccf,31-Mar-25,Laurel Elliott,1,1,4-Mar-25,4-Mar-25,Kansas,OK,,,,172,$85.40,$85.40,,$0.00,$0.00,$0.00,$85.40,No,None,
+Approved,105,163098,31-Mar-25,Laurel Elliott,1,1,3-Mar-25,3-Mar-25,Kansas,OK,,,,152,$71.40,$71.40,,$0.00,$0.00,$0.00,$71.40,No,None,
+Approved,106,1ddeb9,31-Mar-25,Laurel Elliott,1,1,6-Mar-25,6-Mar-25,Kansas,OK,,,,488,$306.60,$306.60,<div>Revised due to did not include return trip in first invoice</div>,$0.00,$0.00,$0.00,$306.60,No,None,
+Approved,107,ff7872,31-Mar-25,Melinda Stark,1,1,2-Mar-25,3-Mar-25,Orange City,FL,,,,266,$151.20,$348.76,,$65.00,$107.00,$13.94,$162.82,Yes,"Lodging
+Parking and Tolls",
+Approved,108,0a3da0,31-Mar-25,Melinda Stark,1,1,3-Mar-25,4-Mar-25,Orange City,FL,,,,24,$0.00,$185.16,,$65.00,$106.34,$13.82,$0.00,Yes,Lodging,
+Approved,109,cba195,31-Mar-25,Melinda Stark,1,1,4-Mar-25,5-Mar-25,Kendall,FL,,,,14.4,$0.00,$185.16,,$65.00,$106.34,$13.82,$0.00,Yes,Lodging,
+Approved,111,e93d60,31-Mar-25,Melinda Stark,1,1,5-Mar-25,6-Mar-25,Kendall,FL,Orange City,FL,32763,288,$166.60,$351.76,<div>Hotel to inspection site to home</div>,$65.00,$106.34,$13.82,$166.60,Yes,Lodging,
+Approved,112,9bf7c6,31-Mar-25,Brent Aversano,1,1,6-Mar-25,6-Mar-25,Lake In The Hills,ILLINOIS,,,,268,$152.60,$209.20,,$51.00,$0.00,$0.00,$158.20,No,Parking and Tolls,
+Approved,114,310fff,31-Mar-25,Jerry Peal,2,1,6-Mar-25,7-Mar-25,Alamo,TN,,,,224,$121.80,$223.80,,$102.00,$0.00,$0.00,$121.80,No,None,
+Approved,115,e1378c,31-Mar-25,Eric Aycock,1,1,7-Mar-25,7-Mar-25,Morrisonville,NY,,,,216,$116.20,$180.70,,$64.50,$0.00,$0.00,$116.20,No,None,
+Approved,117,c9e89b,31-Mar-25,Celine Williams,2,2,6-Mar-25,7-Mar-25,San Antonio,TX,,,,207,$109.90,$414.86,,$120.00,$157.00,$27.96,$109.90,Yes,"Lodging
+Ground Transportation",
+Approved,118,ae8231,31-Mar-25,Brent Aversano,1,1,7-Mar-25,7-Mar-25,Lake In The Hills,ILLINOIS,,,,219,$118.30,$184.10,,$60.00,$0.00,$0.00,$124.10,No,Parking and Tolls,
+Approved,119,9289b8,31-Mar-25,Jessica Jackson,1,2,5-Mar-25,5-Mar-25,Tryon,NC,,,,117,$46.90,$97.90,,$51.00,$0.00,$0.00,$46.90,No,None,
+Approved,120,e60fee,31-Mar-25,Daniel J Herr,1,1,7-Mar-25,7-Mar-25,Johnsburg,IL,,,,701,$455.70,$506.70,,$51.00,$0.00,$0.00,$455.70,No,None,
+Processed,121,34fca8,31-Mar-25,HOMER,7,7,3-Mar-25,7-Mar-25,HASTINGS,NE,ALLIANCE,NE,69301,794,$520.80,"$1,804.20",<div>This is continuous away from home travel to include week ends.</div>,$476.00,$647.32,$99.29,$581.59,No,Lodging,
+Approved,122,3188dc,31-Mar-25,Karyn Melton,3,2,5-Mar-25,7-Mar-25,Jonesboro,AR,,,,403,$247.10,$669.00,,$170.00,$220.00,$31.90,$247.10,Yes,Lodging,
+Approved,123,0fb993,31-Mar-25,Joseph Peter Cornell,3,1,2-Mar-25,4-Mar-25,Philadelphia,PA,,,,0,$0.00,$849.12,"<div>Lyft 29.21 
+<br>Gas 19.33
+<br></div>",$185.00,$246.00,$27.06,$391.06,Yes,"Car Rental
+Lodging",
+Approved,124,fddbde,31-Mar-25,Joseph Peter Cornell,3,1,6-Mar-25,8-Mar-25,Philadelphia,PA,,,,0,$0.00,$654.00,"<div>lyft one way 36.99
+<br>Gas 20.00
+<br>Tolls 11.58 each way 23.16
+<br></div>",$185.00,$230.00,$23.00,$216.00,Yes,"Car Rental
+Lodging",
+Approved,125,a58e42,31-Mar-25,Bill Tsudama,2,1,2-Mar-25,3-Mar-25,Watsonville,CA,,,,130,$56.00,"$1,564.93",,"$1,380.00",$117.00,$11.93,$56.00,Yes,Lodging,
+Processed,126,1555d4,31-Mar-25,Bill Tsudama,2,2,4-Mar-25,6-Mar-25,Watsonville,CA,,,,204,$107.80,$429.80,"<div>Only asking for the rate in Firebaugh, CA.&#160; As the rate where I stayed was over the GSA rate.</div>",$102.00,$220.00,$0.00,$107.80,Yes,Lodging,
+Processed,127,7aa093,31-Mar-25,William Brooks III,5,5,3-Mar-25,7-Mar-25,Cleveland,OH,,,,395,$241.50,"$1,487.38","<div>Tolls ($7.75)
+<br>Parking $105)</div>",$340.00,$135.00,$642.60,$369.78,Yes,"Lodging
+Parking and Tolls",
+Processed,128,3fe86c,31-Mar-25,Chris Chamberlin,5,4,2-Mar-25,7-Mar-25,Union,MS,,,,763,$499.10,"$1,081.02",,$306.00,$218.35,$57.57,$499.10,Yes,Lodging,
+Approved,129,cb39e0,31-Mar-25,Gregory Bradle,1,2,3-Mar-25,3-Mar-25,Eureka,IL,,,,285,$164.50,$215.50,,$51.00,$0.00,$0.00,$164.50,No,None,
+Approved,130,0baad0,31-Mar-25,Gregory Bradle,1,2,5-Mar-25,5-Mar-25,Eureka,IL,,,,278,$159.60,$210.60,,$51.00,$0.00,$0.00,$159.60,No,None,
+Approved,131,743df6,31-Mar-25,Eric Aycock,1,2,10-Mar-25,10-Mar-25,Morrisonville,NY,,,,113,$44.10,$95.10,,$51.00,$0.00,$0.00,$44.10,No,None,
+Approved,132,5e6a8d,31-Mar-25,Peter F Vang Dean,1,2,10-Mar-25,10-Mar-25,St Paul,Minnesota,,,,204,$107.80,$107.80,<div>map attached in receipts box</div>,$0.00,$0.00,$0.00,$107.80,Yes,None,
+Approved,134,485eed,31-Mar-25,Marcella Magnelli-Middleton,1,1,11-Mar-25,11-Mar-25,Land O Lakes,FL,,,,329,$195.30,$255.30,,$60.00,$0.00,$0.00,$195.30,No,None,
+Processed,140,fc9704,31-Mar-25,David Casal,6,7,2-Mar-25,7-Mar-25,South Abington Township,PA,,,,849,$559.30,"$1,647.00","<div>Parking $7.00 + 1.01 tax x 2 days (3/5 &amp;3/6) at hotel, listed on hotel receipts 
+<br>No Tolls - </div>",$349.50,$647.00,$75.18,$575.32,Yes,"Lodging
+Parking and Tolls",
+Processed,141,c9e7a3,31-Mar-25,Clint Cave,6,7,2-Mar-25,7-Mar-25,Stamford,CT,,,,0,$0.00,"$2,918.75","The GSA nightly rate for Boston changed in March which is $291. The actual lodging cost (GVT - Government Contractor Rate) was $269.64. The lodging receipt displays the rates differently per night but the total cost is $1348.20 and the total taxes is $221.78. Dividing the total cost by 6 nights is $269.64 which is under the GSA nightly rate. The parking was $60 per night at the hotel. The rental car and insurance receipts are separate, the rental car was pre-paid and the insurance was added at the airport. It is cheaper to book the rental car for a week instead of 6 days. The rental car cost was $283.88. Booked an Uber to return home from the rental car, due to the fact that I haven't received reimbursement, I did not reserve a new rental car. The toll was charged on my card on March 10th. Please let me know if you have any questions or concerns. ",$506.00,"$1,348.20",$221.75,$842.80,Yes,"Lodging
+Car Rental
+Gas for Car Rental
+Parking and Tolls
+Ground Transportation",
+Processed,143,751d95,31-Mar-25,Melinda Stark,1,1,9-Mar-25,10-Mar-25,Orange City,FL,Miramar,FL,33027,278,$159.60,$364.94,,$51.00,$129.00,$16.77,$168.17,Yes,"Lodging
+Parking and Tolls",
+Processed,144,f4a6f7,31-Mar-25,Melinda Stark,1,1,10-Mar-25,11-Mar-25,Miramar,FL,,,,38,$0.00,$236.37,,$68.00,$149.00,$19.37,$0.00,Yes,Lodging,
+Processed,145,33b662,31-Mar-25,Melinda Stark,1,1,12-Mar-25,12-Mar-25,Miramar,FL,,,,20,$0.00,$247.67,,$68.00,$159.00,$20.67,$0.00,Yes,Lodging,
+Resubmitted,146,312c37,31-Mar-25,Chris Chamberlin,3,2,10-Mar-25,12-Mar-25,Union,MS,,,,554,$352.80,$711.78,,$170.00,$136.87,$52.11,$352.80,Yes,Lodging,
+Approved,147,86ba89,31-Mar-25,Peter M Wade,1,2,11-Mar-25,11-Mar-25,ROCHESTER,NY,,,,149,$69.30,$129.30,,$60.00,$0.00,$0.00,$69.30,No,None,
+Approved,148,09ee5e,31-Mar-25,Peter M Wade,1,1,12-Mar-25,12-Mar-25,ROCHESTER,NY,,,,138,$61.60,$121.60,,$60.00,$0.00,$0.00,$61.60,No,None,
+Approved,150,4f2d2b,31-Mar-25,Amanda Harper,1,1,13-Mar-25,13-Mar-25,Sioux City,IA,,,,96,$32.20,$92.20,,$60.00,$0.00,$0.00,$32.20,No,None,
+Approved,151,b685d7,31-Mar-25,Amanda Harper,1,1,12-Mar-25,12-Mar-25,Sioux City,IA,,,,93,$30.10,$90.10,,$60.00,$0.00,$0.00,$30.10,No,None,
+Approved,152,03da29,31-Mar-25,Amanda Harper,1,1,11-Mar-25,11-Mar-25,Sioux City,IA,,,,102,$36.40,$96.40,,$60.00,$0.00,$0.00,$36.40,No,None,
+Approved,153,7667a2,31-Mar-25,Amanda Harper,1,1,6-Mar-25,6-Mar-25,Sioux City,IA,,,,91,$28.70,$79.70,,$51.00,$0.00,$0.00,$28.70,No,None,
+Approved,154,8ed499,31-Mar-25,Brent Aversano,1,1,13-Mar-25,13-Mar-25,Lake In The Hills,ILLINOIS,,,,258,$145.60,$200.50,Scattered site,$51.00,$0.00,$0.00,$149.50,No,Parking and Tolls,
+Duplicate,155,11bba0,31-Mar-25,William A Harding Jr ,4,3,4-Mar-25,7-Mar-25,Wilmington ,North Carolina ,Richmond ,VA ,23231,477.62,$299.33,$960.56,"Hello, here is my travel expense for the week of March 3rd through March 7. I had a total of three inspections this is the second time I am trying to submit this travel expense. Having issues with submitting my receipt for lodging  ",$300.00,$310.65,$50.58,$299.33,No,Lodging,
+Processed,156,bbcb92,31-Mar-25,Ronald W Johnson,3,4,10-Mar-24,12-Mar-25,Zachary,Louisiana,,,,220,$119.00,"$1,136.99","Car rental includes insurance and car rental rate. The insurance was $44, and the car rental was $189.35. The return flight from Louisville to New Orleans was purchased with points and tax of $5.60 was paid. The total flight amount was $223.60.",$180.00,$226.10,$39.94,$690.95,Yes,"Lodging
+Car Rental
+Gas for Car Rental
+Parking and Tolls
+Airfare",
+Processed,157,8d6df4,31-Mar-25,William A Harding JR ,4,3,4-Mar-25,7-Mar-25,Wilmington ,North Carolina ,,,,477.62,$299.33,$960.56,"Here is my travel expense for the week of March 3, 2025, thought March 7th, 2025. I had three inspections for the week two inspections were 2-day inspections.  I'm having trouble dragging my Lodging receipt into the drop box.  This has been an issue for me for a few weeks now. ",$300.00,$310.65,$50.58,$299.33,No,Lodging,
+Processed,158,fa76c4,31-Mar-25,Melinda Stark,1,1,13-Mar-25,13-Mar-25,Miramar,FL,Orange City,FL,32763,269,$153.30,$330.86,,$51.00,$113.00,$13.56,$153.30,Yes,Lodging,
+Resubmitted,159,4ad2b3,31-Mar-25,William Freeman,1,1,12-Mar-25,13-Mar-25,Little Rock,AR,,,,299,$174.30,$312.20,,$51.00,$79.00,$7.90,$174.30,Yes,Lodging,
+Resubmitted,160,0f9dff,31-Mar-25,William Freeman,1,1,9-Mar-25,10-Mar-25,Little Rock,AR,,,,741,$483.70,$629.26,,$51.00,$90.85,$3.71,$483.70,Yes,Lodging,
+Processed,161,b3a2c5,31-Mar-25,Peter F Vang Dean,1,1,13-Mar-25,13-Mar-25,St Paul,Minnesota,,,,202,$106.40,$106.40,mileage map attached,$0.00,$0.00,$0.00,$106.40,Yes,None,
+Processed,162,b490a7,31-Mar-25,Daniel J Herr,4,4,10-Mar-25,13-Mar-25,Johnsburg,IL,,,,801,$525.70,"$1,133.57",,$238.00,$330.00,$39.87,$525.70,Yes,Lodging,
+Processed,163,276b2b,31-Mar-25,Cynthia Williams,1,1,10-Mar-25,10-Mar-25,Indianapolis,Indiana,,,,143,$65.10,$116.10,,$51.00,$0.00,$0.00,$65.10,No,None,
+Ready for Invoice,164,1f7541,31-Mar-25,Joseph Peter Cornell,3,1,12-Mar-25,14-Mar-25,Philadelphia,PA,Philadelphia,Pennsylvania,19125,0,$0.00,$658.61,TOLLS 25.68,$185.00,$230.00,$23.00,$220.61,Yes,"Lodging
+Car Rental",
+Processed,165,e8d826,31-Mar-25,Benjamin Russoniello,3,3,12-Mar-25,14-Mar-25,North Abington Township,PA,,,,791,$518.70,"$1,078.77","I'm hopeful that all three of my receipts are attached.  Each time I add one, it overwrites the last.",$191.00,$254.81,$28.38,$604.58,Yes,"Lodging
+Parking and Tolls",
+Processed,166,cf5a0f,31-Mar-25,Jerry Peal,6,3,9-Mar-25,14-Mar-25,Alamo,TN,,,,1080,$721.00,"$1,672.40",,$440.00,$424.95,$86.45,$721.00,Yes,Lodging,
+Processed,167,8aa082,31-Mar-25,Thomas Schaul,5,4,9-Mar-25,13-Mar-25,Hanover Park,IL,,,,25,$0.00,"$2,102.36","Problems attaching pics of receipts.. tried combining multiple receiptsinto pics but it still says one could not be attached..
+Please let me know what additional receipt pics you need..",$370.00,$683.00,$84.00,$965.36,Yes,"Lodging
+Car Rental
+Gas for Car Rental
+Parking and Tolls
+Airfare",
+Processed,168,39673a,31-Mar-25,HOMER WINDFIELD,7,6,10-Mar-25,14-Mar-25,ALLIANCE,NE,MITCHELL,SD,57301,491,$308.70,"$1,682.86",,$476.00,$743.95,$109.21,$353.70,Yes,Lodging,
+Processed,170,b1d7b2,31-Mar-25,Onesimo Garza lll,3,2,3-Mar-25,5-Mar-25,Mesick,Michigan,,,,323,$191.10,$344.10,Often I will not have a hotel expense if I drive back and forth from home or stay with friends or family in the area of my inspection. With a previous vendor I was told to invoice for the smaller per diem amounts for all travel days when there is no hotel receipt. Please let me know if I need to invoice a different way when a hotel expense is not needed.,$153.00,$0.00,$0.00,$191.10,No,Ground Transportation,
+Processed,171,2c10e5,31-Mar-25,Onesimo Garza lll,3,1,10-Mar-25,12-Mar-25,Mesick,Michigan,,,,250,$140.00,$293.00,No hotel receipt when I drive back and forth or stay with friends or family in the inspection area. I was instructed previously to invoice for the smaller per diem rates when there is no hotel receipt. Please advise if I need to invoice differently when a hotel is not needed.   ,$153.00,$0.00,$0.00,$140.00,No,Ground Transportation,
+Processed,172,629abc,31-Mar-25,William A Harding JR ,4,3,10-Mar-25,14-Mar-25,Wilmington ,North Carolina ,,,,855,$563.50,"$1,263.32","Hello, here is my travel expense for the week of March 10th. I had three inspections for this week. I have driven from Wilmington NC to Exmore Virgina for a one-day inspection. 
+After I completed the inspection in Exmore VA, I had to drive to Charlotteville VA for two inspections that trip three hours on Tuesday. I had said in Charlotteville VA for three nights.",$300.00,$347.70,$52.12,$563.50,Yes,Lodging,
+Processed,173,a79244,31-Mar-25,Luis Correa,1,1,5-Mar-25,5-Mar-25,Rio Grande,PR,,,,100,$35.00,$138.00,It was inspected on the same day of the round trip by car.,$103.00,$0.00,$0.00,$35.00,No,None,
+Processed,174,f47535,31-Mar-25,Luis Correa,1,1,7-Mar-25,7-Mar-25,Rio Grande,PR,,,,134,$58.80,$161.80,It was inspected on the day of the round trip by car.,$103.00,$0.00,$0.00,$58.80,No,None,
+Duplicate,175,83932e,31-Mar-25,Luis Correa,1,1,7-Mar-25,7-Mar-25,Rio Grande,PR,,,,180,$91.00,$194.00,It was inspected on the day of the round trip by car.,$103.00,$0.00,$0.00,$91.00,No,None,
+Processed,176,1b585e,31-Mar-25,Onesimo Garza lll,4,1,12-Mar-25,15-Mar-25,Mesick,Michigan,,,,246,$137.20,$497.30,"When I stay with friends or family or drive back and forth from home, a hotel is not needed for the entire stay. ",$238.00,$110.00,$12.10,$137.20,Yes,"Lodging
+Ground Transportation",
+Processed,177,57f5af,31-Mar-25,Luis Correa,1,1,6-Mar-25,6-Mar-25,Rio Grande,PR,,,,180,$91.00,$194.00,"It was inspected on the day of the round trip by car.
+Correcting previous travel expense with travel date error. Insp # 30983 Property # 800019242",$103.00,$0.00,$0.00,$91.00,No,None,
+Processed,178,8155f7,31-Mar-25,Luis Correa,1,1,13-Mar-25,13-Mar-25,Rio Grande,PR,,,,204,$107.80,$210.80,It was inspected on the day of the round trip by car.,$103.00,$0.00,$0.00,$107.80,No,None,
+Processed,179,c6bc91,31-Mar-25,Thomas Feehan,1,1,14-Mar-25,14-Mar-25,South Bend,Indiana,,,,315,$185.50,$220.85,,$0.00,$0.00,$0.00,$220.85,Yes,Parking and Tolls,
+Processed,180,8679da,31-Mar-25,Gregory Bradle,1,2,10-Mar-25,10-Mar-25,Eureka,IL,,,,258,$145.60,$196.60,,$51.00,$0.00,$0.00,$145.60,No,None,
+Duplicate,181,a779e2,31-Mar-25,Quenton Jackson,3,3,9-Mar-25,12-Mar-25,Zachary ,LA,,,,0,$0.00,"$1,311.10",,$153.00,$242.10,$34.37,$881.63,Yes,"Car Rental
+Lodging
+Gas for Car Rental
+Airfare",
+Processed,182,b0385a,31-Mar-25,Melinda Stark,1,1,17-Mar-25,17-Mar-25,Orange City,FL,,,,72,$15.40,$66.40,,$51.00,$0.00,$0.00,$15.40,No,None,
+Processed,183,b63ec0,31-Mar-25,Eric Aycock,1,1,10-Mar-25,10-Mar-25,Morrisonville,NY,,,,70,$14.00,$103.70,,$64.50,$0.00,$0.00,$39.20,Yes,Parking and Tolls,
+Duplicate,184,4b4abc,31-Mar-25,Laurel Elliott,3,3,12-Mar-25,14-Mar-25,Kansas ,OK,,,,872,$575.40,"$1,001.03","Personal mileage
+Kansas OK to Mound Valley KS
+Mound Valley KS to Wichita KS
+Wichita KS to Larned KS 
+Larned KS to Kansas OK 
+Flihhts and rental cars into these small towns much more costly than personal vehicle. 
+",$171.00,$220.00,$34.63,$575.40,Yes,Lodging,
+Processed,185,ff0dd1,31-Mar-25,Laurel Elliott,3,3,12-Mar-25,14-Mar-25,Kansas ,OK,,,,1207,$809.90,"$1,234.53","Personal mileage 
+Kansas OK to Wichita KS
+Wichita KS to Larned KS
+Larned KS to Sharon Springs KS
+Sharon Springs KS to Kansas OK
+
+Flights and rental car much more costly than personal mileage. ",$170.00,$220.00,$34.63,$809.90,Yes,Lodging,
+Ready for QC,186,c6c6ec,31-Mar-25,William Freeman,1,1,16-Mar-25,17-Mar-25,Little Rock,AR,,,,271,$154.70,$313.56,,$50.99,$93.60,$14.27,$154.70,Yes,Lodging,
+Processed,187,fc80f6,31-Mar-25,Tacie Godwin,1,1,18-Mar-25,18-Mar-25,Irvington,AL,,,,303,$177.10,$241.60,No lodging for this trip ,$64.50,$0.00,$0.00,$177.10,No,None,
+Processed,188,a9b435,31-Mar-25,Brent Aversano,1,1,18-Mar-25,18-Mar-25,Lake In The Hills,ILLINOIS,,,,139,$62.30,$113.30,,$51.00,$0.00,$0.00,$62.30,No,Parking and Tolls,
+Processed,189,26a498,31-Mar-25,KARYN MELTON,1,1,18-Mar-25,18-Mar-25,Jonesboro,AR,,,,136,$60.20,$60.20,milage for driving to inspection 34130 ,$0.00,$0.00,$0.00,$60.20,No,None,
+Processed,190,a1c7f5,31-Mar-25,Brent Aversano,1,1,19-Mar-25,19-Mar-25,Lake In The Hills,ILLINOIS,,,,198,$103.60,$163.60,,$60.00,$0.00,$0.00,$103.60,No,Ground Transportation,
+Ready for Invoice,191,9e237d,31-Mar-25,Jeff Margett,5,4,9-Mar-25,13-Mar-25,SNOHOMISH,WA,,,,0,$0.00,"$1,463.22",,$306.00,$584.02,$100.96,$472.24,Yes,"Car Rental
+Gas for Car Rental",
+Processed,192,165d71,31-Mar-25,Andrew J Clay,1,1,17-Mar-25,17-Mar-25,Chippewa Falls,Wisconsin,,,,164,$79.80,$79.80,,$0.00,$0.00,$0.00,$79.80,No,None,
+Ready for QC,193,6da375,31-Mar-25,Andrew J Clay,1,1,18-Mar-25,18-Mar-25,Chippewa Falls,Wisconsin,,,,122,$50.40,$50.40,,$0.00,$0.00,$0.00,$50.40,No,None,
+Processed,194,e8c75f,31-Mar-25,Andrew J Clay,1,2,12-Mar-25,13-Mar-25,Chippewa Falls,Wisconsin,,,,0,$0.00,$153.77,,$35.00,$107.00,$11.77,$0.00,No,Lodging,
+Processed,195,034022,31-Mar-25,Robert Davis,1,1,18-Mar-25,18-Mar-25,San Diego,CA,,,,169,$83.30,$147.80,,$64.50,$0.00,$0.00,$83.30,No,Ground Transportation,
+Ready for Invoice,196,f07f90,31-Mar-25,Jerry Peal,4,3,16-Mar-25,19-Mar-25,Alamo,TN,,,,1091,$728.70,"$1,315.54",,$280.00,$254.97,$51.87,$728.70,Yes,Lodging,
+Ready for QC,197,73a7cc,31-Mar-25,Peter M Wade,1,1,18-Mar-25,18-Mar-25,ROCHESTER,NY,,,,220,$119.00,$170.00,,$51.00,$0.00,$0.00,$119.00,No,None,
+Ready for QC,198,a1f46a,31-Mar-25,Peter M Wade,1,1,19-Mar-25,19-Mar-25,ROCHESTER,NY,,,,140,$63.00,$123.00,,$60.00,$0.00,$0.00,$63.00,No,None,
+Ready for QC,199,607e04,31-Mar-25,Bill Tsudama,1,1,16-Mar-25,17-Mar-25,Corralitos,CA,,,,94,$30.80,$237.54,,$69.00,$125.00,$12.74,$30.80,Yes,Lodging,
+Ready for Invoice,200,bfce67,31-Mar-25,Thomas Feehan,2,2,18-Mar-25,19-Mar-25,South Bend,Indiana,,,,612,$393.40,$621.90,,$102.00,$110.00,$16.50,$393.40,Yes,Lodging,
+Processed,201,14bec2,31-Mar-25,Clint Cave,6,7,10-Mar-25,14-Mar-25,Stamford,CT,,,,359,$216.30,"$1,756.85","Parking is on the lodging receipt, $36 per night which is $180. Toll is $35.",$440.00,$770.00,$115.55,$431.30,Yes,"Lodging
+Parking and Tolls",
+Ready for QC,202,aaec65,31-Mar-25,Kristopher Gray,1,1,20-Mar-25,20-Mar-25,Morton Grove,IL,,,,184,$93.80,$158.50,$4.70 in tolls paid.  No receipt given.,$60.00,$0.00,$0.00,$98.50,No,Parking and Tolls,
+Processed,203,6e7eb6,31-Mar-25,KARYN  MELTON,1,1,19-Mar-25,19-Mar-25,Jonesboro,AR,,,,120,$49.00,$49.00,Miles driven to inspection,$0.00,$0.00,$0.00,$49.00,No,None,
+Ready for Invoice,204,d10211,31-Mar-25,Peter F Vang Dean,1,3,18-Mar-25,19-Mar-25,St Paul,Minnesota,,,,469,$293.30,$430.42,"Lodging options in and near Chisholm, the far point of my trip, were poor.",$0.01,$122.55,$14.56,$293.30,Yes,Lodging,
+Processed,206,b0ed44,31-Mar-25,Tacie Godwin,1,1,21-Mar-25,21-Mar-25,Irvington,AL,,,,299,$174.30,$225.30,No lodging only invoicing for mileage and per diem ,$51.00,$0.00,$0.00,$174.30,No,None,
+Processed,207,983d43,31-Mar-25,William Brooks III,5,6,10-Mar-25,14-Mar-25,Cleveland ,Ohio,,,,351.6,$211.12,$801.02,,$331.00,$135.00,$18.90,$316.12,Yes,"Lodging
+Parking and Tolls",
+Ready for QC,208,78a840,31-Mar-25,William Brooks III,4,4,18-Mar-25,21-Mar-25,Cleveland ,Ohio,,,,635.2,$409.64,$775.40,,$260.00,$90.00,$15.76,$409.64,Yes,Lodging,
+Claim Received,209,a696ba,31-Mar-25,Amanda Harper,1,1,21-Mar-25,21-Mar-25,Sioux City,IA,,,,204,$107.80,$167.80,,$60.00,$0.00,$0.00,$107.80,No,None,
+Review Comments,210,ad31bc,31-Mar-25,Amanda Harper,3,2,16-Mar-25,18-Mar-25,Sioux City,IA,,,,1008,$670.60,"$1,083.70",,$170.00,$220.00,$23.10,$670.60,Yes,"None
+Lodging",
+Ready for QC,211,645d02,31-Mar-25,Brent Aversano,1,1,21-Mar-25,21-Mar-25,Lake In The Hills,ILLINOIS,,,,178,$89.60,$149.60,,$60.00,$0.00,$0.00,$89.60,No,Ground Transportation,
+Ready for Invoice,212,0b1c47,31-Mar-25,Bernard Rupnik,4,2,18-Mar-25,21-Mar-25,Ashland,Wisconsin,,,,695,$451.50,"$1,045.66","Travel POV Ashland, WI-Marquette, MI-Sault Ste. Marie, MI-Ashland, WI. Air travel not an option.",$238.00,$318.00,$38.16,$451.50,Yes,Lodging,
+Duplicate,213,2be8a5,31-Mar-25,Marcella Magnelli-Middleton,6,2,13-Mar-25,20-Mar-25,Land O Lakes,FL,,,,0,$0.00,"$2,833.42",,$473.00,$916.00,$121.52,"$1,322.90",Yes,"Lodging
+Car Rental
+Parking and Tolls
+Airfare",
+Processed,214,3fc2ff,31-Mar-25,Marcella Magnelli-Middleton,6,2,13-Mar-25,20-Mar-25,Land O Lakes,FL,Mesa,AZ,85204,0,$0.00,"$2,833.92",This is the second submission for this request. Please disregard the first submission. I had to park at the airport fee $144 because I had an inspection on 3/13/25 that ended at 1 pm and I would not make the flight if I drove home to drop off the car. ,$473.00,$916.00,$122.02,"$1,322.90",Yes,"Lodging
+Car Rental
+Parking and Tolls
+Airfare",
+Ready for QC,215,8ebe1a,31-Mar-25,Jerry Peal,1,1,21-Mar-25,21-Mar-25,Alamo,TN,,,,166,$81.20,$136.70,,$55.50,$0.00,$0.00,$81.20,No,None,
+Ready for QC,216,8d25ae,31-Mar-25,Marcus Gardner ,1,1,18-Mar-25,18-Mar-25,Cheltenham ,PA,,,,110,$42.00,$42.00,,$0.00,$0.00,$0.00,$42.00,No,None,
+Review Comments,217,daaf78,31-Mar-25,Jessica Jackson,5,9,17-Mar-25,21-Mar-25,Tryon,North Carolina,Tryon,North Carolina,28782,803,$527.10,$800.10,No overnights,$273.00,$0.00,$0.00,$527.10,No,None,
+Ready for QC,218,23c4b0,31-Mar-25,Quenton Jackson,4,2,17-Mar-25,20-Mar-25,Zachary,LA,,,,792,$519.40,$749.40,,$230.00,$0.00,$0.00,$519.40,No,None,
+Processed,219,061396,31-Mar-25,Homer Windfield,7,4,17-Mar-25,20-Mar-25,Jackson,MS,BROOKINGS,SD,57006,480,$301.00,"$1,545.25","This travel is continuous travel to include weekends as home is Jackson, MS.",$476.00,$673.19,$75.06,$321.00,No,Lodging,
+Ready for QC,220,ff1b28,31-Mar-25,Joseph Peter Cornell,1,2,18-Mar-25,18-Mar-25,Philadelphia,PA,,,,0,$0.00,$18.00,tolls,$0.00,$0.00,$0.00,$18.00,No,Parking and Tolls,
+Ready for Invoice,221,325763,31-Mar-25,Joseph Peter Cornell,4,3,18-Mar-25,21-Mar-25,Philadelphia,PA,,,,0,$0.00,$924.20,"28.64 Tolls for Lancaster
+14.30 Tolls NJ
+Gas 35.65
+Parking 10.00",$242.50,$335.00,$38.56,$308.14,Yes,"Car Rental
+Lodging",
+Processed,222,582445,31-Mar-25,Benjamin Russoniello,5,9,17-Mar-25,21-Mar-25,North Abington Township,PA,,,,1035,$689.50,"$1,627.12",Several scattered sites throughout the week.,$391.50,$452.00,$58.76,$724.86,Yes,Lodging,
+Ready for Invoice,223,40fda2,31-Mar-25,William A Harding JR ,4,5,18-Mar-25,21-Mar-25,Wilmington ,North Carolina ,,,,684,$443.80,$698.80,"Hello, here is my travel expense for the week of March 16th, 2025. Tuesday was the beginning of my travel week for inspections. I did not have to get a hotel because the properties were one to two hours away from my home. Did have breakfast and lunch before and after the inspections. ",$255.00,$0.00,$0.00,$443.80,No,None,
+Ready for Invoice,224,984f35,31-Mar-25,Louis D. Jerome,3,4,10-Mar-25,12-Mar-25,Smithfield,UT,,,,528,$334.60,$505.60,,$171.00,$0.00,$0.00,$334.60,No,None,
+Processed,225,a25c4e,31-Mar-25,Daniel J Herr,5,5,17-Mar-25,21-Mar-25,Johnsburg,IL,,,,921,$609.70,"$1,369.78",,$306.00,$400.00,$54.08,$609.70,Yes,Lodging,
+Processed,226,061701,31-Mar-25,Ronald W Johnson,4,8,17-Mar-25,20-Mar-25,Zachary,Louisiana,,,,220,$119.00,"$1,803.28",,$280.00,$322.34,$51.81,"$1,149.13",Yes,"Lodging
+Car Rental
+Gas for Car Rental
+Parking and Tolls
+Airfare",
+Ready for Invoice,227,fcc543,31-Mar-25,Cynthia W. Williams,7,6,16-Mar-25,22-Mar-25,Indianapolis,Indiana,,,,377,$228.90,"$1,438.74","The usual daily hotel rate is $85 but was higher mid to late week of March 16 - 22 because the NCAA held the First Four or Early Eight in Dayton on March 18-19 at the University of Dayton Arena. That event was followed by the Ohio State Boys Basketball Championship at the Arena on March 21-22.   The average hotel rate of $104.27, before taxes, was still below the $115 for the hotel location. I left Saturday because the time on site for my Friday inspection was more than 10 hours. The inspection app wouldn't show the inspection completed and the H&amp;S the property received from NSPIRE didn't identify the unit locations. I forwarded the H&amp;S to my HUD email and then to the POC. I had at least a 2-hour drive home. ",$481.00,$625.60,$103.24,$228.90,Yes,Lodging,
+Processed,228,bea972,31-Mar-25,Clint Cave,6,8,23-Feb-25,28-Feb-25,Stamford,CT,,,,0,$0.00,"$1,936.55","The rental car is cheaper for 7 days instead of 6 days. Local rental car closes on Sunday, so rented from the nearest airport. Would have to take an Uber to and from so this was the most inexpensive option. The rental car receipt is separate from the car insurance receipt. Parking at the hotel was the only option. Parking is itemized on the lodging receipt. ",$506.00,$601.20,$98.90,$730.45,Yes,"Lodging
+Gas for Car Rental
+Parking and Tolls
+Car Rental",
+Ready for Invoice,229,640f72,31-Mar-25,Clint Cave,1,7,17-Mar-25,21-Mar-25,Stamford,CT,,,,832,$547.40,$607.40,"Worked 80 miles away from home in CT this week and had 1 inspection in Rhode Island in the middle of the week. Per diem is for Jamestown, RI (first and last day per diem). Total miles is 832. No rental car, no lodging. ",$60.00,$0.00,$0.00,$547.40,No,None,
+Ready for QC,230,dba8ca,31-Mar-25,Gregory Bradle,2,2,18-Mar-25,19-Mar-25,Eureka,IL,,,,587,$375.90,$491.40,,$115.50,$0.00,$0.00,$375.90,No,None,
+Ready for QC,231,b67fe0,31-Mar-25,Gregory Bradle,1,1,21-Mar-25,21-Mar-25,Eureka,IL,,,,381,$231.70,$296.20,,$64.50,$0.00,$0.00,$231.70,No,None,
+Ready for QC,232,7279fd,31-Mar-25,Brent Aversano,1,1,24-Mar-25,24-Mar-25,Lake In The Hills,ILLINOIS,,,,357,$214.90,$269.80,,$51.00,$0.00,$0.00,$218.80,No,Parking and Tolls,
+Processed,233,fbdc9e,31-Mar-25,Thomas Schaul,2,1,14-Mar-25,17-Mar-25,Hanover Park,IL,,,,148,$68.60,$211.40,Inspection started on Friday 3/14 and continued &amp; finished on Monday 3/17. No lodging as I stayed at home.,$138.00,$0.00,$0.00,$73.40,No,None,
+Ready for QC,234,27a478,31-Mar-25,Thomas Schaul,2,2,18-Mar-25,19-Mar-25,Hanover Park,IL,,,,382,$232.40,$481.02,Tolls in IL &amp; IN,$102.00,$110.00,$13.00,$256.02,Yes,Lodging,
+Claim Received,235,eff97a,31-Mar-25,Thomas Schaul,1,1,20-Mar-25,20-Mar-25,Hanover Park,IL,,,,81,$21.70,$93.65,,$69.00,$0.00,$0.00,$24.65,No,None,
+Claim Received,236,fea5a6,31-Mar-25,Luis Correa,4,1,8-Mar-25,11-Mar-25,Rio Grande,PR,,,,0,$0.00,"$1,423.28","Due to peak season, travel is available Saturday, March 8th via sea transport ($8.50 receipt).
+Since the pandemic, only commercial or government vehicles are crossing by boat. For this reason, a Jeep was rented, as Culebra only rents Jeeps or golf carts.
+Three-night accommodations are available per travel date, and only available on the inspection date.",$338.00,$597.00,$46.55,$441.73,Yes,"Lodging
+Car Rental
+Parking and Tolls
+Ground Transportation",
+Claim Received,237,9aff52,31-Mar-25,William Freeman,1,1,24-Mar-25,24-Mar-25,Little Rock,AR,,,,250,$140.00,$159.00,,$19.00,$0.00,$0.00,$140.00,No,None,
+Claim Received,238,1340e9,31-Mar-25,Amanda Harper,1,1,24-Mar-25,24-Mar-25,Sioux City,IA,,,,375,$227.50,$278.50,,$51.00,$0.00,$0.00,$227.50,No,None,
+Review Comments,239,35ad79,31-Mar-25,Quenton Jackson,4,3,9-Mar-25,12-Mar-25,Zachary,LA,,,,0,$0.00,"$1,394.76",,$238.00,$242.10,$33.65,$881.01,Yes,"Lodging
+Car Rental
+Gas for Car Rental
+Airfare",
+Ready for Invoice,240,d26d2d,31-Mar-25,David Casal,4,4,11-Mar-25,14-Mar-25,South Abington Township,PA,,,,573,$366.10,"$1,105.63","10 hotel parking on hotel receipt, 51.44 tolls",$270.99,$360.00,$47.10,$427.54,Yes,"Lodging
+Parking and Tolls",
+Processed,242,e35ff0,31-Mar-25,David A Casal,4,4,17-Mar-25,20-Mar-25,South Abington Township,PA,,,,859,$566.30,"$1,446.18","15 Parking on hotel receipt 3/20, 43.85 parking on hotel receipt 3/19, tolls 71.63 summary attached; not feasible to complete this route flying in this timeline.  Would have only been able to do 1/2 the inspections due to time associated with flying and flying from AVP airport which does not have direct flights to BWI so would have lost at least 4 days to travel.",$287.50,$416.00,$45.90,$696.78,Yes,"Lodging
+Parking and Tolls",
+Ready for Invoice,243,dff1fe,31-Mar-25,Caden Casal,6,7,16-Mar-25,21-Mar-25,South Abington Township,PA,,,,762,$498.40,"$1,868.71",Tolls 48.72; Trip was ,$465.00,$758.00,$98.59,$547.12,Yes,"Lodging
+Parking and Tolls",
+Ready for Invoice,244,ee6324,31-Mar-25,Caden Casal,6,6,9-Mar-25,14-Mar-25,South Abington Township,PA,,,,1063,$709.10,"$1,777.62","3/11/25 could not locate a hotel near 15401 at or below per diem rate (this is a very rural area with few hotel options).  Tolls 39.34, Flight travel not an option many stops in rural areas with no airports within reasonable distance.  Would have taken two weeks at least with additional expenses to complete this by flying.",$374.00,$595.22,$59.97,$748.43,Yes,"Lodging
+Parking and Tolls",
+Claim Received,245,28374f,31-Mar-25,Brent Aversano,1,1,25-Mar-25,25-Mar-25,Lake In The Hills,ILLINOIS,,,,193,$100.10,$151.10,,$51.00,$0.00,$0.00,$100.10,No,Ground Transportation,
+Review Comments,246,a4f9fc,31-Mar-25,David Cianci,3,2,3-Mar-25,7-Mar-25,South Abington Township,PA,,,,678,$439.60,$622.59,"Tolls $3, no hotels = no receipts.  ",$180.00,$0.00,$0.00,$442.59,No,Parking and Tolls,
+Duplicate,247,2fc83b,31-Mar-25,David Cianci,2,4,24-Feb-25,27-Feb-25,South Abington Township,PA,,,,517,$326.90,$457.40,"No hotels, tolls $6",$124.50,$0.00,$0.00,$332.90,No,Parking and Tolls,
+Claim Received,248,c6c094,31-Mar-25,David Cianci,6,4,17-Mar-25,22-Mar-25,South Abington Township,PA,,,,710,$462.00,"$1,695.48",Day 6 travel was required because of late completion of inspection and would have had to drive throughout the night to make it home which wasn't safe.  15235 chosen for hotel as central location to inspections; tolls $6.88,$440.00,$690.00,$96.60,$468.88,Yes,"Lodging
+Parking and Tolls",
+Claim Received,249,79911e,31-Mar-25,David Cianci,4,4,24-Mar-25,27-Mar-25,South Abington Township,PA,,,,1051,$700.70,"$1,082.11","No hotels, tolls $136.92 receipt attached",$244.49,$0.00,$0.00,$837.62,Yes,Parking and Tolls,
+Claim Received,250,d074cc,31-Mar-25,Jessica Jackson,1,3,24-Mar-25,24-Mar-25,Tryon,North Carolina,,,,326,$193.20,$244.20,No overnight,$51.00,$0.00,$0.00,$193.20,No,None,
+Processed,251,7d9e36,31-Mar-25,Jordan Theodore,6,7,2-Mar-25,7-Mar-25,South Abington Township,PA,,,,1157,$774.90,"$1,838.11","Hotel parking $35.58, remote areas without hotels which is why Air BNB was chosen, no local airports flights not practical would have required 2 weeks to complete this route and no central airport to even price.",$437.00,$529.98,$60.65,$810.48,Yes,"Parking and Tolls
+Lodging",
+Processed,252,fa06e7,31-Mar-25,Jordan Theodore,3,3,10-Mar-25,12-Mar-25,South Abington Township,PA,,,,801,$525.70,$855.70,"Tolls 3.00, 2 roundtrip flights and rental car would far exceed mileage cost",$184.50,$125.00,$17.50,$528.70,Yes,"Lodging
+Parking and Tolls",
+Claim Received,253,1533ca,31-Mar-25,Kristopher Gray,1,1,25-Mar-25,25-Mar-25,Morton Grove,IL,Northbrook,IL,60062,64,$9.80,$72.45,$2.65 In Tolls paid,$60.00,$0.00,$0.00,$12.45,No,None,
+Claim Received,254,a2651a,31-Mar-25,Tacie Godwin,1,1,24-Mar-25,24-Mar-25,Irvington,AL,,,,180,$91.00,$142.00,Only invoicing for mileage and per diem for 1 day ,$51.00,$0.00,$0.00,$91.00,No,None,
+Claim Received,255,ef5418,31-Mar-25,Jordan Theodore,4,5,17-Mar-25,21-Mar-25,South Abington Township,PA,,,,2174,"$1,486.80","$1,739.76","Tolls $21.96, No hotels for the week, Air travel not feasible because work is not all in one area of NY so it would have required many extra days requiring 2 weeks to complete this route",$231.00,$0.00,$0.00,"$1,508.76",No,Parking and Tolls,
+Claim Received,256,e27d3d,31-Mar-25,Jerry L Peal,2,1,25-Mar-25,26-Mar-25,Alamo,TN,,,,949,$629.30,$830.40,,$120.00,$70.00,$11.10,$629.30,Yes,Lodging,
+Processed,257,c5448e,31-Mar-25,Jordan Theodore,3,1,23-Feb-25,25-Feb-25,Roanoke,VA,South Abington Township,PA,18411,534,$338.80,$911.96,"Hotel Parking $8, Tolls, Worked in Alabama until late Friday so drove to DC over weekend which is why starting point is from Hotel on Saturday AM.  Day 1 full per diem because return travel from previous week of inspections in Alabama.  It was more cost effective to travel over the weekend then to fly home and then back.
+
+Was previously submitted with error which including red bull, tax on hotel too high and mileage incorrect because the feature to start and end at different locations was not working at time of original submission.  All corrected now",$234.99,$249.66,$32.78,$394.53,Yes,"Lodging
+Parking and Tolls",
+Claim Received,258,a31778,31-Mar-25,Andrew J Clay,1,1,25-Mar-25,25-Mar-25,Chippewa Falls,Wisconsin,,,,115,$45.50,$45.50,,$0.00,$0.00,$0.00,$45.50,No,None,
+Claim Received,259,c83dc4,31-Mar-25,Louis Jerome,3,4,24-Mar-25,26-Mar-25,Smithfield,UT,,,,1038,$691.60,$988.78,,$220.99,$70.55,$5.64,$691.60,Yes,Lodging,
+Resubmitted,260,3b7f59,31-Mar-25,William Freeman,2,1,9-Mar-25,10-Mar-25,Little Rock,AR,,,,741,$483.70,$680.27,,$102.00,$90.85,$3.72,$483.70,Yes,Lodging,
+Claim Received,261,21044d,31-Mar-25,William Freeman,1,2,25-Mar-25,25-Mar-25,Little Rock,AR,,,,289,$167.30,$218.30,,$51.00,$0.00,$0.00,$167.30,No,None,
+Processed,262,098fcc,31-Mar-25,William Freeman,2,2,12-Mar-25,13-Mar-25,Little Rock,AR,,,,299,$174.30,$363.20,,$102.00,$79.00,$7.90,$174.30,Yes,Lodging,
+Claim Received,263,dfd0a6,31-Mar-25,Peter M Wade,2,2,25-Mar-25,26-Mar-25,ROCHESTER,NY,,,,305,$178.50,$399.81,,$102.00,$107.40,$11.91,$178.50,Yes,Lodging,
+Claim Received,264,0ce584,31-Mar-25,Brent Aversano,1,1,27-Mar-25,27-Mar-25,Lake In The Hills,ILLINOIS,,,,192,$99.40,$156.20,,$51.00,$0.00,$0.00,$105.20,No,Parking and Tolls,
+Claim Received,265,1e05e6,31-Mar-25,Cynthia W. Williams,2,2,25-Mar-25,26-Mar-25,Indianapolis,Indiana,,,,123,$51.10,$245.84,"I stayed overnight to avoid the 90-minute drive and start the inspection earlier. That allowed me to enter all units before 5 pm and finish the inspection in one day, which was the regional manager's preference because she was leaving for vacation.  ",$102.00,$82.80,$9.94,$51.10,Yes,Lodging,
+Claim Received,266,025653,31-Mar-25,Vincent Rias,1,2,3-Mar-25,3-Mar-25,Country Club Hills ,IL,,,,326,$193.20,$244.20,,$51.00,$0.00,$0.00,$193.20,No,None,
+Claim Received,267,b69e50,31-Mar-25,Vincent Rias,1,2,11-Mar-25,11-Mar-25,Country Club Hills ,IL,,,,162,$78.40,$129.40,,$51.00,$0.00,$0.00,$78.40,No,None,
+Claim Received,268,8147be,31-Mar-25,Andrew J Clay,1,1,27-Mar-25,27-Mar-25,Chippewa Falls,Wisconsin,,,,159,$76.30,$76.30,,$0.00,$0.00,$0.00,$76.30,No,None,
+Claim Received,269,cb5664,31-Mar-25,Thomas Schaul,4,3,24-Mar-25,27-Mar-25,Hanover Park,IL,,,,387,$235.90,$844.60,Insp #33104 (on Tuesday 3/25) estimated by HUD as 1.5 day inspection,$238.00,$330.00,$36.00,$240.60,Yes,Lodging,
+Claim Received,271,2560a1,31-Mar-25,Onesimo Garza lll,4,2,23-Mar-25,26-Mar-25,Mesick,Michigan,,,,1271,$854.70,"$1,092.70",I stayed with family so no hotel expense. See travel comparison cost form attached.,$238.00,$0.00,$0.00,$854.70,Yes,"Car Rental
+Gas for Car Rental
+Airfare
+Ground Transportation",
+Claim Received,272,e3fcf2,31-Mar-25,William R. Brooks III,5,5,24-Mar-25,28-Mar-25,Cleveland ,Ohio,,,,513,$324.10,$696.20,,$272.00,$88.40,$11.70,$324.10,Yes,Lodging,
+Claim Received,273,afe607,31-Mar-25,Kameron Ahankoob,1,1,27-Mar-25,27-Mar-25,Moorpark,CA,,,,110,$42.00,$106.50,,$64.50,$0.00,$0.00,$42.00,No,None,
+Processed,274,2a3b10,31-Mar-25,Caden Casal,5,3,16-Feb-25,20-Feb-25,South Abington Township,PA,Enid,Oklahoma,73703,1949,"$1,329.30","$2,302.50","Tolls 10.96, Day 5 is full day per diem because following day is in a hotel as well but it's on a different report.  ",$323.00,$550.00,$89.23,"$1,340.27",Yes,"Lodging
+Parking and Tolls",
+Review Comments,275,e6430e,31-Mar-25,Thad J Desormeaux ,3,2,9-Mar-25,12-Mar-25,New Iberia,Louisiana ,Jasper,Texas,75951,191,$98.70,$606.01,I have not included any expenses for the last day of this inspection because I traveled to the city of my next inspection immediately after it’s conclusion and am applying those expenses to that trip.,$187.00,$283.47,$36.84,$98.70,Yes,Lodging,
+Processed,276,7dc0ba,31-Mar-25,Caden Casal,3,1,21-Feb-25,23-Feb-25,Enid,OK,,,,2051,"$1,400.70","$1,956.36",Day 1 full day per diem because previous night was in hotel.  It is on a different ex. report. ,$187.00,$327.00,$38.36,"$1,404.00",Yes,"Lodging
+Parking and Tolls",
+Claim Received,277,7cdb7d,31-Mar-25,David A Casal,5,9,24-Mar-25,28-Mar-25,South Abington Township,PA,,,,1866,"$1,271.20","$1,760.42","Tolls 193.72 (receipt attached), no hotels for the week, air travel impossible due to traveling to different areas throughout the week.  ",$295.50,$0.00,$0.00,"$1,464.92",Yes,Parking and Tolls,
+Processed,278,f1c687,31-Mar-25,Thad J Desormeaux ,6,3,12-Mar-25,20-Mar-25,Jasper,Texas,Beaumont,Texas,77705,240,$133.00,"$1,300.00","I included full per diem on day 1 because I traveled directly from another inspection. The first 6 nights on the hotel receipt are included on this request, the remainder are for my next Reimbursement Request.",$408.00,$660.00,$99.00,$133.00,Yes,Lodging,
+Claim Received,279,c277e1,31-Mar-25,Thad J Desormeaux ,2,1,18-Mar-25,20-Mar-25,Beaumont,Texas,Port Arthur,Texas,77640,61,$7.70,$396.70,The full per diem is included on day 1 because I am traveling from the previous inspection I performed. My last day of expenses will be on my next Reimbursement Request as I am traveling directly to another inspection. Only last 2 nights used from hotel rct.,$136.00,$220.00,$33.00,$7.70,Yes,Lodging,
+Claim Received,280,b054d9,31-Mar-25,Benjamin Russoniello,5,4,24-Mar-25,28-Mar-25,North Abington Township,PA,,,,1187,$795.90,"$1,679.76","Turnpike toll $41.88, turnpike toll 38.58.  Additional mileage due to scattered sites in Pittsburgh and surrounding during which I traveled in my POV.  Attached hotel receipt.  Unable to attach cost compare sheet.  Will email to Ali separately.",$315.00,$440.00,$48.40,$876.36,Yes,Lodging,
+Claim Received,281,e06f91,31-Mar-25,Claston A Bernard,5,2,23-Mar-25,27-Mar-25,Gonzales,LA,Fredricksburg,VA,22408,1534,"$1,038.80","$1,748.54","It would have cost me $449.00 for a one way ticket From New Orleans, LA (MSY) to Charlotte, NC (CLT), and from DCA to MSY $350.00 for an airfare total of $809.00. Rental car would cost $703.87, and lodging between South Boston and Washington DC would cost about $1023.00. I would be looking at a total $2535.87 in cost flying.",$306.00,$357.98,$45.76,"$1,038.80",Yes,Lodging,
+Claim Received,282,339327,31-Mar-25,Daniel J Herr,1,1,25-Mar-25,25-Mar-25,Johnsburg,IL,,,,640,$413.00,$464.01,round trip direct to the property,$51.00,$0.00,$0.01,$413.00,No,None,
+Claim Received,283,e3f867,31-Mar-25,Daniel J Herr,1,1,26-Mar-25,26-Mar-25,Johnsburg,IL,,,,474,$296.80,$347.80,Direct route and mileage to property.,$51.00,$0.00,$0.00,$296.80,No,None,
+Claim Received,285,9e4b9a,31-Mar-25,Brent Aversano,1,1,28-Mar-25,28-Mar-25,Lake In The Hills,ILLINOIS,,,,94,$30.80,$86.80,,$51.00,$0.00,$0.00,$35.80,No,Parking and Tolls,
+Claim Received,286,db3f80,31-Mar-25,Jordan Theodore,3,3,24-Mar-25,27-Mar-25,South Abington Township,PA,,,,824,$541.80,$849.63,"Tolls 100.83, no hotels ",$207.00,$0.00,$0.00,$642.63,Yes,Parking and Tolls,
+Claim Received,287,57d9b5,31-Mar-25,Caden Casal,5,9,24-Mar-25,28-Mar-25,South Abington Township,PA,,,,804,$527.80,"$1,868.16","142.48 hotel parking, Hotel $10 over allowed per diem rate on 3 of 4 nights.  ",$360.00,$735.00,$102.89,$670.27,Yes,"Lodging
+Parking and Tolls",
+Claim Received,288,b344e6,31-Mar-25,Jeff Margett,2,2,24-Mar-25,26-Mar-25,SNOHOMISH,WA,,,,0,$0.00,$728.83,,$137.00,$212.15,$29.56,$350.12,Yes,"Lodging
+Car Rental
+Gas for Car Rental",
+Claim Received,289,990979,31-Mar-25,Ronald W Johnson,5,8,23-Mar-25,27-Mar-25,Zachary,Louisiana,,,,220,$119.00,"$2,527.02",The hotel parking and airport parking receipts were added together. The hotel parking fee was $11.00 total and the airport parking was $100.00 total. Grand total was $111.00,$364.50,$519.86,$95.88,"$1,546.78",Yes,"Lodging
+Car Rental
+Gas for Car Rental
+Parking and Tolls
+Airfare",
+Claim Received,291,f29665,31-Mar-25,Amanda Harper,1,1,27-Mar-25,27-Mar-25,Sioux City,IA,,,,309,$181.30,$232.30,,$51.00,$0.00,$0.00,$181.30,No,None,
+Claim Received,292,bc237d,31-Mar-25,Amanda Harper,1,1,28-Mar-25,28-Mar-25,Sioux City,IA,,,,304,$177.80,$228.80,,$51.00,$0.00,$0.00,$177.80,No,None,
+Claim Received,293,93f67d,31-Mar-25,HOMER WINDFIELD ,7,9,24-Mar-25,28-Mar-25,Jackson ,MS,Omaha,NE,68114,453,$282.10,"$1,439.59",,$476.00,$577.41,$81.08,$305.10,No,Lodging,
+Claim Received,294,14e1b7,31-Mar-25,Robert Davis,2,1,25-Mar-25,26-Mar-25,San Diego,CA,,,,218,$117.60,$388.50,1.5 day inspection,$129.00,$129.00,$12.90,$117.60,Yes,Ground Transportation,
+Claim Received,295,1bacb3,31-Mar-25,Quenton Jackson,5,3,24-Mar-25,28-Mar-25,Zachary,LA,,,,1409,$951.30,"$1,644.89",The program will not let me attach my PDF hotel receipts. It's still giving me a red strikeout. They have been emailed to Ali.,$306.00,$338.85,$48.74,$951.30,Yes,Lodging,
+Claim Received,296,7aa5fb,31-Mar-25,Marcella Magnelli Middleton,5,5,24-Mar-25,28-Mar-25,Land O Lakes,FL,,,,0,$0.00,"$1,741.20",Flights for Spirit was $79.19 each way. Screenshots show different seat selection as well as price.,$387.00,$788.00,$102.44,$463.76,Yes,"Lodging
+Car Rental
+Airfare",
+Claim Received,297,46c61e,31-Mar-25,William Freeman,1,1,28-Mar-25,28-Mar-25,Little Rock,AR,,,,285,$164.50,$183.50,,$19.00,$0.00,$0.00,$164.50,No,None,
+Claim Received,298,011e96,31-Mar-25,Peter F Vang Dean,5,9,24-Mar-25,28-Mar-25,St Paul,Minnesota,,,,456,$284.20,$835.31,,$82.82,$417.38,$50.91,$284.20,Yes,Lodging,
+Claim Received,299,fa93e3,31-Mar-25,Chris Chamberlin,6,4,23-Mar-25,28-Mar-25,Union,MS,,,,976,$648.20,"$1,517.88","Traveled from home to Albany, Georgia 343 miles from Albany, Georgia to Athens Georgia 200 miles and traveling around the city to the Properties for the week 50 miles and traveling from Athens Georgia to home 383 miles. ",$322.00,$424.60,$123.08,$648.20,Yes,Lodging,
+Claim Received,300,997aaf,31-Mar-25,Thomas Feehan,5,5,23-Mar-25,28-Mar-25,South Bend,Indiana,,,,684,$443.80,"$1,332.77",,$310.50,$515.35,$58.44,$448.48,Yes,"Lodging
+Parking and Tolls",
+Duplicate,301,d63656,31-Mar-25,Onesimo Garza lll,1,1,3-Mar-25,3-Mar-25,Mesick,MI,,,,266,$151.20,$202.20,the inspection was from our home and back in the same day,$51.00,$0.00,$0.00,$151.20,No,Ground Transportation,
+Duplicate,302,fffda5,31-Mar-25,Onesimo Garza lll,1,1,4-Mar-25,4-Mar-25,Mesick,MI,,,,134,$58.80,$109.80,,$51.00,$0.00,$0.00,$58.80,No,Ground Transportation,
+Claim Received,303,636ea9,31-Mar-25,Onesimo Garza lll,1,1,17-Mar-25,17-Mar-25,Mesick,MI,,,,140,$63.00,$114.00,Drove back and forth from home the same day as the inspection.,$51.00,$0.00,$0.00,$63.00,No,Ground Transportation,
+Claim Received,304,d4bebf,31-Mar-25,Onesimo Garza lll,1,1,19-Mar-25,19-Mar-25,Mesick,MI,,,,250,$140.00,$200.00,Drove back and forth from home the same day.,$60.00,$0.00,$0.00,$140.00,No,Ground Transportation,
+Claim Received,305,9c8709,31-Mar-25,Bernard Rupnik,7,4,23-Mar-25,29-Mar-25,Ashland,Wisconsin,,,,1393,$940.10,"$2,424.72","POV Ashland, WI-St. Louis, MO least costly travel. On Friday, 3-28, completed an inspection then traveled about halfway to different per diem rate. Toll of $1.90 was encountered each way at I90 in Illinois. Where do I send Cost Comparison Form?",$548.50,$798.80,$133.52,$943.90,Yes,Lodging,
+Claim Received,306,40348c,31-Mar-25,Joseph Cornell 200337995,5,3,24-Mar-25,28-Mar-25,PHILADELPHIA,Pennsylvania,,,,0,$0.00,"$1,521.60","24.30 parking with tax 3/24-3/25 on hotel receipt
+34.38 Parking with tax for 3/26-3/28 on hotel receipt
+69.77 Gas
+Tolls 65.84
+",$370.50,$562.00,$87.06,$502.04,Yes,"Car Rental
+Lodging",
+Claim Received,309,a91f9f,31-Mar-25,Chris Chamberlin,1,1,11-Mar-25,12-Mar-25,Union,MS,,,,232,$127.40,$367.38,,$51.00,$136.87,$52.11,$127.40,Yes,Lodging,
+Claim Received,311,8b580c,31-Mar-25,Gregory Bradle,2,1,25-Mar-25,26-Mar-25,Eureka,IL,,,,449,$279.30,$545.55,,$129.00,$122.55,$14.70,$279.30,Yes,Lodging,
+Processed,313,f6c0e5,31-Mar-25,Chris Chamberlin,2,1,11-Mar-25,12-Mar-25,Union,MS,,,,360,$217.00,$507.98,,$102.00,$136.87,$52.11,$217.00,Yes,Lodging,
+Claim Received,314,e6285e,31-Mar-25,Amanda Harper,1,1,31-Mar-25,31-Mar-25,Sioux City,IA,,,,245,$136.50,$187.50,,$51.00,$0.00,$0.00,$136.50,No,None,
+Processed,315,1614ee,31-Mar-25,Chris Chamberlin,1,1,10-Mar-25,10-Mar-25,Union,MS,,,,232,$127.40,$178.40,,$51.00,$0.00,$0.00,$127.40,No,None,
+Claim Received,316,3b0398,31-Mar-25,Marcella Magnelli-Middleton,1,1,31-Mar-25,31-Mar-25,Land O Lakes,FL,,,,215,$115.50,$183.50,,$51.00,$0.00,$0.00,$132.50,No,None,
+Claim Received,317,c23c1e,31-Mar-25,Don E. Crook,3,2,26-Mar-25,28-Mar-25,Nocona,Texas,,,,250,$140.00,$645.06,"Drove 2 hours to Plano, Tx on Wed. 3/26/2025. Drove 2 hours home on 3/28/2025. Ate two breakfast at $5.00 each. Home address is minimum 1.5 hours from any useful commercial airport. Air travel is not practical.",$307.00,$162.00,$21.06,$155.00,Yes,Lodging,
+Claim Received,318,e5d832,31-Mar-25,Brent Aversano,1,1,31-Mar-25,31-Mar-25,Lake In The Hills,ILLINOIS,,,,158,$75.60,$126.60,,$51.00,$0.00,$0.00,$75.60,No,Ground Transportation,
+Claim Received,319,6dcd1b,1-Apr-25,Kameron Ahankoob,1,2,31-Mar-25,31-Mar-25,Moorpark,CA,,,,127,$53.90,$118.40,insp 31114 is a scattered site with 4 different sites.,$64.50,$0.00,$0.00,$53.90,No,None,
+Claim Received,320,7cc67d,1-Apr-25,Kristopher Gray,2,2,31-Mar-25,1-Apr-25,Morton Grove,IL,,,,350,$210.00,$340.20,,$102.00,$0.00,$0.00,$238.20,Yes,None,
+Claim Received,321,6ebaaa,1-Apr-25,Jerry Peal,1,1,1-Apr-25,1-Apr-25,Alamo,TN,,,,236,$130.20,$190.20,,$60.00,$0.00,$0.00,$130.20,No,None,
+Claim Received,322,82953a,1-Apr-25,Jerry Peal,1,1,31-Mar-25,31-Mar-25,Alamo,TN,,,,197,$102.90,$162.90,,$60.00,$0.00,$0.00,$102.90,No,None,
+Claim Received,323,dcd742,1-Apr-25,Bill Tsudama,5,3,24-Mar-25,28-Mar-25,Corralitos,CA,,,,382,$232.40,"$1,334.64",Please note that INSP34408 was cancelled by HUD within 72 hours.,$513.00,$516.00,$73.24,$232.40,Yes,Lodging,
+Claim Received,324,7a3e1b,1-Apr-25,Marcella Magnelli-Middleton,1,1,1-Apr-25,1-Apr-25,LAND O LAKES,Florida,,,,195,$101.50,$164.50,,$51.00,$0.00,$0.00,$113.50,No,None,
+Claim Received,325,5e94f0,1-Apr-25,Kameron Ahankoob,1,1,1-Apr-25,1-Apr-25,Moorpark,CA,,,,148,$68.60,$133.10,,$64.50,$0.00,$0.00,$68.60,No,None,
+Claim Received,326,3786df,2-Apr-25,Tacie Godwin,4,1,30-Mar-25,2-Apr-25,Irvington,AL,,,,1481.8,"$1,002.26","$1,681.28",Hotel receipt and cost comparison sheet is attached ,$301.00,$319.65,$58.37,"$1,002.26",Yes,Lodging,
+Claim Received,327,ee8ef9,2-Apr-25,ROBERT A DAVIS,1,1,1-Apr-25,1-Apr-25,San Diego,CA,,,,63,$9.10,$26.35,,$17.25,$0.00,$0.00,$9.10,Yes,Ground Transportation,
+Claim Received,328,f75557,2-Apr-25,Jessica Jackson,1,2,17-Mar-25,17-Mar-25,Tryon,NC,,,,258,$145.60,$205.60,no over night,$60.00,$0.00,$0.00,$145.60,No,None,
+Claim Received,329,99504e,2-Apr-25,Jessica Jackson,1,1,19-Mar-25,19-Mar-25,Tryon,NC,,,,154,$72.80,$72.80,,$0.00,$0.00,$0.00,$72.80,Yes,None,
+Claim Received,330,d9ac1b,2-Apr-25,Jessica Jackson,1,3,20-Mar-25,20-Mar-25,Tryon,NC,,,,169,$83.30,$143.30,,$60.00,$0.00,$0.00,$83.30,Yes,None,
+Claim Received,331,26bcf2,2-Apr-25,Jessica Jackson,1,1,21-Mar-25,21-Mar-25,Tryon,NC,,,,128,$54.60,$105.60,,$51.00,$0.00,$0.00,$54.60,Yes,None,
+Claim Received,332,9b1615,2-Apr-25,Jessica Jackson,1,1,19-Mar-25,19-Mar-25,Tryon,NC,,,,154,$72.80,$123.80,,$51.00,$0.00,$0.00,$72.80,Yes,None,
+Claim Received,333,2762a0,2-Apr-25,Jerry Peal,1,1,2-Apr-25,2-Apr-25,Alamo,TN,,,,317,$186.90,$237.90,,$51.00,$0.00,$0.00,$186.90,No,None,
+Claim Received,334,a93f60,3-Apr-25,Kameron Ahankoob,1,1,2-Apr-25,2-Apr-25,Moorpark,CA,,,,202,$106.40,$170.90,scattered sites,$64.50,$0.00,$0.00,$106.40,No,None,
+Claim Received,335,2a472e,3-Apr-25,Clint Cave,5,8,24-Mar-25,28-Mar-25,Stamford,CT ,,,,515,$325.50,"$1,417.90",N/A,$387.00,$576.00,$67.40,$387.50,Yes,"Lodging
+Parking and Tolls",
+Claim Received,336,fb0526,3-Apr-25,Clint Cave,1,2,31-Mar-25,1-Apr-25,Stamford,CT,,,,116,$46.20,$46.20,N/A,$0.00,$0.00,$0.00,$46.20,No,None,
+Claim Received,337,adc540,4-Apr-25,Bernard Rupnik,3,1,1-Apr-25,3-Apr-25,Ashland,Wisconsin,,,,1324,$891.80,"$1,397.97","Toll at I90 in Illinois. Using POV less than air travel, cost compare form attached. Nearest Rental car charges daily + .99 cents per mile without air ticket.",$204.50,$260.00,$37.87,$895.60,Yes,Lodging,
+Claim Received,338,4f4562,4-Apr-25,Thomas Feehan,4,4,31-Mar-25,3-Apr-25,South Bend,Indiana,,,,441,$273.70,$885.98,The Portal will not let me load my toll receipt and my Cost Comparison Sheet.,$238.00,$330.00,$39.60,$278.38,Yes,"Lodging
+Parking and Tolls",
+Claim Received,339,e61b58,4-Apr-25,Marcella Magnelli-Middleton,1,2,3-Apr-25,3-Apr-25,Land O Lakes,FL,,,,105,$38.50,$94.50,The second inspection was scattered site. From first inspection to second inspection for both properties was 75 miles away from my home location.,$51.00,$0.00,$0.00,$43.50,No,None,
+Claim Received,340,d4614f,4-Apr-25,Jessica Jackson,1,2,31-Mar-25,31-Mar-25,Tryon,North Carolina,,,,205,$108.50,$159.50,,$51.00,$0.00,$0.00,$108.50,Yes,None,
+Claim Received,341,7f9e7c,4-Apr-25,Jessica Jackson,1,2,31-Mar-25,31-Mar-25,Tryon,North Carolina,,,,192,$99.40,$150.42,,$51.02,$0.00,$0.00,$99.40,Yes,None,
+Claim Received,342,d24d5b,4-Apr-25,Jessica Jackson,1,3,3-Apr-25,3-Apr-25,Tryon,North Carolina,,,,252,$141.40,$192.40,,$51.00,$0.00,$0.00,$141.40,Yes,None,
+Claim Received,343,8ca58b,4-Apr-25,Jessica Jackson,1,2,4-Apr-25,4-Apr-25,Tryon,North Carolina,,,,327,$193.90,$244.90,Inspection 34213 was a scattered site over 3 cities.,$51.00,$0.00,$0.00,$193.90,Yes,None,
+Claim Received,344,9f2665,4-Apr-25,Kameron Ahankoob,1,1,3-Apr-25,3-Apr-25,Moorpark,CA,,,,164,$79.80,$144.30,Scattered sites across Los Angeles ,$64.50,$0.00,$0.00,$79.80,Yes,None,
+Claim Received,345,82ddd1,4-Apr-25,Quenton Jackson,6,5,30-Mar-25,4-Apr-25,Zachary,LA,,,,1106,$739.20,"$1,113.20",Used points for hotel stay this week because my credits cards are maxed out.,$374.00,$0.00,$0.00,$739.20,Yes,None,
+Claim Received,346,a095c0,4-Apr-25,Onesimo Garza lll,2,1,31-Mar-25,1-Apr-25,Mesick,MI,,,,808,$530.60,$775.58,Left Monday and came home  Tuesday after inspection.,$111.00,$115.00,$18.98,$530.60,Yes,"Lodging
+Ground Transportation",
+Claim Received,347,598531,4-Apr-25,Onesimo Garza lll,1,1,3-Apr-25,3-Apr-25,Mesick,MI,,,,388,$236.60,$296.59,Drove to the sight and back in one day,$59.99,$0.00,$0.00,$236.60,Yes,Ground Transportation,
+Claim Received,348,59af9e,4-Apr-25,William Freeman,4,5,31-Mar-25,4-Apr-25,Little Rock,AR,Boosier City,LA,71171,712,$463.40,$844.86,First day Monday returned home. Tuesday drove to Hamburg stayed  in Eldorado.   Wednesday drove to  Boosier City,$193.00,$166.29,$22.17,$463.40,Yes,Lodging,
+Claim Received,349,feccb0,5-Apr-25,Ronald W Johnson,6,10,31-Mar-25,4-Apr-25,Zachary,Louisiana,,,,220,$119.00,"$2,776.74",,$440.00,$564.55,$103.17,"$1,669.02",Yes,"Lodging
+Car Rental
+Gas for Car Rental
+Ground Transportation
+Parking and Tolls
+Airfare",
+Claim Received,350,2064c8,5-Apr-25,Homer Windfield ,7,6,31-Mar-25,4-Apr-25,OMAHA,NE,Saint Ann,MO,63074,597,$382.90,"$1,742.30",,$476.00,$717.47,$121.93,$426.90,No,Lodging,
+Claim Received,351,b29f82,5-Apr-25,Laurel Elliott,4,4,1-Apr-25,4-Apr-25,Kansas,OK,,,,637,$410.90,"$1,053.37",,$238.00,$325.00,$54.47,$435.90,Yes,Lodging,
+Claim Received,352,898169,5-Apr-25,Chris Chamberlin,5,3,30-Mar-25,3-Apr-25,Union,MS,,,,694,$450.80,"$1,888.71","Traveled from Home GA 265, from Rome GA to 334. Took a flight from Savannah GA to Jackson MS, traveled from Jackson MS to union 95.",$342.00,$522.55,$144.18,$879.98,Yes,"Lodging
+Airfare",
+Claim Received,353,034467,6-Apr-25,Benjamin Russoniello,1,1,31-Mar-25,31-Mar-25,North Abington Township,PA,,,,211,$112.70,$163.70,"Cost comparison sheet attached.  Three days rental.  Pick up the day prior, return the day after inspection.  ",$51.00,$0.00,$0.00,$112.70,Yes,None,
+Claim Received,354,0f29dc,6-Apr-25,Benjamin Russoniello,1,2,1-Apr-25,1-Apr-25,North Abington Township,PA,,,,295,$171.50,$240.38,Cost comparison sheet attached. ,$64.50,$0.00,$0.00,$175.88,Yes,None,
+Claim Received,355,a65f1b,6-Apr-25,Benjamin Russoniello,3,2,2-Apr-25,4-Apr-25,North Abington Township,PA,,,,318,$187.60,$781.76,Cost comparison sheet emailed separately to Ali.  Cannot submit more than one attachment here.  Each additional attachment overwrites the first.,$204.50,$334.00,$47.76,$195.50,Yes,Lodging,
+Claim Received,356,6125e2,6-Apr-25,Peter Franklin Vang Dean,4,7,30-Mar-25,3-Apr-25,Saint Paul,MN,,,,1372,$925.40,"$1,417.33","A round-trip flight would not have been feasible for this looping itinerary.  Cost comparison sheet includes lunch and dinner.  Due to time &amp; dietary constraints, I brought my own food (except for free hotel breakfasts), much of it in a cooler, so I am claiming no M&amp;IE on this form. Bringing my own lunches &amp; dinners would not have been feasible had I flown.  
+Two hotel invoices include a rate adjustment shown on a separate line from the base room charge, bringing the net base room charge down to or below $110.  Mileage driven is shown on two maps, because Google Maps only accommodates up to 10 destinations on a single map.",$0.00,$442.00,$49.93,$925.40,Yes,Lodging,
+Claim Received,357,2e422d,6-Apr-25,Benjamin Russoniello,3,1,2-Apr-25,4-Apr-25,North Abington Township,PA,,,,0,$0.00,"$1,358.70","Flight receipt attached.  Other receipts emailed to Ali.  Unable to attach all receipts.  Additional receipts overwrite the previous one in the system.  These expenses are submitted separately from travel to/from airport, hotel and per diem expenses for the trip.  Submitting separately because Marv agreed to reimburse these expenses directly.",$0.00,$0.00,$0.00,"$1,358.70",Yes,Airfare,
+Claim Received,358,046a75,6-Apr-25,William R. Brooks III,5,6,31-Mar-25,4-Apr-25,Cleveland ,Ohio,,,,799,$524.30,$951.22,,$272.00,$135.00,$19.92,$524.30,Yes,Lodging,
+Claim Received,359,b7f668,6-Apr-25,Andrew J Clay,2,3,2-Apr-25,4-Apr-25,Chippewa Falls,Wisconsin,,,,567,$361.90,$659.87,,$66.00,$207.29,$24.68,$361.90,Yes,Lodging,
+Claim Received,360,7da7eb,6-Apr-25,Don Crook,4,3,30-Mar-25,3-Apr-25,Nocona,Texas,,,,815,$535.50,"$1,420.75",Drive to Amarillo for 9am 3/31 inspection. Stayed over night on 3/31 due to cost effectiveness.,$440.00,$390.14,$55.11,$535.50,No,Lodging,
+Claim Received,361,a13693,7-Apr-25,Brent Aversano,1,1,3-Apr-25,3-Apr-25,Lake In The Hills,ILLINOIS,,,,231,$126.70,$193.50,,$61.00,$0.00,$0.00,$132.50,Yes,"Parking and Tolls
+Ground Transportation",
+Claim Received,362,24903d,7-Apr-25,Claston A Bernard,5,4,23-Mar-25,27-Mar-25,Fredricksburg,VA,Varnville,SC,29944,620,$399.00,$981.50,I have attached rates comparison.,$332.50,$250.00,$0.00,$399.00,Yes,Lodging,
+Claim Received,363,e1e6aa,7-Apr-25,Marcus Gardner ,1,1,2-Apr-25,2-Apr-25,Cheltenham ,PA,,,,0,$0.00,$0.00,,$0.00,$0.00,$0.00,$0.00,No,None,
+Claim Received,364,ce0696,7-Apr-25,Gregory Bradle,1,1,2-Apr-25,2-Apr-25,Eureka,IL,,,,380,$231.00,$295.50,,$64.50,$0.00,$0.00,$231.00,Yes,None,
+Claim Received,365,8c4b1d,7-Apr-25,Jerry Peal,1,1,7-Apr-25,7-Apr-25,Alamo,TN,,,,407,$249.90,$300.90,,$51.00,$0.00,$0.00,$249.90,Yes,None,
+Claim Received,366,12a035,7-Apr-25,David A Casal,3,3,31-Mar-25,4-Apr-25,South Abington Township,PA,,,,1352,$911.40,"$1,200.04",Day 2 was travel day.  ,$157.50,$110.00,$17.71,$914.83,Yes,"Lodging
+Parking and Tolls",
+Claim Received,367,7a0bdb,7-Apr-25,Michael Graves,1,1,7-Apr-25,7-Apr-25,Durham,NC,,,,608,$390.60,$390.60,One day trip total 608 miles round trip.,$0.00,$0.00,$0.00,$390.60,No,None,
+Claim Received,368,97d416,7-Apr-25,Onesimo Garza lll,1,1,7-Apr-25,7-Apr-25,Mesick,MI,,,,238,$131.60,$182.60,traveled to and from home to Muskegon in one day.,$51.00,$0.00,$0.00,$131.60,Yes,Ground Transportation,
+Claim Received,369,95f4aa,7-Apr-25,David Cianci,2,2,31-Mar-25,4-Apr-25,South Abington Township,PA,,,,329,$195.30,$300.30,Two additional inspections completed this week but not on expense report because within 50 miles of home,$102.00,$0.00,$0.00,$198.30,Yes,Parking and Tolls,
+Claim Received,370,d23d12,7-Apr-25,Eric Aycock,7,6,30-Mar-25,5-Apr-25,Morrisonville,NY,Lincoln,NH,03251,673,$436.10,$935.60,There is no Lodging reimbursement requested as I used a Timeshare that I had access to at no cost.,$499.50,$0.00,$0.00,$436.10,Yes,None,
+Claim Received,371,25bec0,8-Apr-25,Kameron Ahankoob,1,1,7-Apr-25,7-Apr-25,Moorpark,CA,,,,179,$90.30,$154.80,"Scattered sites across East Los Angeles, La Puente, and Whittier ",$64.50,$0.00,$0.00,$90.30,Yes,None,
+Claim Received,372,d5095a,8-Apr-25,Mark,1,1,4-Apr-25,4-Apr-25,MABLETON,GA,,,,258,$145.60,$205.60,,$60.00,$0.00,$0.00,$145.60,Yes,None,
+Claim Received,373,68c075,8-Apr-25,Jerry Peal,1,1,8-Apr-25,8-Apr-25,Alamo,TN,,,,314,$184.80,$184.80,,$0.00,$0.00,$0.00,$184.80,Yes,None,
+Claim Received,374,2725be,8-Apr-25,TACIE GODWIN,1,1,8-Apr-25,8-Apr-25,IRVINGTON,AL,,,,626.4,$403.48,$454.48,Only invoicing for per diem and mileage. ,$51.00,$0.00,$0.00,$403.48,No,None,
+Claim Received,375,51a8e6,8-Apr-25,Joseph Peter Cornell,1,1,3-Apr-25,3-Apr-25,Philadelphia,PA,,,,0,$0.00,$6.00,Bridge to DRPA,$0.00,$0.00,$0.00,$6.00,No,Parking and Tolls,
+Claim Received,376,5019af,8-Apr-25,Joseph Peter Cornell,1,1,7-Apr-25,7-Apr-25,Philadelphia,PA,,,,0,$0.00,$6.00,Bridge toll DRPA,$0.00,$0.00,$0.00,$6.00,No,Parking and Tolls,
+Claim Received,377,cb41a9,8-Apr-25,Joseph Peter Cornell,3,1,3-Apr-25,5-Apr-25,Philadelphia,PA,,,,0,$0.00,$606.36,"TOLLS 12.00
+GAS 18.33",$170.00,$220.00,$32.18,$184.18,Yes,"Car Rental
+Lodging",
+Claim Received,378,313482,8-Apr-25,Joseph Peter Cornell,5,2,30-Mar-25,3-Apr-25,Philadelphia,PA,,,,0,$0.00,"$1,203.95","42.50 TOLLS
+PARKING 12.00",$306.01,$425.20,$63.70,$409.04,Yes,"Lodging
+Car Rental",
+Claim Received,379,11b70b,9-Apr-25,Amanda Harper,1,1,7-Apr-25,7-Apr-25,Sioux City,IA,,,,0,$0.00,$262.36,,$51.00,$0.00,$0.00,$211.36,Yes,None,
+Claim Received,380,6e814a,9-Apr-25,Don Crook,2,1,7-Apr-25,8-Apr-25,Nocona,Texas,,,,285,$164.50,$392.99,Drive to first inspection o 4/7/25 is 2.5 hours and then to second inspection location for overnight.  Air travel is not practical when travel to and from airport is half the time it takes to POV to and from inspection sites. ,$102.00,$110.00,$16.49,$164.50,Yes,Lodging,
