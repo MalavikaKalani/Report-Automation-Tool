@@ -18,7 +18,7 @@ def add_security_headers(response):
     return response
 
 def check_file_permissions():
-    required_files = ['all_submissions.csv', 'inspections.csv', 'per_diem.csv']
+    required_files = ['Live_Data_New_04_09(All_Submissions).csv', 'Live_Data_New_04_09(Inspections).csv', 'Live_Data_New_04_09(Per Diem).csv']
     for file in required_files:
         if not os.path.exists(file):
             return False, f"Required file {file} not found"
