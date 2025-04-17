@@ -193,7 +193,9 @@ def index():
 def process():
     try:
         submission_num = int(request.form['submission_num'])
+        print(f"🔢 Parsed submission number: {submission_num}")
         success, result = process_data(submission_num)
+        print(f"✅ process_data() returned: success={success}, result={result}")
         
         if success:
             return send_file(result, as_attachment=True, download_name=result)
