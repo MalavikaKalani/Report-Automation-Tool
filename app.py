@@ -27,6 +27,9 @@ def check_file_permissions():
     return True, "All files accessible"
 
 def process_data(submission_num):
+
+    print(f"📁 Current working directory: {os.getcwd()}")
+
     try:
         # Check file permissions first
         can_access, message = check_file_permissions()
