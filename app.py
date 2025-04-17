@@ -172,8 +172,14 @@ def process_data(submission_num):
         # final_df.to_excel('report_submission_37.xlsx', index=False)
 
         # Generate unique filename
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        excel_filename = f'{inspector_name}_{reimbursement_id}_{submission_num}.xlsx'
+        
+        # Get the absolute path of the directory where the app.py file is located
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+
+        # Create the path for the Excel file using BASE_DIR
+        excel_filename = os.path.join(base_dir, f'{inspector_name}_{reimbursement_id}_{submission_num}.xlsx')
+
+        # excel_filename = f'{inspector_name}_{reimbursement_id}_{submission_num}.xlsx'
 
         # Save to Excel with adjusted column width
         with pd.ExcelWriter(excel_filename, engine='xlsxwriter') as writer:
@@ -210,7 +216,8 @@ def process():
         print(f"✅ process_data() returned: success={success}, result={result}")
         
         if success:
-            return send_file(result, as_attachment=True, download_name=result)
+            file_name = os.path.basename(result)
+            return send_file(result, as_attachment=True, download_name=file_name)
         else:
             return render_template('index.html', error=result)
     except ValueError:
