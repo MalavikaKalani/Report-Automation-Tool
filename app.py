@@ -4,6 +4,8 @@ import os
 from datetime import datetime
 import sys
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Base path where app.py lives
+
 app = Flask(__name__)
 
 # Add security headers to all responses
@@ -20,9 +22,10 @@ def add_security_headers(response):
 def check_file_permissions():
     required_files = ['Live_Data_New_04_09(All_Submissions).csv', 'Live_Data_New_04_09(Inspections).csv', 'Live_Data_New_04_09(Per Diem).csv']
     for file in required_files:
-        if not os.path.exists(file):
+        file_path = os.path.join(BASE_DIR, file)
+        if not os.path.exists(file_path):
             return False, f"Required file {file} not found"
-        if not os.access(file, os.R_OK):
+        if not os.access(file_path, os.R_OK):
             return False, f"No read permission for {file}"
     return True, "All files accessible"
 
@@ -42,11 +45,17 @@ def process_data(submission_num):
         # perdiem = pd.read_csv("per_diem.csv")
         # property_info = pd.read_csv("property.csv")
 
-        submissions = pd.read_csv("Live_Data_New_04_09(All_Submissions).csv", encoding='cp1252')
-        inspections = pd.read_csv("Live_Data_New_04_09(Inspections).csv",encoding='cp1252')
-        perdiem = pd.read_csv("Live_Data_New_04_09(Per Diem).csv",encoding='cp1252')
-        property_info = pd.read_csv("property.csv",encoding='cp1252')
+        # submissions = pd.read_csv("Live_Data_New_04_09(All_Submissions).csv", encoding='cp1252')
+        
 
+        # inspections = pd.read_csv("Live_Data_New_04_09(Inspections).csv",encoding='cp1252')
+        # perdiem = pd.read_csv("Live_Data_New_04_09(Per Diem).csv",encoding='cp1252')
+        # property_info = pd.read_csv("property.csv",encoding='cp1252')
+        
+        submissions = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(All_Submissions).csv"), encoding='cp1252')
+        inspections = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Inspections).csv"), encoding='cp1252')
+        perdiem = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Per Diem).csv"), encoding='cp1252')
+        property_info = pd.read_csv(os.path.join(BASE_DIR, "property.csv"), encoding='cp1252')
 
 
         # FILTER BY SUBMISSION NUMBER TO CREATE REPORT FOR EACH SUBMISSION
