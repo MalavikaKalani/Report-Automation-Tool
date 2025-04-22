@@ -10,7 +10,7 @@
             background-color: #f8f9fa;
         }
         .container {
-            max-width: 600px;
+            max-width: 1500px;
             margin-top: 50px;
         }
         .card {
@@ -34,9 +34,21 @@
                     <div class="mb-3">
                         <label for="submission_num" class="form-label">Enter Submission Number:</label>
                         <input type="number" class="form-control" id="submission_num" name="submission_num" required>
+                        <!-- <input type="number" class="form-control" id="submission_num" name="submission_num" value="{{ submission_num or '' }}" required> -->
                     </div>
                     <button type="submit" class="btn btn-primary">Process Data</button>
                 </form>
+                {% if excel_table %}
+                <h5 class="mt-4">Submission Data:</h5>
+                <div class="table-responsive">
+                    {{ excel_table | safe }}
+                </div>
+                {% endif %}
+
+                {% if transportation_expenses %}
+                <h5 class="mt-4">Transportation Expenses:</h5>
+                <p><strong>{{ transportation_expenses }}</strong></p>
+                {% endif %}
             </div>
         </div>
     </div>

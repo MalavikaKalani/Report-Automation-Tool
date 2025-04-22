@@ -20,7 +20,7 @@ def add_security_headers(response):
     return response
 
 def check_file_permissions():
-    required_files = ['Live_Data_New_04_09(All_Submissions).csv', 'Live_Data_New_04_09(Inspections).csv', 'Live_Data_New_04_09(Per Diem).csv']
+    required_files = ['Live_Data_New_04_09(All_Submissions).csv', 'Live_Data_New_04_09(Inspections).csv', 'Live_Data_New_04_09(Per Diem).csv', 'Live_Data_New_04_09(Transportation Expenses).csv']
     for file in required_files:
         file_path = os.path.join(BASE_DIR, file)
         if not os.path.exists(file_path):
@@ -56,18 +56,21 @@ def process_data(submission_num):
         inspections = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Inspections).csv"), encoding='cp1252')
         perdiem = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Per Diem).csv"), encoding='cp1252')
         property_info = pd.read_csv(os.path.join(BASE_DIR, "property.csv"), encoding='cp1252')
+        transportation = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Transportation Expenses).csv"), encoding='cp1252')
 
 
         # FILTER BY SUBMISSION NUMBER TO CREATE REPORT FOR EACH SUBMISSION
         df_submissions = submissions[submissions['Submission Num'] == submission_num]
         df_inspections = inspections[inspections['Submission Num'] == submission_num]
         df_perdiem = perdiem[perdiem['Submission Num'] == submission_num]
+        df_transportation = transportation[transportation['Submission Num'] == submission_num]
 
         if len(df_submissions) == 0:
                 return False, f"Submission number {submission_num} not found"
 
         inspector_name = df_submissions['Inspector Name'].iloc[0]
         reimbursement_id = df_submissions['Reimbursement RequestID'].iloc[0]
+        transportation_expenses = df_transportation['Transportation Expenses'].iloc[0]
 
 
         # REFORMAT DATES (Convert date columns to datetime for proper sorting)
@@ -166,39 +169,47 @@ def process_data(submission_num):
                         'Travel End Location', 'POV Mileage', 'POV Mileage Expense ($0.70 per mile)', 'Total Reimbursement','Total Expenses Per Line Item'
                             ]]
 
-        # print(final_df.dtypes)
+        return True, (final_df, transportation_expenses)
+        # # Get the absolute path of the directory where the app.py file is located
+        # base_dir = os.path.dirname(os.path.abspath(__file__))
 
-        # final_df.to_csv('report_submission_37.csv', index=False)
-        # final_df.to_excel('report_submission_37.xlsx', index=False)
+        # # Create the path for the Excel file using BASE_DIR
+        # excel_filename = os.path.join(base_dir, f'{inspector_name}_{reimbursement_id}_{submission_num}.xlsx')
 
-        # Generate unique filename
-        
-        # Get the absolute path of the directory where the app.py file is located
-        base_dir = os.path.dirname(os.path.abspath(__file__))
+        # # Save to Excel with adjusted column width
+        # with pd.ExcelWriter(excel_filename, engine='xlsxwriter') as writer:
+        #     final_df.to_excel(writer, sheet_name='Sheet1', index=False)
 
-        # Create the path for the Excel file using BASE_DIR
-        excel_filename = os.path.join(base_dir, f'{inspector_name}_{reimbursement_id}_{submission_num}.xlsx')
+        #     # Access the workbook and worksheet
+        #     workbook = writer.book
+        #     worksheet = writer.sheets['Sheet1']
 
-        # excel_filename = f'{inspector_name}_{reimbursement_id}_{submission_num}.xlsx'
+        #     # Adjust column width dynamically
+        #     for i, col in enumerate(final_df.columns):
+        #         max_length = max(final_df[col].astype(str).map(len).max(), len(col)) + 8
+        #         worksheet.set_column(i, i, max_length)  # Set column width
 
-        # Save to Excel with adjusted column width
-        with pd.ExcelWriter(excel_filename, engine='xlsxwriter') as writer:
-            final_df.to_excel(writer, sheet_name='Sheet1', index=False)
-
-            # Access the workbook and worksheet
-            workbook = writer.book
-            worksheet = writer.sheets['Sheet1']
-
-            # Adjust column width dynamically
-            for i, col in enumerate(final_df.columns):
-                max_length = max(final_df[col].astype(str).map(len).max(), len(col)) + 8
-                worksheet.set_column(i, i, max_length)  # Set column width
-
-            writer._save()  # Save the file
-            return True, excel_filename
+        #     writer._save()  # Save the file
+        #     return True, excel_filename
 
     except Exception as e:
         return False, f"Error processing data: {str(e)}"
+
+# @app.route('/view_transportation/<int:submission_num>', methods=['GET'])
+# def view_transportation(submission_num):
+#     try:
+#         transportation = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Transportation Expenses)"), encoding='cp1252')
+#         df_transportation = transportation[transportation['Submission Num'] == submission_num]
+
+#         if len(df_transportation) == 0:
+#             return render_template('index.html', error=f"No transportation data for submission #{submission_num}")
+
+#         transportation_expenses = df_transportation['Transportation Expenses'].iloc[0]
+
+#         return render_template('transportation.html', transportation_expenses=transportation_expenses, submission_num=submission_num)
+
+#     except Exception as e:
+#         return render_template('index.html', error=f"Error displaying transportation data: {str(e)}")
 
 @app.route('/', methods=['GET'])
 def index():
@@ -216,10 +227,16 @@ def process():
         print(f"✅ process_data() returned: success={success}, result={result}")
         
         if success:
-            file_name = os.path.basename(result)
-            return send_file(result, as_attachment=True, download_name=file_name)
+            # file_name = os.path.basename(result)
+            final_df, transportation_expenses = result
+            table_html = final_df.to_html(classes='table table-bordered table-striped', index=False, border=0)
+            # return send_file(result, as_attachment=True, download_name=file_name)
+            return render_template('index.html',
+                                   submission_num=submission_num,
+                                   excel_table=table_html,
+                                   transportation_expenses=transportation_expenses)
         else:
-            return render_template('index.html', error=result)
+            return render_template('index.html', submission_num=submission_num, error=result)
     except ValueError:
         return render_template('index.html', error="Please enter a valid submission number")
     except Exception as e:
