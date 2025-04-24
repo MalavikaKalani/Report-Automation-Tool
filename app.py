@@ -53,17 +53,27 @@ def process_data(submission_num):
         # property_info = pd.read_csv("property.csv",encoding='cp1252')
         
         submissions = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(All_Submissions).csv"), encoding='cp1252')
-        inspections = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Inspections).csv"), encoding='cp1252')
+        # inspections = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Inspections).csv"), encoding='cp1252')
+        inspections = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Inspections).csv"), encoding='cp1252', names=[
+            'Submission Num','Reimbursement RequestID','Inspector Name','Inspection Id_OG','Inspection Date','Property Id','Inspection Id','Status'
+        ],header=0, keep_default_na=True)
+
+        # row_268 = inspections[inspections['Submission Num'] == 268]
+        # for i, val in enumerate(row_268.iloc[0]):
+        #     print(f"Column {i}: {inspections.columns[i]} → {val}")
+
         perdiem = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Per Diem).csv"), encoding='cp1252')
-        property_info = pd.read_csv(os.path.join(BASE_DIR, "property.csv"), encoding='cp1252')
+        property_info = pd.read_csv(os.path.join(BASE_DIR, "property.csv"), encoding='utf-8-sig')
         transportation = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Transportation Expenses).csv"), encoding='cp1252')
 
-
+        
         # FILTER BY SUBMISSION NUMBER TO CREATE REPORT FOR EACH SUBMISSION
         df_submissions = submissions[submissions['Submission Num'] == submission_num]
         df_inspections = inspections[inspections['Submission Num'] == submission_num]
         df_perdiem = perdiem[perdiem['Submission Num'] == submission_num]
         df_transportation = transportation[transportation['Submission Num'] == submission_num]
+
+        # print(df_inspections.dtypes)
 
         if len(df_submissions) == 0:
                 return False, f"Submission number {submission_num} not found"
@@ -74,8 +84,6 @@ def process_data(submission_num):
         transportation_expenses = df_transportation['Transportation Expenses'].iloc[0]
         travel_location_info = df_submissions[['Depart City','Depart State','Dest City','Dest State','Dest Zip']]
         comments = df_submissions['Comments'].iloc[0]
-
-
 
         # REFORMAT DATES (Convert date columns to datetime for proper sorting)
         df_inspections["Inspection Date"] = pd.to_datetime(df_inspections["Inspection Date"], format="%m/%d/%Y")
@@ -97,7 +105,8 @@ def process_data(submission_num):
 
         # RENAME FOR MERGE TO WORK BASED ON INSPECTION ID 
         df_inspections.rename(columns={"Inspection Id": "InspectionID"}, inplace=True)
-
+        print(f"✅ Found {len(df_inspections)} inspection rows for submission {submission_num}")
+        print(df_inspections.head())
 
         # MERGE INSPECTION WITH PROPERTY INFO 
         df_inspections = pd.merge(
@@ -106,6 +115,8 @@ def process_data(submission_num):
             on='InspectionID', 
             how='left'
         )
+
+       
 
         # MERGE INSPECTION WITH PER DIEM 
         merged_df = pd.merge(
@@ -120,12 +131,12 @@ def process_data(submission_num):
             merged_df.groupby("Day Number")
             .agg({
                 "Day Number": "first",
-                "InspectionID": set,  # Store multiple IDs in a list
-                "PropertyID": set,  # Store multiple Property IDs in a list
-                "PropertyType": set,
-                "PropertyName": set,
-                "PropertyStreetAddress": set,
-                "CityState": set,
+                "InspectionID": list,  # Store multiple IDs in a list
+                "PropertyID": list,  # Store multiple Property IDs in a list
+                "PropertyType": list,
+                "PropertyName": list,
+                "PropertyStreetAddress": list,
+                "CityState": list,
                 "Per Diem": "first",
                 "Lodging Rate": "first",
                 "Lodging Cost": "first",
