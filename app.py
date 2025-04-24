@@ -68,9 +68,13 @@ def process_data(submission_num):
         if len(df_submissions) == 0:
                 return False, f"Submission number {submission_num} not found"
 
+        # get information that will be individually displayed 
         inspector_name = df_submissions['Inspector Name'].iloc[0]
         reimbursement_id = df_submissions['Reimbursement RequestID'].iloc[0]
         transportation_expenses = df_transportation['Transportation Expenses'].iloc[0]
+        travel_location_info = df_submissions[['Depart City','Depart State','Dest City','Dest State','Dest Zip']]
+        comments = df_submissions['Comments'].iloc[0]
+
 
 
         # REFORMAT DATES (Convert date columns to datetime for proper sorting)
@@ -111,7 +115,6 @@ def process_data(submission_num):
             how='right'
         )
 
-
         # GROUP BY DAY NUMBER AND AGGREGATE INSPECTIONS IDS USING A SET
         final_df = (
             merged_df.groupby("Day Number")
@@ -150,8 +153,6 @@ def process_data(submission_num):
         final_df["POV Mileage Expense ($0.70 per mile)"] = pov_mileage_expense
         final_df["Total Reimbursement"] = total_reimbursement
 
-
-
         # ENSURE SAME DATA TYPE
         final_df["Total Reimbursement"] = final_df["Total Reimbursement"].replace('[\$,]', '', regex=True).astype(float)
 
@@ -166,10 +167,10 @@ def process_data(submission_num):
 
         final_df = final_df[['Day Number', 'Date of Inspection', 'InspectionID', 'PropertyID', 'Program', 'Property Name', 'Property Address', 'Property City, State',
                         'Per Diem', 'GSA Lodging Rate', 'Actual Lodging Cost', 'Lodging Rate Tax', 'GSA Rate Zip Code', 'Travel Start Location', 
-                        'Travel End Location', 'POV Mileage', 'POV Mileage Expense ($0.70 per mile)', 'Total Reimbursement','Total Expenses Per Line Item'
+                        'Travel End Location', 'POV Mileage', 'POV Mileage Expense ($0.70 per mile)', 'Total Reimbursement'
                             ]]
 
-        return True, (final_df, transportation_expenses)
+        return True, (final_df, transportation_expenses, travel_location_info, comments)
         # # Get the absolute path of the directory where the app.py file is located
         # base_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -224,17 +225,21 @@ def process():
         submission_num = int(request.form['submission_num'])
         print(f"🔢 Parsed submission number: {submission_num}")
         success, result = process_data(submission_num)
+        # print(f"🔍 Debug result from process_data: success={success}, result={result}")
         print(f"✅ process_data() returned: success={success}, result={result}")
         
         if success:
             # file_name = os.path.basename(result)
-            final_df, transportation_expenses = result
+            final_df, transportation_expenses, travel_location_info, comments = result
             table_html = final_df.to_html(classes='table table-bordered table-striped', index=False, border=0)
+            location_html = travel_location_info.to_html(classes='table table-bordered table-striped', index=False, border=0)
             # return send_file(result, as_attachment=True, download_name=file_name)
             return render_template('index.html',
                                    submission_num=submission_num,
                                    excel_table=table_html,
-                                   transportation_expenses=transportation_expenses)
+                                   transportation_expenses=transportation_expenses,
+                                   location_table = location_html,
+                                   comments = comments)
         else:
             return render_template('index.html', submission_num=submission_num, error=result)
     except ValueError:
