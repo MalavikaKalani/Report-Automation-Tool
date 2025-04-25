@@ -29,6 +29,11 @@ def check_file_permissions():
             return False, f"No read permission for {file}"
     return True, "All files accessible"
 
+
+def highlight_non_nan(val):
+    """Highlights non-NaN values yellow."""
+    return 'background-color: yellow' if pd.notna(val) else ''
+
 def process_data(submission_num):
 
     print(f"📁 Current working directory: {os.getcwd()}")
@@ -181,6 +186,7 @@ def process_data(submission_num):
                         'Travel End Location', 'POV Mileage', 'POV Mileage Expense ($0.70 per mile)', 'Total Reimbursement'
                             ]]
 
+        # final_df = final_df.style.applymap(highlight_non_nan)
         return True, (final_df, transportation_expenses, travel_location_info, comments)
         # # Get the absolute path of the directory where the app.py file is located
         # base_dir = os.path.dirname(os.path.abspath(__file__))
@@ -242,6 +248,7 @@ def process():
         if success:
             # file_name = os.path.basename(result)
             final_df, transportation_expenses, travel_location_info, comments = result
+            
             table_html = final_df.to_html(classes='table table-bordered table-striped', index=False, border=0)
             location_html = travel_location_info.to_html(classes='table table-bordered table-striped', index=False, border=0)
             # return send_file(result, as_attachment=True, download_name=file_name)
