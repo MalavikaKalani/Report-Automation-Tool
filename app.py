@@ -45,10 +45,6 @@ def process_data(submission_num):
             return False, message
 
         # LOAD DATA FROM CSV
-        # submissions = pd.read_csv("all_submissions.csv")
-        # inspections = pd.read_csv("inspections_new.csv")
-        # perdiem = pd.read_csv("per_diem.csv")
-        # property_info = pd.read_csv("property.csv")
 
         # submissions = pd.read_csv("Live_Data_New_04_09(All_Submissions).csv", encoding='cp1252')
         
@@ -60,8 +56,8 @@ def process_data(submission_num):
         submissions = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(All_Submissions).csv"), encoding='cp1252')
         # inspections = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Inspections).csv"), encoding='cp1252')
         inspections = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Inspections).csv"), encoding='cp1252', names=[
-            'Submission Num','Reimbursement RequestID','Inspector Name','Inspection Id_OG','Inspection Date','Property Id','Inspection Id','Status'
-        ],header=0, keep_default_na=True)
+            'Submission Num','Reimbursement RequestID','Inspector Name','Inspection Id_OG','Inspection Date','Property Id','Inspection Id','Status'],
+            header=0, keep_default_na=True)
 
         # row_268 = inspections[inspections['Submission Num'] == 268]
         # for i, val in enumerate(row_268.iloc[0]):
@@ -70,18 +66,19 @@ def process_data(submission_num):
         perdiem = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Per Diem).csv"), encoding='cp1252')
         property_info = pd.read_csv(os.path.join(BASE_DIR, "property.csv"), encoding='utf-8-sig')
         transportation = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Transportation Expenses).csv"), encoding='cp1252')
-
+        
         
         # FILTER BY SUBMISSION NUMBER TO CREATE REPORT FOR EACH SUBMISSION
         df_submissions = submissions[submissions['Submission Num'] == submission_num]
+
+        if len(df_submissions) == 0:
+                return False, f"Submission number {submission_num} not found"
+
         df_inspections = inspections[inspections['Submission Num'] == submission_num]
         df_perdiem = perdiem[perdiem['Submission Num'] == submission_num]
         df_transportation = transportation[transportation['Submission Num'] == submission_num]
 
         # print(df_inspections.dtypes)
-
-        if len(df_submissions) == 0:
-                return False, f"Submission number {submission_num} not found"
 
         # get information that will be individually displayed 
         inspector_name = df_submissions['Inspector Name'].iloc[0]
@@ -109,9 +106,11 @@ def process_data(submission_num):
 
 
         # RENAME FOR MERGE TO WORK BASED ON INSPECTION ID 
+        
         df_inspections.rename(columns={"Inspection Id": "InspectionID"}, inplace=True)
-        print(f"✅ Found {len(df_inspections)} inspection rows for submission {submission_num}")
-        print(df_inspections.head())
+        # print(f"✅ Found {len(df_inspections)} inspection rows for submission {submission_num}")
+        
+        
 
         # MERGE INSPECTION WITH PROPERTY INFO 
         df_inspections = pd.merge(
@@ -120,8 +119,6 @@ def process_data(submission_num):
             on='InspectionID', 
             how='left'
         )
-
-       
 
         # MERGE INSPECTION WITH PER DIEM 
         merged_df = pd.merge(
@@ -156,12 +153,12 @@ def process_data(submission_num):
         # final_df['Inspection Date'] = final_df['Day Number'].map(day_to_date_mapping)
 
         # ADD EXTRA FIELDS 
-        final_df['Travel Start Location'] = pd.Series(dtype='int')
-        final_df['Travel End Location'] = pd.Series(dtype='int')
-        final_df['Total Expenses Per Line Item'] = pd.Series(dtype='int')
+        # final_df['Travel Start Location'] = pd.Series(dtype='int')
+        # final_df['Travel End Location'] = pd.Series(dtype='int')
+        # final_df['Total Expenses Per Line Item'] = pd.Series(dtype='int')
 
         pov_mileage = df_submissions["Miles Driven"].iloc[0]
-        pov_mileage_expense = (pov_mileage - 50) * 0.70  
+        pov_mileage_expense = 0 if pov_mileage == 0 else (pov_mileage - 50) * 0.70
         total_reimbursement = df_submissions["Total Reimbursement"].iloc[0]
 
 
@@ -170,10 +167,10 @@ def process_data(submission_num):
         final_df["Total Reimbursement"] = total_reimbursement
 
         # ENSURE SAME DATA TYPE
-        final_df["Total Reimbursement"] = final_df["Total Reimbursement"].replace('[\$,]', '', regex=True).astype(float)
+        # final_df["Total Reimbursement"] = final_df["Total Reimbursement"].replace('[\$,]', '', regex=True).astype(float)
 
         # Now assign NaN properly
-        final_df.loc[2:, ["POV Mileage", "POV Mileage Expense ($0.70 per mile)", "Total Reimbursement"]] = pd.NA
+        # final_df.loc[2:, ["POV Mileage", "POV Mileage Expense ($0.70 per mile)", "Total Reimbursement"]] = pd.NA
 
 
         # RENAME AND REORDER FOR CONSISTENCY
@@ -182,12 +179,20 @@ def process_data(submission_num):
         "Lodging Rate": "GSA Lodging Rate", "Lodging Cost": "Actual Lodging Cost", "Lodging Taxes": "Lodging Rate Tax"}, inplace=True)
 
         final_df = final_df[['Day Number', 'Date of Inspection', 'InspectionID', 'PropertyID', 'Program', 'Property Name', 'Property Address', 'Property City, State',
-                        'Per Diem', 'GSA Lodging Rate', 'Actual Lodging Cost', 'Lodging Rate Tax', 'GSA Rate Zip Code', 'Travel Start Location', 
-                        'Travel End Location', 'POV Mileage', 'POV Mileage Expense ($0.70 per mile)', 'Total Reimbursement'
+                        'Per Diem', 'GSA Lodging Rate', 'Actual Lodging Cost', 'Lodging Rate Tax', 'GSA Rate Zip Code'
                             ]]
 
+        print("✅ ABOUT TO RETURNNNNNNNN:")
+        print("submission_num:", submission_num)
+        print("reimbursement_id:", reimbursement_id)
+        print("inspector_name:", inspector_name)
+        print("pov_mileage:", pov_mileage)
+        print("travel_location_info:", travel_location_info)
+        print("transportation_expenses:", transportation_expenses)
+        print("comments:", comments)
         # final_df = final_df.style.applymap(highlight_non_nan)
-        return True, (final_df, transportation_expenses, travel_location_info, comments)
+        return True, (submission_num, reimbursement_id, inspector_name, pov_mileage, pov_mileage_expense, total_reimbursement,
+            travel_location_info, transportation_expenses, comments, final_df)
         # # Get the absolute path of the directory where the app.py file is located
         # base_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -247,17 +252,23 @@ def process():
         
         if success:
             # file_name = os.path.basename(result)
-            final_df, transportation_expenses, travel_location_info, comments = result
+            (submission_num, reimbursement_id, inspector_name, pov_mileage, pov_mileage_expense, total_reimbursement,
+            travel_location_info, transportation_expenses, comments, final_df) = result
             
             table_html = final_df.to_html(classes='table table-bordered table-striped', index=False, border=0)
             location_html = travel_location_info.to_html(classes='table table-bordered table-striped', index=False, border=0)
             # return send_file(result, as_attachment=True, download_name=file_name)
             return render_template('index.html',
-                                   submission_num=submission_num,
-                                   excel_table=table_html,
+                                   submission_num = submission_num,
+                                   reimbursement_id = reimbursement_id, 
+                                   inspector_name = inspector_name,
+                                   pov_mileage = pov_mileage,
+                                   pov_mileage_expense = pov_mileage_expense,
+                                   total_reimbursement = total_reimbursement,
+                                   location_table = location_html, 
                                    transportation_expenses=transportation_expenses,
-                                   location_table = location_html,
-                                   comments = comments)
+                                   comments = comments,
+                                   excel_table=table_html)
         else:
             return render_template('index.html', submission_num=submission_num, error=result)
     except ValueError:

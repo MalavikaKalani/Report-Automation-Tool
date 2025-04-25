@@ -38,17 +38,36 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Process Data</button>
                 </form>
-                {% if excel_table %}
-                <h5 class="mt-4">Submission Data:</h5>
-                <div class="table-responsive">
-                    {{ excel_table | safe }}
-                </div>
+                {% if submission_num %}
+                <h5 class="mt-4">Submission Number: </h5>
+                <p><strong>{{ submission_num }}</strong></p>
                 {% endif %}
-                {% if transportation_expenses %}
-                <h5 class="mt-4">Transportation Expenses:</h5>
-                <p><strong>{{ transportation_expenses }}</strong></p>
+                
+                {% if reimbursement_id %}
+                <h5 class="mt-4">Reimbursement Request ID: </h5>
+                <p><strong>{{ reimbursement_id }}</strong></p>
                 {% endif %}
 
+                {% if inspector_name %}
+                <h5 class="mt-4">Name of Inspector: </h5>
+                <p><strong>{{ inspector_name }}</strong></p>
+                {% endif %}
+
+                {% if pov_mileage %}
+                <h5 class="mt-4">POV Mileage: </h5>
+                <p><strong>{{ pov_mileage }}</strong></p>
+                {% endif %}
+
+                {% if (pov_mileage_expense) %}
+                <h5 class="mt-4">POV Mileage Expense: </h5>
+                <p><strong>{{ pov_mileage_expense }}</strong></p>
+                {% endif %}
+
+                {% if total_reimbursement %}
+                <h5 class="mt-4">Total Reimbursement </h5>
+                <p><strong>{{ total_reimbursement }}</strong></p>
+                {% endif %}
+                
                 {% if location_table %}
                 <h5 class="mt-4">Travel Locations:</h5>
                 <div class="table-responsive">
@@ -56,11 +75,23 @@
                 </div>
                 {% endif %}
 
+                {% if transportation_expenses %}
+                <h5 class="mt-4">Transportation Expenses:</h5>
+                <p><strong>{{ transportation_expenses }}</strong></p>
+                {% endif %}
+
                 {% if comments %}
                 <h5 class="mt-4">Additional Comments: </h5>
                 <p><strong>{{ comments }}</strong></p>
                 {% endif %}
 
+                {% if excel_table %}
+                <h5 class="mt-4">Submission Data:</h5>
+                <div class="table-responsive">
+                    {{ excel_table | safe }}
+                </div>
+                {% endif %}
+                
             </div>
         </div>
     </div>
@@ -75,8 +106,8 @@
             const value = td.textContent.trim().toLowerCase();
   
             // Highlight if value is not empty, not 'nan', and not 'nat'
-            if (value !== "" && value !== "nan" && value !== "nat") {
-              td.style.backgroundColor = "yellow";
+            if (value !== "" && value !== "nan" && value !== "nat" && value !== "NaN" && !value.includes("nan")) {
+              td.style.backgroundColor = "#FFFF99";
             }
           });
         });
