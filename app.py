@@ -78,7 +78,8 @@ def process_data(submission_num):
         df_perdiem = perdiem[perdiem['Submission Num'] == submission_num]
         df_transportation = transportation[transportation['Submission Num'] == submission_num]
 
-        # print(df_inspections.dtypes)
+        print(df_perdiem.columns)
+        # print(property_info.dtypes)
 
         # get information that will be individually displayed 
         inspector_name = df_submissions['Inspector Name'].iloc[0]
@@ -91,7 +92,6 @@ def process_data(submission_num):
         df_inspections["Inspection Date"] = pd.to_datetime(df_inspections["Inspection Date"], format="%m/%d/%Y")
         df_perdiem["First Day"] = pd.to_datetime(df_perdiem["First Day"], format="%m/%d/%Y")
         df_perdiem["Last Day"] = pd.to_datetime(df_perdiem["Last Day"], format="%m/%d/%Y")
-
 
         # GENERATE DATES FROM FIRST TO LAST DAY IN PER DIEM
         sorted_dates = pd.date_range(start=df_perdiem["First Day"].min(), end=df_perdiem["Last Day"].max())
@@ -110,12 +110,10 @@ def process_data(submission_num):
         df_inspections.rename(columns={"Inspection Id": "InspectionID"}, inplace=True)
         # print(f"✅ Found {len(df_inspections)} inspection rows for submission {submission_num}")
         
-        
-
         # MERGE INSPECTION WITH PROPERTY INFO 
         df_inspections = pd.merge(
             df_inspections, 
-            property_info[['InspectionID', 'PropertyID', 'PropertyType', 'PropertyName', 'PropertyStreetAddress', 'CityState', 'PropertyZip']], 
+            property_info[['InspectionID', 'PropertyID', 'PropertyType', 'PropertyName', 'PropertyStreetAddress', 'CityState']], 
             on='InspectionID', 
             how='left'
         )
@@ -143,7 +141,7 @@ def process_data(submission_num):
                 "Lodging Rate": "first",
                 "Lodging Cost": "first",
                 "Lodging Taxes": "first",
-                "PropertyZip": "first"
+                "Zip Code": "first"
             })
             # .reset_index()
         )
@@ -175,7 +173,7 @@ def process_data(submission_num):
 
         # RENAME AND REORDER FOR CONSISTENCY
         final_df.rename(columns={"Inspection Date": "Date of Inspection", "PropertyType": "Program", "PropertyName": "Property Name",
-        "PropertyStreetAddress" : "Property Address", "CityState" : "Property City, State", "PropertyZip": "GSA Rate Zip Code",
+        "PropertyStreetAddress" : "Property Address", "CityState" : "Property City, State", "Zip Code": "GSA Rate Zip Code",
         "Lodging Rate": "GSA Lodging Rate", "Lodging Cost": "Actual Lodging Cost", "Lodging Taxes": "Lodging Rate Tax"}, inplace=True)
 
         final_df = final_df[['Day Number', 'Date of Inspection', 'InspectionID', 'PropertyID', 'Program', 'Property Name', 'Property Address', 'Property City, State',
