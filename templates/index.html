@@ -16,6 +16,12 @@
         .card {
             box-shadow: 0 0 15px rgba(0,0,0,0.1);
         }
+        .gsa_table td, .gsa-table th {
+            max-width: 80px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     </style>
 </head>
 <body>
@@ -89,6 +95,13 @@
                 <h5 class="mt-4">Submission Data:</h5>
                 <div class="table-responsive">
                     {{ excel_table | safe }}
+                </div>
+                {% endif %}
+
+                {% if gsa_table %}
+                <h5 class="mt-4">GSA Rates:</h5>
+                <div class="table-responsive">
+                    {{ gsa_table | safe }}
                 </div>
                 {% endif %}
                 

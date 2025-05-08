@@ -3,10 +3,13 @@ import pandas as pd
 import os
 from datetime import datetime
 import sys
+import requests
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Base path where app.py lives
 
 app = Flask(__name__)
+
+GSA_API_KEY = "ZXji2qaMJo1JNcfoARGX4xgpUdnjDHqcTUiCAAUT"
 
 # Add security headers to all responses
 @app.after_request
@@ -18,6 +21,62 @@ def add_security_headers(response):
     response.headers['Access-Control-Allow-Credentials'] = 'true'
     
     return response
+
+def get_perdiem_by_zip(zips, months):
+
+    year = "2025"
+    results = []
+    # GSA_BASE_URL = "https://api.gsa.gov/travel/perdiem/v2/rates/zip/{zip}/year/{year}?api_key={GSA_API_KEY}"
+    
+    for zip_code_raw in zips:
+        zip_code = str(int(float(zip_code_raw))).zfill(5)
+        if zip_code == "00000":
+            continue
+        url = f"https://api.gsa.gov/travel/perdiem/v2/rates/zip/{zip_code}/year/{year}?api_key={GSA_API_KEY}"
+        headers = {
+        "Accept": "application/json"
+        }
+
+        try:
+            response = requests.get(url, headers=headers)
+            response.raise_for_status()
+            data = response.json()
+            
+            rates = data.get("rates", [])
+            if not rates or not rates[0].get("rate"):
+                results.append({"zip": zip_code, "error": "Missing rate data"})
+                continue
+            
+            mie = rates[0]["rate"][0]["meals"]
+            first_last_day = round(0.75 * int(mie), 2)
+
+            month_rates = rates[0]["rate"][0]["months"]["month"]
+            for month in months:
+                lodging_rate = next(
+                    (m["value"] for m in month_rates if m["long"].lower() == month.lower()),
+                    None
+                )
+                if lodging_rate is None:
+                    results.append({
+                        "zip": zip_code,
+                        "month": month,
+                        "error": "Month data not found"
+                    })
+                    continue
+
+                results.append({
+                    "Zip Code": zip_code,
+                    "Month": month,
+                    "MI&E": mie,
+                    "First/Last Day": first_last_day,
+                    "Lodging Rate": lodging_rate
+                })
+
+        except (requests.HTTPError, KeyError, IndexError) as e:
+            results.append({"zip": zip_code, "error": str(e)})
+
+    gsa_df = pd.DataFrame(results)
+    return gsa_df
 
 def check_file_permissions():
     required_files = ['Live_Data_New_04_09(All_Submissions).csv', 'Live_Data_New_04_09(Inspections).csv', 'Live_Data_New_04_09(Per Diem).csv', 'Live_Data_New_04_09(Transportation Expenses).csv']
@@ -43,25 +102,12 @@ def process_data(submission_num):
         can_access, message = check_file_permissions()
         if not can_access:
             return False, message
-
-        # LOAD DATA FROM CSV
-
-        # submissions = pd.read_csv("Live_Data_New_04_09(All_Submissions).csv", encoding='cp1252')
-        
-
-        # inspections = pd.read_csv("Live_Data_New_04_09(Inspections).csv",encoding='cp1252')
-        # perdiem = pd.read_csv("Live_Data_New_04_09(Per Diem).csv",encoding='cp1252')
-        # property_info = pd.read_csv("property.csv",encoding='cp1252')
         
         submissions = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(All_Submissions).csv"), encoding='cp1252')
         # inspections = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Inspections).csv"), encoding='cp1252')
         inspections = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Inspections).csv"), encoding='cp1252', names=[
             'Submission Num','Reimbursement RequestID','Inspector Name','Inspection Id_OG','Inspection Date','Property Id','Inspection Id','Status'],
             header=0, keep_default_na=True)
-
-        # row_268 = inspections[inspections['Submission Num'] == 268]
-        # for i, val in enumerate(row_268.iloc[0]):
-        #     print(f"Column {i}: {inspections.columns[i]} → {val}")
 
         perdiem = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Per Diem).csv"), encoding='cp1252')
         property_info = pd.read_csv(os.path.join(BASE_DIR, "property.csv"), encoding='utf-8-sig')
@@ -93,6 +139,14 @@ def process_data(submission_num):
         df_perdiem["First Day"] = pd.to_datetime(df_perdiem["First Day"], format="%m/%d/%Y")
         df_perdiem["Last Day"] = pd.to_datetime(df_perdiem["Last Day"], format="%m/%d/%Y")
 
+        # get months for GSA API Usage 
+        inspection_months = set(
+            pd.concat([
+                df_perdiem["First Day"].dt.strftime("%B"),
+                df_perdiem["Last Day"].dt.strftime("%B")
+            ])
+        )
+
         # GENERATE DATES FROM FIRST TO LAST DAY IN PER DIEM
         sorted_dates = pd.date_range(start=df_perdiem["First Day"].min(), end=df_perdiem["Last Day"].max())
 
@@ -106,7 +160,6 @@ def process_data(submission_num):
 
 
         # RENAME FOR MERGE TO WORK BASED ON INSPECTION ID 
-        
         df_inspections.rename(columns={"Inspection Id": "InspectionID"}, inplace=True)
         # print(f"✅ Found {len(df_inspections)} inspection rows for submission {submission_num}")
         
@@ -150,11 +203,6 @@ def process_data(submission_num):
         final_df['Inspection Date'] = (final_df['Day Number'].map(daynum_to_date)).dt.date
         # final_df['Inspection Date'] = final_df['Day Number'].map(day_to_date_mapping)
 
-        # ADD EXTRA FIELDS 
-        # final_df['Travel Start Location'] = pd.Series(dtype='int')
-        # final_df['Travel End Location'] = pd.Series(dtype='int')
-        # final_df['Total Expenses Per Line Item'] = pd.Series(dtype='int')
-
         pov_mileage = df_submissions["Miles Driven"].iloc[0]
         pov_mileage_expense = 0 if pov_mileage == 0 else (pov_mileage - 50) * 0.70
         total_reimbursement = df_submissions["Total Reimbursement"].iloc[0]
@@ -180,17 +228,12 @@ def process_data(submission_num):
                         'Per Diem', 'GSA Lodging Rate', 'Actual Lodging Cost', 'Lodging Rate Tax', 'GSA Rate Zip Code'
                             ]]
 
-        print("✅ ABOUT TO RETURNNNNNNNN:")
-        print("submission_num:", submission_num)
-        print("reimbursement_id:", reimbursement_id)
-        print("inspector_name:", inspector_name)
-        print("pov_mileage:", pov_mileage)
-        print("travel_location_info:", travel_location_info)
-        print("transportation_expenses:", transportation_expenses)
-        print("comments:", comments)
-        # final_df = final_df.style.applymap(highlight_non_nan)
+        
+        zip_codes = set(final_df['GSA Rate Zip Code'])
+        # print(inspection_months)
+        
         return True, (submission_num, reimbursement_id, inspector_name, pov_mileage, pov_mileage_expense, total_reimbursement,
-            travel_location_info, transportation_expenses, comments, final_df)
+            travel_location_info, transportation_expenses, comments, final_df, zip_codes, inspection_months)
         # # Get the absolute path of the directory where the app.py file is located
         # base_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -216,21 +259,6 @@ def process_data(submission_num):
     except Exception as e:
         return False, f"Error processing data: {str(e)}"
 
-# @app.route('/view_transportation/<int:submission_num>', methods=['GET'])
-# def view_transportation(submission_num):
-#     try:
-#         transportation = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Transportation Expenses)"), encoding='cp1252')
-#         df_transportation = transportation[transportation['Submission Num'] == submission_num]
-
-#         if len(df_transportation) == 0:
-#             return render_template('index.html', error=f"No transportation data for submission #{submission_num}")
-
-#         transportation_expenses = df_transportation['Transportation Expenses'].iloc[0]
-
-#         return render_template('transportation.html', transportation_expenses=transportation_expenses, submission_num=submission_num)
-
-#     except Exception as e:
-#         return render_template('index.html', error=f"Error displaying transportation data: {str(e)}")
 
 @app.route('/', methods=['GET'])
 def index():
@@ -251,10 +279,15 @@ def process():
         if success:
             # file_name = os.path.basename(result)
             (submission_num, reimbursement_id, inspector_name, pov_mileage, pov_mileage_expense, total_reimbursement,
-            travel_location_info, transportation_expenses, comments, final_df) = result
+            travel_location_info, transportation_expenses, comments, final_df, zip_codes, inspection_months) = result
+
+            # USE ZIP CODES AND MONTHS FOR API USAGE 
+            gsa_df = get_perdiem_by_zip(zip_codes, inspection_months)
+            
             
             table_html = final_df.to_html(classes='table table-bordered table-striped', index=False, border=0)
             location_html = travel_location_info.to_html(classes='table table-bordered table-striped', index=False, border=0)
+            gsa_html = gsa_df.to_html(classes='table table-bordered table-striped', index=False, border=0)
             # return send_file(result, as_attachment=True, download_name=file_name)
             return render_template('index.html',
                                    submission_num = submission_num,
@@ -266,7 +299,8 @@ def process():
                                    location_table = location_html, 
                                    transportation_expenses=transportation_expenses,
                                    comments = comments,
-                                   excel_table=table_html)
+                                   excel_table=table_html,
+                                   gsa_table = gsa_html)
         else:
             return render_template('index.html', submission_num=submission_num, error=result)
     except ValueError:
