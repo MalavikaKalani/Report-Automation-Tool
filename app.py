@@ -28,8 +28,8 @@ def get_perdiem_by_zip(zips, months):
     results = []
     # GSA_BASE_URL = "https://api.gsa.gov/travel/perdiem/v2/rates/zip/{zip}/year/{year}?api_key={GSA_API_KEY}"
     
-    for zip_code_raw in zips:
-        zip_code = str(int(float(zip_code_raw))).zfill(5)
+    for zip_code in zips:
+        # zip_code = str(int(float(zip_code_raw))).zfill(5)
         if zip_code == "00000":
             continue
         url = f"https://api.gsa.gov/travel/perdiem/v2/rates/zip/{zip_code}/year/{year}?api_key={GSA_API_KEY}"
@@ -58,9 +58,9 @@ def get_perdiem_by_zip(zips, months):
                 )
                 if lodging_rate is None:
                     results.append({
-                        "zip": zip_code,
-                        "month": month,
-                        "error": "Month data not found"
+                        "Zip Code": zip_code,
+                        "Month": month,
+                        "Error": "Month data not found"
                     })
                     continue
 
@@ -76,7 +76,7 @@ def get_perdiem_by_zip(zips, months):
             results.append({"zip": zip_code, "error": str(e)})
 
     gsa_df = pd.DataFrame(results)
-    return gsa_df
+    return (gsa_df, results) # return both dataframe and dictionary 
 
 def check_file_permissions():
     required_files = ['Live_Data_New_04_09(All_Submissions).csv', 'Live_Data_New_04_09(Inspections).csv', 'Live_Data_New_04_09(Per Diem).csv', 'Live_Data_New_04_09(Transportation Expenses).csv']
@@ -221,44 +221,99 @@ def process_data(submission_num):
 
         # RENAME AND REORDER FOR CONSISTENCY
         final_df.rename(columns={"Inspection Date": "Date of Inspection", "PropertyType": "Program", "PropertyName": "Property Name",
-        "PropertyStreetAddress" : "Property Address", "CityState" : "Property City, State", "Zip Code": "GSA Rate Zip Code",
+        "PropertyStreetAddress" : "Property Address", "CityState" : "Property City, State", "Zip Code": "Zip Code",
         "Lodging Rate": "GSA Lodging Rate", "Lodging Cost": "Actual Lodging Cost", "Lodging Taxes": "Lodging Rate Tax"}, inplace=True)
 
         final_df = final_df[['Day Number', 'Date of Inspection', 'InspectionID', 'PropertyID', 'Program', 'Property Name', 'Property Address', 'Property City, State',
-                        'Per Diem', 'GSA Lodging Rate', 'Actual Lodging Cost', 'Lodging Rate Tax', 'GSA Rate Zip Code'
+                        'Per Diem', 'GSA Lodging Rate', 'Actual Lodging Cost', 'Lodging Rate Tax', 'Zip Code'
                             ]]
 
-        
-        zip_codes = set(final_df['GSA Rate Zip Code'])
+        final_df['Zip Code'] = final_df['Zip Code'].apply(lambda x: str(int(x)).zfill(5) if pd.notna(x) else '00000')
+        # final_df['Zip Code'] = final_df['Zip Code'].astype(str).str.zfill(5)
+        zip_codes = set(final_df['Zip Code'])
         # print(inspection_months)
         
         return True, (submission_num, reimbursement_id, inspector_name, pov_mileage, pov_mileage_expense, total_reimbursement,
             travel_location_info, transportation_expenses, comments, final_df, zip_codes, inspection_months)
-        # # Get the absolute path of the directory where the app.py file is located
-        # base_dir = os.path.dirname(os.path.abspath(__file__))
-
-        # # Create the path for the Excel file using BASE_DIR
-        # excel_filename = os.path.join(base_dir, f'{inspector_name}_{reimbursement_id}_{submission_num}.xlsx')
-
-        # # Save to Excel with adjusted column width
-        # with pd.ExcelWriter(excel_filename, engine='xlsxwriter') as writer:
-        #     final_df.to_excel(writer, sheet_name='Sheet1', index=False)
-
-        #     # Access the workbook and worksheet
-        #     workbook = writer.book
-        #     worksheet = writer.sheets['Sheet1']
-
-        #     # Adjust column width dynamically
-        #     for i, col in enumerate(final_df.columns):
-        #         max_length = max(final_df[col].astype(str).map(len).max(), len(col)) + 8
-        #         worksheet.set_column(i, i, max_length)  # Set column width
-
-        #     writer._save()  # Save the file
-        #     return True, excel_filename
+        
 
     except Exception as e:
         return False, f"Error processing data: {str(e)}"
 
+def highlight_perdiem(gsa_dict, final_df):
+
+    # gsa_dict is a list of dictionaries so we want to convert to a lookup format 
+    # key: (zip, month) --> value: {zip, month}
+    gsa_lookup = {
+    (entry['Zip Code'].zfill(5), entry['Month'].strip().lower()): entry
+    for entry in gsa_dict
+    }
+
+    first_idx = final_df.index[0]
+    last_idx = final_df.index[-1]
+
+    print("WHAT IS INDEX")
+    print(first_idx, last_idx)
+
+    for idx in [first_idx, last_idx]:
+        row = final_df.loc[idx]
+        zip_code = row['Zip Code']
+        try:
+            month = pd.to_datetime(row['Date of Inspection']).strftime('%B').lower()
+            actual_perdiem = float(str(row['Per Diem']).replace('$', '').replace(',', '').strip())
+        except Exception:
+            continue
+
+        gsa_entry = gsa_lookup.get((zip_code, month))
+        if not gsa_entry:
+            continue
+
+        expected_rate = gsa_entry.get('First/Last Day')
+        try:
+            if float(actual_perdiem) != float(expected_rate):
+                # Wrap the value with a span + inline style
+                original_value = final_df.at[idx, 'Per Diem']
+                final_df.at[idx, 'Per Diem'] = f'FLAG {original_value}'
+        except Exception:
+            continue
+
+    return final_df
+
+def highlight_mie(gsa_dict, final_df):
+
+    # gsa_dict is a list of dictionaries so we want to convert to a lookup format 
+    # key: (zip, month) --> value: {zip, month}
+    gsa_lookup = {
+    (entry['Zip Code'].zfill(5), entry['Month'].strip().lower()): entry
+    for entry in gsa_dict
+    }
+
+    # first_idx = final_df.index[0]
+    last_idx = final_df.index[-1]
+
+    for idx in range(2, last_idx):
+        row = final_df.loc[idx]
+        zip_code = row['Zip Code']
+        try:
+            month = pd.to_datetime(row['Date of Inspection']).strftime('%B').lower()
+            actual_perdiem = float(str(row['Per Diem']).replace('$', '').replace(',', '').strip())
+        except Exception:
+            continue
+
+        gsa_entry = gsa_lookup.get((zip_code, month))
+        if not gsa_entry:
+            continue
+
+        expected_rate = gsa_entry.get('MI&E')
+        try:
+            if float(actual_perdiem) != float(expected_rate):
+                # Wrap the value with a span + inline style
+                original_value = final_df.at[idx, 'Per Diem']
+                final_df.at[idx, 'Per Diem'] = f'FLAG {original_value}'
+        except Exception:
+            continue
+
+    return final_df
 
 @app.route('/', methods=['GET'])
 def index():
@@ -271,10 +326,10 @@ def index():
 def process():
     try:
         submission_num = int(request.form['submission_num'])
-        print(f"🔢 Parsed submission number: {submission_num}")
+        # print(f"🔢 Parsed submission number: {submission_num}")
         success, result = process_data(submission_num)
         # print(f"🔍 Debug result from process_data: success={success}, result={result}")
-        print(f"✅ process_data() returned: success={success}, result={result}")
+        # print(f"✅ process_data() returned: success={success}, result={result}")
         
         if success:
             # file_name = os.path.basename(result)
@@ -282,10 +337,14 @@ def process():
             travel_location_info, transportation_expenses, comments, final_df, zip_codes, inspection_months) = result
 
             # USE ZIP CODES AND MONTHS FOR API USAGE 
-            gsa_df = get_perdiem_by_zip(zip_codes, inspection_months)
+            (gsa_df, gsa_dict) = get_perdiem_by_zip(zip_codes, inspection_months)
+
+            # new = highlight_perdiem(gsa_dict, final_df)
+            styled_df = highlight_perdiem(gsa_dict, final_df)
+            new_df = highlight_mie(gsa_dict, styled_df)
+            table_html = new_df.to_html(classes='table table-bordered table-striped', index=False, border=0)
             
-            
-            table_html = final_df.to_html(classes='table table-bordered table-striped', index=False, border=0)
+            # table_html = final_df.to_html(classes='table table-bordered table-striped', index=False, border=0)
             location_html = travel_location_info.to_html(classes='table table-bordered table-striped', index=False, border=0)
             gsa_html = gsa_df.to_html(classes='table table-bordered table-striped', index=False, border=0)
             # return send_file(result, as_attachment=True, download_name=file_name)

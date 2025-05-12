@@ -109,6 +109,26 @@ final_df.rename(columns={"Inspection Date": "Date", "PropertyType": "Program", "
 final_df.to_csv('final_output_prop.csv', index=False)
 
 
+# # Get the absolute path of the directory where the app.py file is located
+        # base_dir = os.path.dirname(os.path.abspath(__file__))
 
+        # # Create the path for the Excel file using BASE_DIR
+        # excel_filename = os.path.join(base_dir, f'{inspector_name}_{reimbursement_id}_{submission_num}.xlsx')
+
+        # # Save to Excel with adjusted column width
+        # with pd.ExcelWriter(excel_filename, engine='xlsxwriter') as writer:
+        #     final_df.to_excel(writer, sheet_name='Sheet1', index=False)
+
+        #     # Access the workbook and worksheet
+        #     workbook = writer.book
+        #     worksheet = writer.sheets['Sheet1']
+
+        #     # Adjust column width dynamically
+        #     for i, col in enumerate(final_df.columns):
+        #         max_length = max(final_df[col].astype(str).map(len).max(), len(col)) + 8
+        #         worksheet.set_column(i, i, max_length)  # Set column width
+
+        #     writer._save()  # Save the file
+        #     return True, excel_filename
 
 
