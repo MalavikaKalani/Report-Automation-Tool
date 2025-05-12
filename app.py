@@ -315,6 +315,43 @@ def highlight_mie(gsa_dict, final_df):
 
     return final_df
 
+def highlight_lodging(gsa_dict, final_df):
+
+    # gsa_dict is a list of dictionaries so we want to convert to a lookup format 
+    # key: (zip, month) --> value: {zip, month}
+    gsa_lookup = {
+    (entry['Zip Code'].zfill(5), entry['Month'].strip().lower()): entry
+    for entry in gsa_dict
+    }
+
+    # first_idx = final_df.index[0]
+    last_idx = final_df.index[-1]
+
+    for idx in range(1, last_idx + 1): # checking all rows now for lodging 
+        row = final_df.loc[idx]
+        zip_code = row['Zip Code']
+        try:
+            month = pd.to_datetime(row['Date of Inspection']).strftime('%B').lower()
+            actual_lodging = float(str(row['GSA Lodging Rate']).replace('$', '').replace(',', '').strip())
+        except Exception:
+            continue
+
+        gsa_entry = gsa_lookup.get((zip_code, month))
+        if not gsa_entry:
+            continue
+
+        expected_rate = gsa_entry.get('Lodging Rate')
+        try:
+            if float(actual_lodging) != float(expected_rate):
+                # Wrap the value with a span + inline style
+                original_value = final_df.at[idx, 'GSA Lodging Rate']
+                final_df.at[idx, 'GSA Lodging Rate'] = f'FLAG {original_value}'
+        except Exception:
+            continue
+
+    return final_df
+
+
 @app.route('/', methods=['GET'])
 def index():
     can_access, message = check_file_permissions()
@@ -340,9 +377,11 @@ def process():
             (gsa_df, gsa_dict) = get_perdiem_by_zip(zip_codes, inspection_months)
 
             # new = highlight_perdiem(gsa_dict, final_df)
-            styled_df = highlight_perdiem(gsa_dict, final_df)
-            new_df = highlight_mie(gsa_dict, styled_df)
-            table_html = new_df.to_html(classes='table table-bordered table-striped', index=False, border=0)
+            flagged_perdiem_df = highlight_perdiem(gsa_dict, final_df)
+            flagged_mie_df = highlight_mie(gsa_dict, flagged_perdiem_df)
+            flagged_final_df = highlight_lodging(gsa_dict, flagged_mie_df)
+
+            table_html = flagged_final_df.to_html(classes='table table-bordered table-striped', index=False, border=0)
             
             # table_html = final_df.to_html(classes='table table-bordered table-striped', index=False, border=0)
             location_html = travel_location_info.to_html(classes='table table-bordered table-striped', index=False, border=0)
