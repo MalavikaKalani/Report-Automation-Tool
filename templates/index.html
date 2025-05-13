@@ -117,11 +117,16 @@
   
           cells.forEach((td) => {
             const value = td.textContent.trim().toLowerCase();
+
+            if (value.includes("flag")) {
+              td.style.backgroundColor = "#E06666";
+            }
   
             // Highlight if value is not empty, not 'nan', and not 'nat'
-            if (value !== "" && value !== "nan" && value !== "nat" && value !== "NaN" && !value.includes("nan")) {
+            else if (value !== "" && value !== "nan" && value !== "nat" && value !== "NaN" && !value.includes("nan")) {
               td.style.backgroundColor = "#FFFF99";
             }
+
           });
         });
       </script>

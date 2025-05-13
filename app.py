@@ -191,7 +191,7 @@ def process_data(submission_num):
                 "PropertyStreetAddress": list,
                 "CityState": list,
                 "Per Diem": "first",
-                "Lodging Rate": "first",
+                # "Lodging Rate": "first",
                 "Lodging Cost": "first",
                 "Lodging Taxes": "first",
                 "Zip Code": "first"
@@ -199,10 +199,22 @@ def process_data(submission_num):
             # .reset_index()
         )
 
+        final_df['Zip Code'] = final_df['Zip Code'].apply(lambda x: str(int(x)).zfill(5) if pd.notna(x) else '00000')
+        zip_codes = set(final_df['Zip Code'])
+
+        gsa_df, gsa_dict = get_perdiem_by_zip(zip_codes, inspection_months)
+
         # Add the "Date" column by mapping Day Number to Date
         final_df['Inspection Date'] = (final_df['Day Number'].map(daynum_to_date)).dt.date
+        final_df['Month'] = pd.to_datetime(final_df['Inspection Date']).dt.strftime("%B")
         # final_df['Inspection Date'] = final_df['Day Number'].map(day_to_date_mapping)
 
+        final_df = pd.merge(final_df, gsa_df, how='left', on=['Zip Code', 'Month'])
+        final_df['GSA Lodging Rate'] = final_df['Lodging Rate'] # set to new rates from API
+
+        # Clean up helper columns
+        final_df.drop(columns=['Month', 'Lodging Rate'], inplace=True)
+ 
         pov_mileage = df_submissions["Miles Driven"].iloc[0]
         pov_mileage_expense = 0 if pov_mileage == 0 else (pov_mileage - 50) * 0.70
         total_reimbursement = df_submissions["Total Reimbursement"].iloc[0]
@@ -212,25 +224,27 @@ def process_data(submission_num):
         final_df["POV Mileage Expense ($0.70 per mile)"] = pov_mileage_expense
         final_df["Total Reimbursement"] = total_reimbursement
 
-        # ENSURE SAME DATA TYPE
-        # final_df["Total Reimbursement"] = final_df["Total Reimbursement"].replace('[\$,]', '', regex=True).astype(float)
-
-        # Now assign NaN properly
-        # final_df.loc[2:, ["POV Mileage", "POV Mileage Expense ($0.70 per mile)", "Total Reimbursement"]] = pd.NA
-
 
         # RENAME AND REORDER FOR CONSISTENCY
         final_df.rename(columns={"Inspection Date": "Date of Inspection", "PropertyType": "Program", "PropertyName": "Property Name",
         "PropertyStreetAddress" : "Property Address", "CityState" : "Property City, State", "Zip Code": "Zip Code",
-        "Lodging Rate": "GSA Lodging Rate", "Lodging Cost": "Actual Lodging Cost", "Lodging Taxes": "Lodging Rate Tax"}, inplace=True)
+         "Lodging Cost": "Actual Lodging Cost", "Lodging Taxes": "Lodging Rate Tax"}, inplace=True)
+
+        final_df['GSA Lodging Rate'] = final_df['GSA Lodging Rate'].apply(
+        lambda x: float(str(x).replace('$', '').replace(',', '').strip()) if pd.notna(x) else 0.0)
+
+        final_df['Actual Lodging Cost'] = final_df['Actual Lodging Cost'].apply(
+            lambda x: float(str(x).replace('$', '').replace(',', '').strip()) if pd.notna(x) else 0.0
+        )
+
+        # final_df['Actual Lodging Cost'] = final_df['Actual Lodging Cost'].astype(float)
+        # final_df['Above GSA Rate?'] = final_df['Actual Lodging Cost'] > final_df['GSA Lodging Rate']
 
         final_df = final_df[['Day Number', 'Date of Inspection', 'InspectionID', 'PropertyID', 'Program', 'Property Name', 'Property Address', 'Property City, State',
                         'Per Diem', 'GSA Lodging Rate', 'Actual Lodging Cost', 'Lodging Rate Tax', 'Zip Code'
                             ]]
 
-        final_df['Zip Code'] = final_df['Zip Code'].apply(lambda x: str(int(x)).zfill(5) if pd.notna(x) else '00000')
-        # final_df['Zip Code'] = final_df['Zip Code'].astype(str).str.zfill(5)
-        zip_codes = set(final_df['Zip Code'])
+        
         # print(inspection_months)
         
         return True, (submission_num, reimbursement_id, inspector_name, pov_mileage, pov_mileage_expense, total_reimbursement,
@@ -317,35 +331,22 @@ def highlight_mie(gsa_dict, final_df):
 
 def highlight_lodging(gsa_dict, final_df):
 
-    # gsa_dict is a list of dictionaries so we want to convert to a lookup format 
-    # key: (zip, month) --> value: {zip, month}
-    gsa_lookup = {
-    (entry['Zip Code'].zfill(5), entry['Month'].strip().lower()): entry
-    for entry in gsa_dict
-    }
-
     # first_idx = final_df.index[0]
     last_idx = final_df.index[-1]
 
-    for idx in range(1, last_idx + 1): # checking all rows now for lodging 
+    for idx in range(0, last_idx + 1): # checking all rows now for lodging 
         row = final_df.loc[idx]
-        zip_code = row['Zip Code']
         try:
-            month = pd.to_datetime(row['Date of Inspection']).strftime('%B').lower()
-            actual_lodging = float(str(row['GSA Lodging Rate']).replace('$', '').replace(',', '').strip())
+            actual_lodging = row['Actual Lodging Cost']
         except Exception:
             continue
 
-        gsa_entry = gsa_lookup.get((zip_code, month))
-        if not gsa_entry:
-            continue
-
-        expected_rate = gsa_entry.get('Lodging Rate')
+        expected_gsa_rate = row['GSA Lodging Rate']
         try:
-            if float(actual_lodging) != float(expected_rate):
+            if actual_lodging > expected_gsa_rate:
                 # Wrap the value with a span + inline style
-                original_value = final_df.at[idx, 'GSA Lodging Rate']
-                final_df.at[idx, 'GSA Lodging Rate'] = f'FLAG {original_value}'
+                original_value = final_df.at[idx, 'Actual Lodging Cost']
+                final_df.at[idx, 'Actual Lodging Cost'] = f'FLAG {original_value}'
         except Exception:
             continue
 
