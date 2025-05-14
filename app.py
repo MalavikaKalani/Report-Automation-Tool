@@ -5,7 +5,7 @@ from datetime import datetime
 import sys
 import requests
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Base path where app.py lives
+BASE_DIR = os.path.dirname(os.path.abspath(__file__)) 
 
 app = Flask(__name__)
 
@@ -23,13 +23,28 @@ def add_security_headers(response):
     return response
 
 def get_perdiem_by_zip(zips, months):
+    """
+    Fetches GSA per diem, MI&E and lodging rates for given ZIP codes and months using the GSA Per Diem API.
+
+    Args:
+        zips (iterable): A set of ZIP codes as strings.
+        months (list): A list of month names (e.g., ["January", "February"]) for which to retrieve rates.
+
+    Returns:
+        tuple:
+            - pandas.DataFrame: A DataFrame containing ZIP code, month, lodging rate, MI&E, and first/last day rate.
+            - list: A list of raw result dictionaries, including error details for any failed lookups.
+
+
+    Raises:
+        requests.HTTPError: If the API request fails (e.g., due to invalid ZIP or network issue).
+        KeyError, IndexError: If the expected data structure is not found in the API response.
+    """
 
     year = "2025"
     results = []
-    # GSA_BASE_URL = "https://api.gsa.gov/travel/perdiem/v2/rates/zip/{zip}/year/{year}?api_key={GSA_API_KEY}"
     
     for zip_code in zips:
-        # zip_code = str(int(float(zip_code_raw))).zfill(5)
         if zip_code == "00000":
             continue
         url = f"https://api.gsa.gov/travel/perdiem/v2/rates/zip/{zip_code}/year/{year}?api_key={GSA_API_KEY}"
@@ -76,7 +91,7 @@ def get_perdiem_by_zip(zips, months):
             results.append({"zip": zip_code, "error": str(e)})
 
     gsa_df = pd.DataFrame(results)
-    return (gsa_df, results) # return both dataframe and dictionary 
+    return (gsa_df, results) 
 
 def check_file_permissions():
     required_files = ['Live_Data_New_04_09(All_Submissions).csv', 'Live_Data_New_04_09(Inspections).csv', 'Live_Data_New_04_09(Per Diem).csv', 'Live_Data_New_04_09(Transportation Expenses).csv']
@@ -88,10 +103,6 @@ def check_file_permissions():
             return False, f"No read permission for {file}"
     return True, "All files accessible"
 
-
-def highlight_non_nan(val):
-    """Highlights non-NaN values yellow."""
-    return 'background-color: yellow' if pd.notna(val) else ''
 
 def process_data(submission_num):
 
@@ -128,6 +139,7 @@ def process_data(submission_num):
         # print(property_info.dtypes)
 
         # get information that will be individually displayed 
+        total_inspections = float(df_submissions['Total Inspections'].iloc[0])
         inspector_name = df_submissions['Inspector Name'].iloc[0]
         reimbursement_id = df_submissions['Reimbursement RequestID'].iloc[0]
         transportation_expenses = df_transportation['Transportation Expenses'].iloc[0]
@@ -217,7 +229,12 @@ def process_data(submission_num):
  
         pov_mileage = df_submissions["Miles Driven"].iloc[0]
         pov_mileage_expense = 0 if pov_mileage == 0 else (pov_mileage - 50) * 0.70
-        total_reimbursement = df_submissions["Total Reimbursement"].iloc[0]
+        total_reimbursement = (df_submissions["Total Reimbursement"].iloc[0]).replace('$', '').replace(',', '').strip()
+        expense_per_inspection = (float(total_reimbursement))/total_inspections
+
+        if expense_per_inspection > 400:
+            original_value = total_reimbursement
+            total_reimbursement = f'{original_value} (FLAG: EXCEEDS $400 PER INSPECTION)'
 
 
         final_df["POV Mileage"] = pov_mileage
@@ -237,9 +254,6 @@ def process_data(submission_num):
             lambda x: float(str(x).replace('$', '').replace(',', '').strip()) if pd.notna(x) else 0.0
         )
 
-        # final_df['Actual Lodging Cost'] = final_df['Actual Lodging Cost'].astype(float)
-        # final_df['Above GSA Rate?'] = final_df['Actual Lodging Cost'] > final_df['GSA Lodging Rate']
-
         final_df = final_df[['Day Number', 'Date of Inspection', 'InspectionID', 'PropertyID', 'Program', 'Property Name', 'Property Address', 'Property City, State',
                         'Per Diem', 'GSA Lodging Rate', 'Actual Lodging Cost', 'Lodging Rate Tax', 'Zip Code'
                             ]]
@@ -247,7 +261,7 @@ def process_data(submission_num):
         
         # print(inspection_months)
         
-        return True, (submission_num, reimbursement_id, inspector_name, pov_mileage, pov_mileage_expense, total_reimbursement,
+        return True, (submission_num, reimbursement_id, inspector_name, total_inspections, pov_mileage, pov_mileage_expense, total_reimbursement,
             travel_location_info, transportation_expenses, comments, final_df, zip_codes, inspection_months)
         
 
@@ -371,7 +385,7 @@ def process():
         
         if success:
             # file_name = os.path.basename(result)
-            (submission_num, reimbursement_id, inspector_name, pov_mileage, pov_mileage_expense, total_reimbursement,
+            (submission_num, reimbursement_id, inspector_name, total_inspections, pov_mileage, pov_mileage_expense, total_reimbursement,
             travel_location_info, transportation_expenses, comments, final_df, zip_codes, inspection_months) = result
 
             # USE ZIP CODES AND MONTHS FOR API USAGE 
@@ -383,15 +397,14 @@ def process():
             flagged_final_df = highlight_lodging(gsa_dict, flagged_mie_df)
 
             table_html = flagged_final_df.to_html(classes='table table-bordered table-striped', index=False, border=0)
-            
-            # table_html = final_df.to_html(classes='table table-bordered table-striped', index=False, border=0)
             location_html = travel_location_info.to_html(classes='table table-bordered table-striped', index=False, border=0)
             gsa_html = gsa_df.to_html(classes='table table-bordered table-striped', index=False, border=0)
-            # return send_file(result, as_attachment=True, download_name=file_name)
+           
             return render_template('index.html',
                                    submission_num = submission_num,
                                    reimbursement_id = reimbursement_id, 
                                    inspector_name = inspector_name,
+                                   total_inspections = total_inspections, 
                                    pov_mileage = pov_mileage,
                                    pov_mileage_expense = pov_mileage_expense,
                                    total_reimbursement = total_reimbursement,

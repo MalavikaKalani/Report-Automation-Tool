@@ -59,6 +59,11 @@
                 <p><strong>{{ inspector_name }}</strong></p>
                 {% endif %}
 
+                {% if total_inspections %}
+                <h5 class="mt-4">Total Number of Inspections: </h5>
+                <p><strong>{{ total_inspections }}</strong></p>
+                {% endif %}
+
                 {% if pov_mileage %}
                 <h5 class="mt-4">POV Mileage: </h5>
                 <p><strong>{{ pov_mileage }}</strong></p>
