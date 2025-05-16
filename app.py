@@ -103,6 +103,18 @@ def check_file_permissions():
             return False, f"No read permission for {file}"
     return True, "All files accessible"
 
+def fix_zip(row):
+    try:
+        zip_code = int(row['Zip Code'])
+    except (ValueError, TypeError):
+        zip_code = 0
+    if zip_code == 0:
+        try:
+            property_zip = int(row['PropertyZip'])
+            return str(property_zip).zfill(5)
+        except (ValueError, TypeError):
+            return '00000'
+    return str(zip_code).zfill(5)
 
 def process_data(submission_num):
 
@@ -178,7 +190,7 @@ def process_data(submission_num):
         # MERGE INSPECTION WITH PROPERTY INFO 
         df_inspections = pd.merge(
             df_inspections, 
-            property_info[['InspectionID', 'PropertyID', 'PropertyType', 'PropertyName', 'PropertyStreetAddress', 'CityState']], 
+            property_info[['InspectionID', 'PropertyID', 'PropertyType', 'PropertyName', 'PropertyStreetAddress', 'CityState', 'PropertyZip']], 
             on='InspectionID', 
             how='left'
         )
@@ -206,12 +218,14 @@ def process_data(submission_num):
                 # "Lodging Rate": "first",
                 "Lodging Cost": "first",
                 "Lodging Taxes": "first",
-                "Zip Code": "first"
+                "Zip Code": "first",
+                "PropertyZip": "first"
             })
             # .reset_index()
         )
 
-        final_df['Zip Code'] = final_df['Zip Code'].apply(lambda x: str(int(x)).zfill(5) if pd.notna(x) else '00000')
+        # final_df['Zip Code'] = final_df['Zip Code'].apply(lambda x: str(int(x)).zfill(5) if pd.notna(x) else final_df['PropertyZip'])
+        final_df['Zip Code'] =  final_df.apply(fix_zip, axis=1)
         zip_codes = set(final_df['Zip Code'])
 
         gsa_df, gsa_dict = get_perdiem_by_zip(zip_codes, inspection_months)
@@ -225,7 +239,7 @@ def process_data(submission_num):
         final_df['GSA Lodging Rate'] = final_df['Lodging Rate'] # set to new rates from API
 
         # Clean up helper columns
-        final_df.drop(columns=['Month', 'Lodging Rate'], inplace=True)
+        final_df.drop(columns=['Month', 'Lodging Rate', 'PropertyZip'], inplace=True)
  
         pov_mileage = df_submissions["Miles Driven"].iloc[0]
         pov_mileage_expense = 0 if pov_mileage == 0 else (pov_mileage - 50) * 0.70
@@ -298,7 +312,7 @@ def highlight_perdiem(gsa_dict, final_df):
 
         expected_rate = gsa_entry.get('First/Last Day')
         try:
-            if float(actual_perdiem) != float(expected_rate):
+            if (float(actual_perdiem) != 0.00 and (float(actual_perdiem) != float(expected_rate))):
                 # Wrap the value with a span + inline style
                 original_value = final_df.at[idx, 'Per Diem']
                 final_df.at[idx, 'Per Diem'] = f'FLAG {original_value}'
