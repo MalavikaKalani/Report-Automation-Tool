@@ -94,6 +94,13 @@ def get_perdiem_by_zip(zips, months):
     return (gsa_df, results) 
 
 def check_file_permissions():
+    """
+    Checks whether data files can be properly accessed and shows errors accordingly.
+
+    Returns:
+        boolean: True if files found and False if files could not be found or had no read permissions.
+
+    """
     required_files = ['Live_Data_New_04_09(All_Submissions).csv', 'Live_Data_New_04_09(Inspections).csv', 'Live_Data_New_04_09(Per Diem).csv', 'Live_Data_New_04_09(Transportation Expenses).csv']
     for file in required_files:
         file_path = os.path.join(BASE_DIR, file)
@@ -104,6 +111,13 @@ def check_file_permissions():
     return True, "All files accessible"
 
 def fix_zip(row):
+    """
+    Fixes zip code to property zip incase of incorrect zip submitted by inspector.
+
+    Returns:
+        string: 5-digit zip code
+
+    """
     try:
         zip_code = int(row['Zip Code'])
     except (ValueError, TypeError):
@@ -118,20 +132,19 @@ def fix_zip(row):
 
 def process_data(submission_num):
 
-    print(f"📁 Current working directory: {os.getcwd()}")
+    # print(f"📁 Current working directory: {os.getcwd()}")
 
     try:
-        # Check file permissions first
+    
         can_access, message = check_file_permissions()
         if not can_access:
             return False, message
         
+        # READ IN ALL 5 CSV FILES INTO PANDAS DATAFRAMES
         submissions = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(All_Submissions).csv"), encoding='cp1252')
-        # inspections = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Inspections).csv"), encoding='cp1252')
         inspections = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Inspections).csv"), encoding='cp1252', names=[
             'Submission Num','Reimbursement RequestID','Inspector Name','Inspection Id_OG','Inspection Date','Property Id','Inspection Id','Status'],
             header=0, keep_default_na=True)
-
         perdiem = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Per Diem).csv"), encoding='cp1252')
         property_info = pd.read_csv(os.path.join(BASE_DIR, "property.csv"), encoding='utf-8-sig')
         transportation = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Transportation Expenses).csv"), encoding='cp1252')
@@ -147,10 +160,8 @@ def process_data(submission_num):
         df_perdiem = perdiem[perdiem['Submission Num'] == submission_num]
         df_transportation = transportation[transportation['Submission Num'] == submission_num]
 
-        print(df_perdiem.columns)
-        # print(property_info.dtypes)
 
-        # get information that will be individually displayed 
+        # INFORMATION THAT WILL BE INDIVIDUALLY DISPLAYED
         total_inspections = float(df_submissions['Total Inspections'].iloc[0])
         inspector_name = df_submissions['Inspector Name'].iloc[0]
         reimbursement_id = df_submissions['Reimbursement RequestID'].iloc[0]
@@ -163,7 +174,7 @@ def process_data(submission_num):
         df_perdiem["First Day"] = pd.to_datetime(df_perdiem["First Day"], format="%m/%d/%Y")
         df_perdiem["Last Day"] = pd.to_datetime(df_perdiem["Last Day"], format="%m/%d/%Y")
 
-        # get months for GSA API Usage 
+        # GET MONTHS FOR GSA API USAGE 
         inspection_months = set(
             pd.concat([
                 df_perdiem["First Day"].dt.strftime("%B"),
@@ -182,10 +193,8 @@ def process_data(submission_num):
         # MAP DAY NUMBER TO INSPECTION FOR PER DIEM RATES TO MATCH 
         df_inspections["Day Number"] = df_inspections["Inspection Date"].map(date_to_daynum)
 
-
         # RENAME FOR MERGE TO WORK BASED ON INSPECTION ID 
         df_inspections.rename(columns={"Inspection Id": "InspectionID"}, inplace=True)
-        # print(f"✅ Found {len(df_inspections)} inspection rows for submission {submission_num}")
         
         # MERGE INSPECTION WITH PROPERTY INFO 
         df_inspections = pd.merge(
@@ -208,14 +217,13 @@ def process_data(submission_num):
             merged_df.groupby("Day Number")
             .agg({
                 "Day Number": "first",
-                "InspectionID": list,  # Store multiple IDs in a list
-                "PropertyID": list,  # Store multiple Property IDs in a list
+                "InspectionID": list,  
+                "PropertyID": list,  
                 "PropertyType": list,
                 "PropertyName": list,
                 "PropertyStreetAddress": list,
                 "CityState": list,
                 "Per Diem": "first",
-                # "Lodging Rate": "first",
                 "Lodging Cost": "first",
                 "Lodging Taxes": "first",
                 "Zip Code": "first",
@@ -224,21 +232,21 @@ def process_data(submission_num):
             # .reset_index()
         )
 
-        # final_df['Zip Code'] = final_df['Zip Code'].apply(lambda x: str(int(x)).zfill(5) if pd.notna(x) else final_df['PropertyZip'])
+        
         final_df['Zip Code'] =  final_df.apply(fix_zip, axis=1)
         zip_codes = set(final_df['Zip Code'])
 
         gsa_df, gsa_dict = get_perdiem_by_zip(zip_codes, inspection_months)
 
-        # Add the "Date" column by mapping Day Number to Date
+        # ADD DATE COLUMN BY MAPPING DAY NUMBER TO DATE
         final_df['Inspection Date'] = (final_df['Day Number'].map(daynum_to_date)).dt.date
         final_df['Month'] = pd.to_datetime(final_df['Inspection Date']).dt.strftime("%B")
-        # final_df['Inspection Date'] = final_df['Day Number'].map(day_to_date_mapping)
+
 
         final_df = pd.merge(final_df, gsa_df, how='left', on=['Zip Code', 'Month'])
         final_df['GSA Lodging Rate'] = final_df['Lodging Rate'] # set to new rates from API
 
-        # Clean up helper columns
+        # CLEAN UP HELPER COLUMNS
         final_df.drop(columns=['Month', 'Lodging Rate', 'PropertyZip'], inplace=True)
  
         pov_mileage = df_submissions["Miles Driven"].iloc[0]
@@ -273,8 +281,6 @@ def process_data(submission_num):
                             ]]
 
         
-        # print(inspection_months)
-        
         return True, (submission_num, reimbursement_id, inspector_name, total_inspections, pov_mileage, pov_mileage_expense, total_reimbursement,
             travel_location_info, transportation_expenses, comments, final_df, zip_codes, inspection_months)
         
@@ -284,8 +290,7 @@ def process_data(submission_num):
 
 def highlight_perdiem(gsa_dict, final_df):
 
-    # gsa_dict is a list of dictionaries so we want to convert to a lookup format 
-    # key: (zip, month) --> value: {zip, month}
+    
     gsa_lookup = {
     (entry['Zip Code'].zfill(5), entry['Month'].strip().lower()): entry
     for entry in gsa_dict
@@ -294,8 +299,8 @@ def highlight_perdiem(gsa_dict, final_df):
     first_idx = final_df.index[0]
     last_idx = final_df.index[-1]
 
-    print("WHAT IS INDEX")
-    print(first_idx, last_idx)
+    # print("WHAT IS INDEX")
+    # print(first_idx, last_idx)
 
     for idx in [first_idx, last_idx]:
         row = final_df.loc[idx]
@@ -333,8 +338,9 @@ def highlight_mie(gsa_dict, final_df):
     # first_idx = final_df.index[0]
     last_idx = final_df.index[-1]
 
-    for idx in range(2, last_idx):
+    for idx in range(1, last_idx):
         row = final_df.loc[idx]
+        print(row)
         zip_code = row['Zip Code']
         try:
             month = pd.to_datetime(row['Date of Inspection']).strftime('%B').lower()
