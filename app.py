@@ -119,12 +119,20 @@ def fix_zip(row):
 
     """
     try:
-        zip_string = row['Zip Code']
-        zip_code = int(zip_string[:5])
+        zip_string = str(int(row['Zip Code']))
+        # print(zip_string)
+        if len(zip_string) > 5:
+            zip_code = zip_string[:5] # trim digits
+        else:
+            zip_string = str(int(row['Zip Code']))
+            
+            zip_code = zip_string.zfill(5) 
+            print(zip_code)
+
     except (ValueError, TypeError):
         zip_code = 0
 
-    if (zip_code == 0) or(zip_code is None):
+    if (zip_code == 0):
         try:
             property_zip = int(row['PropertyZip'])
             return str(property_zip).zfill(5)
@@ -234,7 +242,8 @@ def process_data(submission_num):
             # .reset_index()
         )
 
-        
+        # print(final_df.dtypes)
+        # print(final_df['Zip Code'])
         final_df['Zip Code'] =  final_df.apply(fix_zip, axis=1)
         zip_codes = set(final_df['Zip Code'])
 
