@@ -132,7 +132,7 @@ def fix_zip(row):
     except (ValueError, TypeError):
         zip_code = 0
 
-    if (zip_code == 0):
+    if (zip_code == '00000'):
         try:
             property_zip = int(row['PropertyZip'])
             return str(property_zip).zfill(5)
