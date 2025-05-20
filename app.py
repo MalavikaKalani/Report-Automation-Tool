@@ -119,10 +119,12 @@ def fix_zip(row):
 
     """
     try:
-        zip_code = int(row['Zip Code'])
+        zip_string = row['Zip Code']
+        zip_code = int(zip_string[:5])
     except (ValueError, TypeError):
         zip_code = 0
-    if zip_code == 0:
+
+    if (zip_code == 0) or(zip_code is None):
         try:
             property_zip = int(row['PropertyZip'])
             return str(property_zip).zfill(5)
@@ -340,7 +342,7 @@ def highlight_mie(gsa_dict, final_df):
 
     for idx in range(1, last_idx):
         row = final_df.loc[idx]
-        print(row)
+        # print(row)
         zip_code = row['Zip Code']
         try:
             month = pd.to_datetime(row['Date of Inspection']).strftime('%B').lower()
@@ -398,10 +400,8 @@ def index():
 def process():
     try:
         submission_num = int(request.form['submission_num'])
-        # print(f"🔢 Parsed submission number: {submission_num}")
+
         success, result = process_data(submission_num)
-        # print(f"🔍 Debug result from process_data: success={success}, result={result}")
-        # print(f"✅ process_data() returned: success={success}, result={result}")
         
         if success:
             # file_name = os.path.basename(result)
