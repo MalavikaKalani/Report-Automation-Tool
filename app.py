@@ -141,8 +141,39 @@ def fix_zip(row):
     return str(zip_code).zfill(5)
 
 def process_data(submission_num):
+    """
+    Processes inspection, per diem, and expense data for a given submission number.
 
-    # print(f"📁 Current working directory: {os.getcwd()}")
+    This function loads multiple CSV files, filters records related to the given 
+    submission number, calculates other expense details along with property info and GSA 
+    rates, and returns a structured DataFrame along with summary metadata.
+
+    Args:
+        submission_num (str or int): The submission number to process.
+
+    Returns:
+        tuple:
+            - bool: Indicates success (True) or failure (False) of the processing.
+            - str or tuple:
+                If failure: Returns an error message.
+                If success: Returns a tuple containing:
+                    - submission_num (str or int)
+                    - reimbursement_id (str)
+                    - inspector_name (str)
+                    - total_inspections (float)
+                    - pov_mileage (float)
+                    - pov_mileage_expense (float)
+                    - total_reimbursement (str, possibly with a flag if threshold exceeded)
+                    - travel_location_info (DataFrame): Subset of original submission data with city/state info.
+                    - transportation_expenses (str)
+                    - comments (str)
+                    - final_df (DataFrame): Aggregated and formatted inspection and expense data.
+                    - zip_codes (set): Set of zip codes used for fetching GSA rates.
+                    - inspection_months (set): Set of months relevant to per diem calculations.
+
+    Raises:
+        Returns an error message in the second tuple position if an exception is encountered during processing.
+    """
 
     try:
     
@@ -153,12 +184,15 @@ def process_data(submission_num):
         # READ IN ALL 5 CSV FILES INTO PANDAS DATAFRAMES
         submissions = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(All_Submissions).csv"), encoding='cp1252')
         inspections = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Inspections).csv"), encoding='cp1252', names=[
-            'Submission Num','Reimbursement RequestID','Inspector Name','Inspection Id_OG','Inspection Date','Property Id','Inspection Id','Status'],
+            'Submission Num','Reimbursement RequestID','Inspector Name','Inspection Id_OG','Inspection Date','Property Id','Inspection Id','Status','Date Submitted'],
             header=0, keep_default_na=True)
         perdiem = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Per Diem).csv"), encoding='cp1252')
         property_info = pd.read_csv(os.path.join(BASE_DIR, "property.csv"), encoding='utf-8-sig')
         transportation = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Transportation Expenses).csv"), encoding='cp1252')
         
+        # print(property_info.dtypes)
+        # print("PRINTING JUST IMPECTIONS INTIALLY")
+        # print(inspections)
         
         # FILTER BY SUBMISSION NUMBER TO CREATE REPORT FOR EACH SUBMISSION
         df_submissions = submissions[submissions['Submission Num'] == submission_num]
@@ -184,6 +218,9 @@ def process_data(submission_num):
         df_perdiem["First Day"] = pd.to_datetime(df_perdiem["First Day"], format="%m/%d/%Y")
         df_perdiem["Last Day"] = pd.to_datetime(df_perdiem["Last Day"], format="%m/%d/%Y")
 
+        # print("PRINTING INSPECTIONS")
+        # print(df_inspections)
+
         # GET MONTHS FOR GSA API USAGE 
         inspection_months = set(
             pd.concat([
@@ -206,6 +243,10 @@ def process_data(submission_num):
         # RENAME FOR MERGE TO WORK BASED ON INSPECTION ID 
         df_inspections.rename(columns={"Inspection Id": "InspectionID"}, inplace=True)
         
+        
+        
+        # print("PRINTING PROPERTY")
+        # print(property_info)
         # MERGE INSPECTION WITH PROPERTY INFO 
         df_inspections = pd.merge(
             df_inspections, 
@@ -213,7 +254,8 @@ def process_data(submission_num):
             on='InspectionID', 
             how='left'
         )
-
+        # print("PRINTING NOWWWWWWWWW")
+        # print(df_inspections)
         # MERGE INSPECTION WITH PER DIEM 
         merged_df = pd.merge(
             df_inspections,
@@ -221,6 +263,8 @@ def process_data(submission_num):
             on=['Submission Num', 'Reimbursement RequestID','Day Number'],
             how='right'
         )
+
+        # print(merged_df)
 
         # GROUP BY DAY NUMBER AND AGGREGATE INSPECTIONS IDS USING A SET
         final_df = (
@@ -243,7 +287,7 @@ def process_data(submission_num):
         )
 
         # print(final_df.dtypes)
-        # print(final_df['Zip Code'])
+        # print(final_df)
         final_df['Zip Code'] =  final_df.apply(fix_zip, axis=1)
         zip_codes = set(final_df['Zip Code'])
 
