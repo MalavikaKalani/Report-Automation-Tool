@@ -85,11 +85,18 @@
                     {{ location_table | safe }}
                 </div>
                 {% endif %}
+                
+                {% if transportation_table %}
+                <h5 class="mt-4">Transportation Expenses:</h5>
+                <div class="table-responsive">
+                    {{ transportation_table | safe }}
+                </div>
+                {% endif %}
 
-                {% if transportation_expenses %}
+                <!-- {% if transportation_expenses %}
                 <h5 class="mt-4">Transportation Expenses:</h5>
                 <p><strong>{{ transportation_expenses }}</strong></p>
-                {% endif %}
+                {% endif %} -->
 
                 {% if comments %}
                 <h5 class="mt-4">Additional Comments: </h5>

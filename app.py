@@ -130,7 +130,7 @@ def fix_zip(row):
             print(zip_code)
 
     except (ValueError, TypeError):
-        zip_code = 0
+        zip_code = '00000'
 
     if (zip_code == '00000'):
         try:
@@ -184,10 +184,10 @@ def process_data(submission_num):
         # READ IN ALL 5 CSV FILES INTO PANDAS DATAFRAMES
         submissions = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(All_Submissions).csv"), encoding='cp1252')
         inspections = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Inspections).csv"), encoding='cp1252', names=[
-            'Submission Num','Reimbursement RequestID','Inspector Name','Inspection Id_OG','Inspection Date','Property Id','Inspection Id','Status','Date Submitted'],
+            'Submission Num','Reimbursement RequestID','Inspector Name','Inspection Date','Property Id','Inspection Id'],
             header=0, keep_default_na=True)
         perdiem = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Per Diem).csv"), encoding='cp1252')
-        property_info = pd.read_csv(os.path.join(BASE_DIR, "property.csv"), encoding='utf-8-sig')
+        property_info = pd.read_csv(os.path.join(BASE_DIR, "Property.csv"), encoding='utf-8-sig')
         transportation = pd.read_csv(os.path.join(BASE_DIR, "Live_Data_New_04_09(Transportation Expenses).csv"), encoding='cp1252')
         
         # print(property_info.dtypes)
@@ -209,7 +209,7 @@ def process_data(submission_num):
         total_inspections = float(df_submissions['Total Inspections'].iloc[0])
         inspector_name = df_submissions['Inspector Name'].iloc[0]
         reimbursement_id = df_submissions['Reimbursement RequestID'].iloc[0]
-        transportation_expenses = df_transportation['Transportation Expenses'].iloc[0]
+        # transportation_expenses = df_transportation['Transportation Expenses'].iloc[0]
         travel_location_info = df_submissions[['Depart City','Depart State','Dest City','Dest State','Dest Zip']]
         comments = df_submissions['Comments'].iloc[0]
 
@@ -243,8 +243,6 @@ def process_data(submission_num):
         # RENAME FOR MERGE TO WORK BASED ON INSPECTION ID 
         df_inspections.rename(columns={"Inspection Id": "InspectionID"}, inplace=True)
         
-        
-        
         # print("PRINTING PROPERTY")
         # print(property_info)
         # MERGE INSPECTION WITH PROPERTY INFO 
@@ -254,8 +252,8 @@ def process_data(submission_num):
             on='InspectionID', 
             how='left'
         )
-        # print("PRINTING NOWWWWWWWWW")
-        # print(df_inspections)
+        print("PRINTING NOWWWWWWWWW")
+        print(df_inspections)
         # MERGE INSPECTION WITH PER DIEM 
         merged_df = pd.merge(
             df_inspections,
@@ -264,7 +262,7 @@ def process_data(submission_num):
             how='right'
         )
 
-        # print(merged_df)
+        print(merged_df)
 
         # GROUP BY DAY NUMBER AND AGGREGATE INSPECTIONS IDS USING A SET
         final_df = (
@@ -337,7 +335,10 @@ def process_data(submission_num):
 
         
         return True, (submission_num, reimbursement_id, inspector_name, total_inspections, pov_mileage, pov_mileage_expense, total_reimbursement,
-            travel_location_info, transportation_expenses, comments, final_df, zip_codes, inspection_months)
+            travel_location_info, df_transportation, comments, final_df, zip_codes, inspection_months)
+
+        # return True, (submission_num, reimbursement_id, inspector_name, pov_mileage, pov_mileage_expense, 
+        #     travel_location_info, comments, final_df, zip_codes, inspection_months)
         
 
     except Exception as e:
@@ -459,7 +460,10 @@ def process():
         if success:
             # file_name = os.path.basename(result)
             (submission_num, reimbursement_id, inspector_name, total_inspections, pov_mileage, pov_mileage_expense, total_reimbursement,
-            travel_location_info, transportation_expenses, comments, final_df, zip_codes, inspection_months) = result
+            travel_location_info, df_transportation, comments, final_df, zip_codes, inspection_months) = result
+
+            # (submission_num, reimbursement_id, inspector_name, pov_mileage, pov_mileage_expense,
+            # travel_location_info, comments, final_df, zip_codes, inspection_months) = result
 
             # USE ZIP CODES AND MONTHS FOR API USAGE 
             (gsa_df, gsa_dict) = get_perdiem_by_zip(zip_codes, inspection_months)
@@ -472,7 +476,8 @@ def process():
             table_html = flagged_final_df.to_html(classes='table table-bordered table-striped', index=False, border=0)
             location_html = travel_location_info.to_html(classes='table table-bordered table-striped', index=False, border=0)
             gsa_html = gsa_df.to_html(classes='table table-bordered table-striped', index=False, border=0)
-           
+            transportation_html = df_transportation.to_html(classes='table table-bordered table-striped', index=False, border=0)
+            
             return render_template('index.html',
                                    submission_num = submission_num,
                                    reimbursement_id = reimbursement_id, 
@@ -482,7 +487,7 @@ def process():
                                    pov_mileage_expense = pov_mileage_expense,
                                    total_reimbursement = total_reimbursement,
                                    location_table = location_html, 
-                                   transportation_expenses=transportation_expenses,
+                                   transportation_table =transportation_html,
                                    comments = comments,
                                    excel_table=table_html,
                                    gsa_table = gsa_html)
