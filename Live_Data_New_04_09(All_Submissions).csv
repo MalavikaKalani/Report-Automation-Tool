@@ -1,12 +1,12 @@
 "Submission Num","Inspector Name","Reimbursement RequestID","Depart City","Depart State","Dest City","Dest State","Total Inspections","Dest Zip","Comments","Miles Driven","Total Reimbursement"
-13,"Peter M Wade","5409da","ROCHESTER","NY",,,1.00,,,50.00,$180.00
+13,"Peter M Wade","5409da","ROCHESTER","NY",,,1.00,,,50.00,$60.00
 686,"William A Harding JR ","8d6494","Wilmington ","North Carolina ","","",4.00,"","Hello, here is my travel expense report for the month of May. I had drove my personal vehicle from Wilmington NC to Ralegh NC since its only 2-hour drive.  ",1084.00,$723.80
+741,"Andrew J Clay","95ad6f","Chippewa Falls","Wisconsin","","",1.00,"",,256.00,$144.20
 22,"Karyn Melton","ba6e89","Jonesboro","AR",,,1.00,,,792.00,$970.90
 11,"Kristopher Gray","897971","Morton Grove","IL",,,1.00,,,60.00,$70.40
 12,"Amanda Harper","fa183a","Sioux City, ","Iowa",,,1.00,,,196.00,$153.20
-13,"Peter M Wade","5409da","ROCHESTER","NY",,,1.00,,,50.00,$60.00
-14,"Peter M Wade","0d0044","ROCHESTER","NY",,,1.00,,,0.00,$25.00
-15,"Peter M Wade","1ff293","ROCHESTER","NY",,,1.00,,,0.00,$25.00
+14,"Peter M Wade","0d0044","ROCHESTER","NY",,,1.00,,,50.00,$60.00
+15,"Peter M Wade","1ff293","ROCHESTER","NY",,,1.00,,,50.00,$60.00
 16,"David Crawford","5a1239","MANITOU SPRINGS","CO",,,1.00,,,146.00,$136.20
 17,"Thomas Feehan","9cd89a","South Bend","IN",,,3.00,,,582.00,$963.42
 18,"Kristopher Gray","cb29b1","Northbrook","IL","Morton Grove","IL",1.00,"60053","<div>Scattered site 2 day inspection</div>",75.38,$155.77
@@ -18,7 +18,7 @@
 24,"Bill Tsudama","5dc2dc","Corralitos","CA",,,1.00,,,280.00,$895.44
 25,"Joseph Peter Cornell","f5452f","Philadelphia","PA",,,3.00,,"<div>Gas was 13.43 and 52.81
 <br>Self Parking 24.00 per day 3 days total 
-<br>Lyft two rides 32.99 and 27.73</div>",0.00,$1569.06
+<br>Lyft two rides 32.99 and 27.73</div>",0.00,$1604.06
 26,"David Cianci","88b060","South Abington Township","PA",,,3.00,,"<div>Tolls 101.80</div>",827.00,$834.70
 29,"Gregory Bradle","df8241","Eureka","IL",,,2.00,,,153.00,$123.10
 30,"Gregory Bradle","7f92f6","Eureka","IL",,,2.00,,,383.00,$284.10
@@ -56,11 +56,11 @@
 56,"HOMER WINDFIELD","e9628c","JACKSON","MISSISSIPPI","HASTINGS","NEBRASKA",6.00,"68901","<div>This trip involves week ends overnight stay.</div>",1255.00,$2013.06
 57,"Joseph Peter Cornell","d7674f","Philadelphia","PA",,,2.00,,"<div>UBER 38.65
 <br>Gas 38.52 
-<br>both under 75.00</div>",0.00,$1396.97
-58,"Joseph Peter Cornell","a8724e","Philadelphia","PA",,,1.00,,,0.00,$833.90
+<br>both under 75.00</div>",0.00,$1431.97
+58,"Joseph Peter Cornell","a8724e","Philadelphia","PA",,,1.00,,,0.00,$868.90
 60,"William  Freeman","84c825","Little Rock","AR",,,1.00,,,154.00,$123.80
 61,"William Freeman","4e4387","Little Rock","AR",,,1.00,,,193.00,$151.10
-62,"Clint Cave","5cde29","Stamford","CT",,,7.00,,"<div>The rental car receipt is separate from the rental car insurance receipt. The hotel parking is $60 per night as seen on the lodging receipt. One of the inspections had no onsite parking. </div>",0.00,$1901.55
+62,"Clint Cave","5cde29","Stamford","CT",,,7.00,,"<div>The rental car receipt is separate from the rental car insurance receipt. The hotel parking is $60 per night as seen on the lodging receipt. One of the inspections had no onsite parking. </div>",0.00,$1936.55
 63,"Gregory Bradle","1608bb","Eureka","IL",,,2.00,,,401.00,$296.70
 64,"Gregory Bradle","398a5a","Eureka","IL",,,2.00,,,183.00,$144.10
 65,"Tacie Godwin","fbd664","Irvington","AL",,,1.00,,,221.60,$171.12
@@ -90,8 +90,8 @@
 105,"Laurel Elliott","163098","Kansas","OK",,,1.00,,,152.00,
 106,"Laurel Elliott","1ddeb9","Kansas","OK",,,1.00,,"<div>Revised due to did not include return trip in first invoice</div>",488.00,
 107,"Melinda Stark","ff7872","Orange City","FL",,,1.00,,,266.00,$348.76
-108,"Melinda Stark","0a3da0","Orange City","FL",,,1.00,,,24.00,$166.96
-109,"Melinda Stark","cba195","Kendall","FL",,,1.00,,,14.40,$160.24
+108,"Melinda Stark","0a3da0","Orange City","FL",,,1.00,,,24.00,$185.16
+109,"Melinda Stark","cba195","Kendall","FL",,,1.00,,,14.40,$185.16
 111,"Melinda Stark","e93d60","Kendall","FL","Orange City","FL",1.00,"32763","<div>Hotel to inspection site to home</div>",288.00,$351.76
 112,"Brent Aversano","9bf7c6","Lake In The Hills","ILLINOIS",,,1.00,,,268.00,$209.20
 114,"Jerry Peal","310fff","Alamo","TN",,,1.00,,,224.00,$223.80
@@ -104,11 +104,11 @@
 122,"Karyn Melton","3188dc","Jonesboro","AR",,,2.00,,,403.00,$669.00
 123,"Joseph Peter Cornell","0fb993","Philadelphia","PA",,,1.00,,"<div>Lyft 29.21 
 <br>Gas 19.33
-<br></div>",0.00,$814.12
+<br></div>",0.00,$849.12
 124,"Joseph Peter Cornell","fddbde","Philadelphia","PA",,,1.00,,"<div>lyft one way 36.99
 <br>Gas 20.00
 <br>Tolls 11.58 each way 23.16
-<br></div>",0.00,$619.00
+<br></div>",0.00,$654.00
 125,"Bill Tsudama","a58e42","Watsonville","CA",,,1.00,,,130.00,$1564.93
 126,"Bill Tsudama","1555d4","Watsonville","CA",,,2.00,,"<div>Only asking for the rate in Firebaugh, CA.&#160; As the rate where I stayed was over the GSA rate.</div>",204.00,$429.80
 127,"William Brooks III","7aa093","Cleveland","OH",,,5.00,,"<div>Tolls ($7.75)
@@ -120,10 +120,10 @@
 134,"Marcella Magnelli-Middleton","485eed","Land O Lakes","FL",,,1.00,,,329.00,$255.30
 140,"David Casal","fc9704","South Abington Township","PA",,,7.00,,"<div>Parking $7.00 + 1.01 tax x 2 days (3/5 &amp;3/6) at hotel, listed on hotel receipts 
 <br>No Tolls - </div>",849.00,$1647.00
-141,"Clint Cave","c9e7a3","Stamford","CT",,,7.00,,"The GSA nightly rate for Boston changed in March which is $291. The actual lodging cost (GVT - Government Contractor Rate) was $269.64. The lodging receipt displays the rates differently per night but the total cost is $1348.20 and the total taxes is $221",0.00,$2883.75
+141,"Clint Cave","c9e7a3","Stamford","CT",,,7.00,,"The GSA nightly rate for Boston changed in March which is $291. The actual lodging cost (GVT - Government Contractor Rate) was $269.64. The lodging receipt displays the rates differently per night but the total cost is $1348.20 and the total taxes is $221",0.00,$2918.75
 143,"Melinda Stark","751d95","Orange City","FL","Miramar","FL",1.00,"33027",,278.00,$364.94
-144,"Melinda Stark","f4a6f7","Miramar","FL",,,1.00,,,38.00,$227.97
-145,"Melinda Stark","33b662","Miramar","FL",,,1.00,,,20.00,$226.67
+144,"Melinda Stark","f4a6f7","Miramar","FL",,,1.00,,,38.00,$236.37
+145,"Melinda Stark","33b662","Miramar","FL",,,1.00,,,20.00,$247.67
 146,"Chris Chamberlin","312c37","Union","MS",,,2.00,,,554.00,$711.78
 147,"Peter M Wade","86ba89","ROCHESTER","NY",,,2.00,,,149.00,$129.30
 148,"Peter M Wade","09ee5e","ROCHESTER","NY",,,1.00,,,138.00,$121.60
@@ -140,11 +140,11 @@
 160,"William Freeman","0f9dff","Little Rock","AR",,,1.00,,,741.00,$629.26
 162,"Daniel J Herr","b490a7","Johnsburg","IL",,,4.00,,,801.00,$1133.57
 163,"Cynthia Williams","276b2b","Indianapolis","Indiana",,,1.00,,,143.00,$116.10
-164,"Joseph Peter Cornell","1f7541","Philadelphia","PA","Philadelphia","Pennsylvania",1.00,"19125","TOLLS 25.68",0.00,$623.61
+164,"Joseph Peter Cornell","1f7541","Philadelphia","PA","Philadelphia","Pennsylvania",1.00,"19125","TOLLS 25.68",0.00,$658.61
 165,"Benjamin Russoniello","e8d826","North Abington Township","PA",,,3.00,,"I'm hopeful that all three of my receipts are attached.  Each time I add one, it overwrites the last.",791.00,$1078.77
 166,"Jerry Peal","cf5a0f","Alamo","TN",,,3.00,,,1080.00,$1672.40
 167,"Thomas Schaul","8aa082","Hanover Park","IL",,,4.00,,"Problems attaching pics of receipts.. tried combining multiple receiptsinto pics but it still says one could not be attached..
-Please let me know what additional receipt pics you need..",25.00,$2084.86
+Please let me know what additional receipt pics you need..",25.00,$2102.36
 168,"HOMER WINDFIELD","39673a","ALLIANCE","NE","MITCHELL","SD",6.00,"57301",,491.00,$1682.86
 170,"Onesimo Garza lll","b1d7b2","Mesick","Michigan",,,2.00,,"Often I will not have a hotel expense if I drive back and forth from home or stay with friends or family in the area of my inspection. With a previous vendor I was told to invoice for the smaller per diem amounts for all travel days when there is no hotel",323.00,$344.10
 171,"Onesimo Garza lll","2c10e5","Mesick","Michigan",,,1.00,,"No hotel receipt when I drive back and forth or stay with friends or family in the inspection area. I was instructed previously to invoice for the smaller per diem rates when there is no hotel receipt. Please advise if I need to invoice differently when a",250.00,$293.00
@@ -156,7 +156,7 @@ After I completed the inspection in Exmore VA, I had to drive to Charlottevil",8
 176,"Onesimo Garza lll","1b585e","Mesick","Michigan",,,1.00,,"When I stay with friends or family or drive back and forth from home, a hotel is not needed for the entire stay. ",246.00,$497.30
 178,"Luis Correa","8155f7","Rio Grande","PR",,,1.00,,"It was inspected on the day of the round trip by car.",204.00,$210.80
 180,"Gregory Bradle","8679da","Eureka","IL",,,2.00,,,258.00,$196.60
-181,"Quenton Jackson","a779e2","Zachary ","LA",,,3.00,,,0.00,$1276.10
+181,"Quenton Jackson","a779e2","Zachary ","LA",,,3.00,,,0.00,$1311.10
 182,"Melinda Stark","b0385a","Orange City","FL",,,1.00,,,72.00,$66.40
 183,"Eric Aycock","b63ec0","Morrisonville","NY",,,1.00,,,70.00,$103.70
 184,"Laurel Elliott","4b4abc","Kansas ","OK",,,3.00,,"Personal mileage
@@ -177,8 +177,8 @@ Flights and rental car much more costly than personal mileage. ",1207.00,$1234.5
 187,"Tacie Godwin","fc80f6","Irvington","AL",,,1.00,,"No lodging for this trip ",303.00,$241.60
 188,"Brent Aversano","a9b435","Lake In The Hills","ILLINOIS",,,1.00,,,139.00,$113.30
 190,"Brent Aversano","a1c7f5","Lake In The Hills","ILLINOIS",,,1.00,,,198.00,$163.60
-191,"Jeff Margett","9e237d","SNOHOMISH","WA",,,4.00,,,0.00,$1428.22
-194,"Andrew J Clay","e8c75f","Chippewa Falls","Wisconsin",,,2.00,,,0.00,$118.77
+191,"Jeff Margett","9e237d","SNOHOMISH","WA",,,4.00,,,0.00,$1463.22
+194,"Andrew J Clay","e8c75f","Chippewa Falls","Wisconsin",,,2.00,,,0.00,$153.77
 195,"Robert Davis","034022","San Diego","CA",,,1.00,,,169.00,$147.80
 196,"Jerry Peal","f07f90","Alamo","TN",,,3.00,,,1091.00,$1315.54
 197,"Peter M Wade","73a7cc","ROCHESTER","NY",,,1.00,,,220.00,$170.00
@@ -195,8 +195,8 @@ Flights and rental car much more costly than personal mileage. ",1207.00,$1234.5
 210,"Amanda Harper","ad31bc","Sioux City","IA",,,2.00,,,1008.00,$1083.70
 211,"Brent Aversano","645d02","Lake In The Hills","ILLINOIS",,,1.00,,,178.00,$149.60
 212,"Bernard Rupnik","0b1c47","Ashland","Wisconsin",,,2.00,,"Travel POV Ashland, WI-Marquette, MI-Sault Ste. Marie, MI-Ashland, WI. Air travel not an option.",695.00,$1045.66
-213,"Marcella Magnelli-Middleton","2be8a5","Land O Lakes","FL",,,2.00,,,0.00,$2798.42
-214,"Marcella Magnelli-Middleton","3fc2ff","Land O Lakes","FL","Mesa","AZ",2.00,"85204","This is the second submission for this request. Please disregard the first submission. I had to park at the airport fee $144 because I had an inspection on 3/13/25 that ended at 1 pm and I would not make the flight if I drove home to drop off the car. ",0.00,$2798.92
+213,"Marcella Magnelli-Middleton","2be8a5","Land O Lakes","FL",,,2.00,,,0.00,$2833.42
+214,"Marcella Magnelli-Middleton","3fc2ff","Land O Lakes","FL","Mesa","AZ",2.00,"85204","This is the second submission for this request. Please disregard the first submission. I had to park at the airport fee $144 because I had an inspection on 3/13/25 that ended at 1 pm and I would not make the flight if I drove home to drop off the car. ",0.00,$2833.92
 215,"Jerry Peal","8ebe1a","Alamo","TN",,,1.00,,,166.00,$136.70
 216,"Marcus Gardner ","8d25ae","Cheltenham ","PA",,,1.00,,,110.00,$42.00
 217,"Jessica Jackson","daaf78","Tryon","North Carolina","Tryon","North Carolina",9.00,"28782","No overnights",803.00,$800.10
@@ -205,14 +205,14 @@ Flights and rental car much more costly than personal mileage. ",1207.00,$1234.5
 221,"Joseph Peter Cornell","325763","Philadelphia","PA",,,3.00,,"28.64 Tolls for Lancaster
 14.30 Tolls NJ
 Gas 35.65
-Parking 10.00",0.00,$889.20
+Parking 10.00",0.00,$924.20
 222,"Benjamin Russoniello","582445","North Abington Township","PA",,,9.00,,"Several scattered sites throughout the week.",1035.00,$1627.12
 223,"William A Harding JR ","40fda2","Wilmington ","North Carolina ",,,5.00,,"Hello, here is my travel expense for the week of March 16th, 2025. Tuesday was the beginning of my travel week for inspections. I did not have to get a hotel because the properties were one to two hours away from my home. Did have breakfast and lunch befo",684.00,$698.80
 224,"Louis D. Jerome","984f35","Smithfield","UT",,,4.00,,,528.00,$505.60
 225,"Daniel J Herr","a25c4e","Johnsburg","IL",,,5.00,,,921.00,$1369.78
 226,"Ronald W Johnson","061701","Zachary","Louisiana",,,8.00,,,220.00,$1803.28
 227,"Cynthia W. Williams","fcc543","Indianapolis","Indiana",,,6.00,,"The usual daily hotel rate is $85 but was higher mid to late week of March 16 - 22 because the NCAA held the First Four or Early Eight in Dayton on March 18-19 at the University of Dayton Arena. That event was followed by the Ohio State Boys Basketball Ch",377.00,$1438.74
-228,"Clint Cave","bea972","Stamford","CT",,,8.00,,"The rental car is cheaper for 7 days instead of 6 days. Local rental car closes on Sunday, so rented from the nearest airport. Would have to take an Uber to and from so this was the most inexpensive option. The rental car receipt is separate from the car ",0.00,$1901.55
+228,"Clint Cave","bea972","Stamford","CT",,,8.00,,"The rental car is cheaper for 7 days instead of 6 days. Local rental car closes on Sunday, so rented from the nearest airport. Would have to take an Uber to and from so this was the most inexpensive option. The rental car receipt is separate from the car ",0.00,$1936.55
 229,"Clint Cave","640f72","Stamford","CT",,,7.00,,"Worked 80 miles away from home in CT this week and had 1 inspection in Rhode Island in the middle of the week. Per diem is for Jamestown, RI (first and last day per diem). Total miles is 832. No rental car, no lodging. ",832.00,$607.40
 230,"Gregory Bradle","dba8ca","Eureka","IL",,,2.00,,,587.00,$491.40
 231,"Gregory Bradle","b67fe0","Eureka","IL",,,1.00,,,381.00,$296.20
@@ -222,10 +222,10 @@ Parking 10.00",0.00,$889.20
 235,"Thomas Schaul","eff97a","Hanover Park","IL",,,1.00,,,81.00,$93.65
 236,"Luis Correa","fea5a6","Rio Grande","PR",,,1.00,,"Due to peak season, travel is available Saturday, March 8th via sea transport ($8.50 receipt).
 Since the pandemic, only commercial or government vehicles are crossing by boat. For this reason, a Jeep was rented, as Culebra only rents Jeeps or golf carts.
-",0.00,$1388.28
+",0.00,$1423.28
 237,"William Freeman","9aff52","Little Rock","AR",,,1.00,,,250.00,$159.00
 238,"Amanda Harper","1340e9","Sioux City","IA",,,1.00,,,375.00,$278.50
-239,"Quenton Jackson","35ad79","Zachary","LA",,,3.00,,,0.00,$1359.76
+239,"Quenton Jackson","35ad79","Zachary","LA",,,3.00,,,0.00,$1394.76
 240,"David Casal","d26d2d","South Abington Township","PA",,,4.00,,"10 hotel parking on hotel receipt, 51.44 tolls",573.00,$1105.63
 242,"David A Casal","e35ff0","South Abington Township","PA",,,4.00,,"15 Parking on hotel receipt 3/20, 43.85 parking on hotel receipt 3/19, tolls 71.63 summary attached; not feasible to complete this route flying in this timeline.  Would have only been able to do 1/2 the inspections due to time associated with flying and f",859.00,$1446.18
 243,"Caden Casal","dff1fe","South Abington Township","PA",,,7.00,,"Tolls 48.72; Trip was ",762.00,$1868.71
@@ -269,14 +269,14 @@ Since the pandemic, only commercial or government vehicles are crossing by boat.
 285,"Brent Aversano","9e4b9a","Lake In The Hills","ILLINOIS",,,1.00,,,94.00,$86.80
 286,"Jordan Theodore","db3f80","South Abington Township","PA",,,3.00,,"Tolls 100.83, no hotels ",824.00,$849.63
 287,"Caden Casal","57d9b5","South Abington Township","PA",,,9.00,,"142.48 hotel parking, Hotel $10 over allowed per diem rate on 3 of 4 nights.  ",804.00,$1868.16
-288,"Jeff Margett","b344e6","SNOHOMISH","WA",,,2.00,,,0.00,$693.83
+288,"Jeff Margett","b344e6","SNOHOMISH","WA",,,2.00,,,0.00,$728.83
 289,"Ronald W Johnson","990979","Zachary","Louisiana",,,8.00,,"The hotel parking and airport parking receipts were added together. The hotel parking fee was $11.00 total and the airport parking was $100.00 total. Grand total was $111.00",220.00,$2527.02
 291,"Amanda Harper","f29665","Sioux City","IA",,,1.00,,,309.00,$232.30
 292,"Amanda Harper","bc237d","Sioux City","IA",,,1.00,,,304.00,$228.80
 293,"HOMER WINDFIELD ","93f67d","Jackson ","MS","Omaha","NE",9.00,"68114",,453.00,$1439.59
 294,"Robert Davis","14e1b7","San Diego","CA",,,1.00,,"1.5 day inspection",218.00,$388.50
 295,"Quenton Jackson","1bacb3","Zachary","LA",,,3.00,,"The program will not let me attach my PDF hotel receipts. It's still giving me a red strikeout. They have been emailed to Ali.",1409.00,$1644.89
-296,"Marcella Magnelli Middleton","7aa5fb","Land O Lakes","FL",,,5.00,,"Flights for Spirit was $79.19 each way. Screenshots show different seat selection as well as price.",0.00,$1706.20
+296,"Marcella Magnelli Middleton","7aa5fb","Land O Lakes","FL",,,5.00,,"Flights for Spirit was $79.19 each way. Screenshots show different seat selection as well as price.",0.00,$1741.20
 297,"William Freeman","46c61e","Little Rock","AR",,,1.00,,,285.00,$183.50
 298,"Peter F Vang Dean","011e96","St Paul","Minnesota",,,9.00,,,456.00,$835.31
 299,"Chris Chamberlin","fa93e3","Union","MS",,,4.00,,"Traveled from home to Albany, Georgia 343 miles from Albany, Georgia to Athens Georgia 200 miles and traveling around the city to the Properties for the week 50 miles and traveling from Athens Georgia to home 383 miles. ",976.00,$1517.88
@@ -290,7 +290,7 @@ Since the pandemic, only commercial or government vehicles are crossing by boat.
 34.38 Parking with tax for 3/26-3/28 on hotel receipt
 69.77 Gas
 Tolls 65.84
-",0.00,$1486.60
+",0.00,$1521.60
 309,"Chris Chamberlin","a91f9f","Union","MS",,,1.00,,,232.00,$367.38
 311,"Gregory Bradle","8b580c","Eureka","IL",,,1.00,,,449.00,$545.55
 313,"Chris Chamberlin","f6c0e5","Union","MS",,,1.00,,,360.00,$507.98
@@ -336,7 +336,7 @@ Tolls 65.84
 354,"Benjamin Russoniello","0f29dc","North Abington Township","PA",,,2.00,,"Cost comparison sheet attached. ",295.00,$240.38
 355,"Benjamin Russoniello","a65f1b","North Abington Township","PA",,,2.00,,"Cost comparison sheet emailed separately to Ali.  Cannot submit more than one attachment here.  Each additional attachment overwrites the first.",318.00,$781.76
 356,"Peter Franklin Vang Dean","6125e2","Saint Paul","MN",,,7.00,,"A round-trip flight would not have been feasible for this looping itinerary.  Cost comparison sheet includes lunch and dinner.  Due to time &amp; dietary constraints, I brought my own food (except for free hotel breakfasts), much of it in a cooler, so I a",1372.00,
-357,"Benjamin Russoniello","2e422d","North Abington Township","PA",,,1.00,,"Flight receipt attached.  Other receipts emailed to Ali.  Unable to attach all receipts.  Additional receipts overwrite the previous one in the system.  These expenses are submitted separately from travel to/from airport, hotel and per diem expenses for t",0.00,$1323.70
+357,"Benjamin Russoniello","2e422d","North Abington Township","PA",,,1.00,,"Flight receipt attached.  Other receipts emailed to Ali.  Unable to attach all receipts.  Additional receipts overwrite the previous one in the system.  These expenses are submitted separately from travel to/from airport, hotel and per diem expenses for t",0.00,$1358.70
 358,"William R. Brooks III","046a75","Cleveland ","Ohio",,,6.00,,,799.00,$951.22
 359,"Andrew J Clay","b7f668","Chippewa Falls","Wisconsin",,,3.00,,,567.00,$659.87
 360,"Don Crook","7da7eb","Nocona","Texas",,,3.00,,"Drive to Amarillo for 9am 3/31 inspection. Stayed over night on 3/31 due to cost effectiveness.",815.00,$1420.75
@@ -354,10 +354,10 @@ Tolls 65.84
 373,"Jerry Peal","68c075","Alamo","TN",,,1.00,,,314.00,
 374,"TACIE GODWIN","2725be","IRVINGTON","AL",,,1.00,,"Only invoicing for per diem and mileage. ",626.40,$454.48
 377,"Joseph Peter Cornell","cb41a9","Philadelphia","PA",,,1.00,,"TOLLS 12.00
-GAS 18.33",0.00,$571.36
+GAS 18.33",0.00,$606.36
 378,"Joseph Peter Cornell","313482","Philadelphia","PA",,,2.00,,"42.50 TOLLS
-PARKING 12.00",0.00,$1168.95
-379,"Amanda Harper","11b70b","Sioux City","IA",,,1.00,,,0.00,$227.36
+PARKING 12.00",0.00,$1203.95
+379,"Amanda Harper","11b70b","Sioux City","IA",,,1.00,,,0.00,$262.36
 380,"Don Crook","6e814a","Nocona","Texas",,,1.00,,"Drive to first inspection o 4/7/25 is 2.5 hours and then to second inspection location for overnight.  Air travel is not practical when travel to and from airport is half the time it takes to POV to and from inspection sites. ",285.00,$392.99
 383,"Jerry Peal","ea4eae","Alamo","TN",,,1.00,,,450.00,$331.00
 385,"Jessica Jackson","edbc26","Tryon","NC",,,2.00,,,324.00,$242.80
@@ -368,10 +368,10 @@ PARKING 12.00",0.00,$1168.95
 390,"Chris Chamberlin","504c78","Union","MS",,,1.00,,"Drove from union Mississippi to Scottsboro, Alabama 265 and return home 265",520.00,$562.97
 391,"Chris Chamberlin","e0ce52","Union","MS",,,1.00,,"Drove from Union, Mississippi to Jackson, Mississippi 95 from Savannah, Georgia to Rockmart, GA 299 and from Rockmart, Georgia to Union 290 ",684.00,$972.95
 392,"Chris Chamberlin","080be4","Union","MS",,,1.00,,"Drove from Union Mississippi to Scottsboro 265 and travel back home 265",530.00,$569.97
-393,"Robert Tiller Jr.","84c881","Kissimmee","FL",,,1.00,,,0.00,$1606.25
-394,"Celine Williams","0870b6","San Antonio","TX",,,2.00,,"After the inspections scheduled for 4/3/25 &amp; 4/4/25, I stayed through the weekend to visit family. However I am only requesting 2 days of M&amp;IE and vehicle rental, not the full 4 days. The flight booked to return Sunday 4/6/25 was actually cheaper ",0.00,$746.06
+393,"Robert Tiller Jr.","84c881","Kissimmee","FL",,,1.00,,,0.00,$1641.25
+394,"Celine Williams","0870b6","San Antonio","TX",,,2.00,,"After the inspections scheduled for 4/3/25 &amp; 4/4/25, I stayed through the weekend to visit family. However I am only requesting 2 days of M&amp;IE and vehicle rental, not the full 4 days. The flight booked to return Sunday 4/6/25 was actually cheaper ",0.00,$781.06
 395,"Jerry Peal","5fd18c","Alamo","TN",,,1.00,,,462.00,$339.40
-397,"Amanda Harper","4c6a53","Sioux City","IA",,,1.00,,,0.00,$133.92
+397,"Amanda Harper","4c6a53","Sioux City","IA",,,1.00,,,0.00,$168.92
 398,"Brent Aversano","681963","Lake In The Hills","ILLINOIS",,,1.00,,,58.00,$56.60
 399,"Karyn Melton","396575","Jonesboro","AR",,,3.00,,"There is no lodging receipt for Tuesday April 1, because I stayed with a relative. The lodging receipt for inspection 34247 has 2 nights.  The reason there is an extra night is there is because I had a service mortgagee inspection scheduled for April 3 wh",693.00,$938.50
 400,"Jerry Peal","901b00","Alamo","TN",,,1.00,,,115.00,$96.50
@@ -385,7 +385,7 @@ PARKING 12.00",0.00,$1168.95
 410,"Benjamin Russoniello","d5c11f","North Abington Township","PA",,,1.00,,,329.00,$318.32
 411,"Joseph Peter Cornell","fde177","Philadelphia","PA",,,1.00,,"$52 dollars for tolls round trip $12 parking 
 40.00 GAS
-",0.00,$776.86
+",0.00,$811.86
 412,"William Freeman","ca517b","Little Rock","AR",,,1.00,,"Room was comp so I saved company money.",483.00,$409.10
 414,"Claston A Bernard","0eb76b","Augusta","GA","Gonzales","LA",2.00,"70737","Cost comparison uploaded with Lodging receipt.",918.00,$855.94
 415,"Bill Tsudama","bb28ce","Corralitos","CA",,,4.00,,,370.00,$903.74
@@ -403,7 +403,7 @@ PARKING 12.00",0.00,$1168.95
 427,"Eric Aycock","1a9520","Lincoln","NH","Morrisonville","NY",7.00,"12962","There is no lodging reimbursement request as I utilized a time share for the period at no cost.",777.00,$934.40
 428,"David A Casal","8bff5d","Danville","PA","South Abington Township","PA",5.00,"18411","$103.29 for 3 nights of hotel parking, Tolls 88.45,  Day 1 and 5 were travel days, start and end point are different, 5 inspections ",378.00,$1675.53
 429,"David Cianci","fdfd69","South Abington Township","PA",,,6.00,,,956.00,$1419.68
-430,"Amanda Harper","077c2a","Sioux City","IA",,,1.00,,,0.00,$119.40
+430,"Amanda Harper","077c2a","Sioux City","IA",,,1.00,,,0.00,$154.40
 431,"Laurel Elliott","f96ed2","Kansas","OK",,,4.00,,"74347-66049 233 miles
 66049-66062 41 miles
 66062-66523 82 miles
@@ -422,25 +422,25 @@ There are no direct commercial flights between Little Rock, Arkansas, and Russel
 440,"Jessica Jackson","642cbb","Tryon","NC",,,1.00,,,95.00,$82.50
 441,"Thomas Schaul","0a5efe","Hanover Park","IL",,,1.00,,,65.00,$81.90
 442,"Brent Aversano","302f07","Lake In The Hills","ILLINOIS",,,1.00,,,83.00,$92.10
-443,"Paula Fischer","3eaf71","Vancouver","WA ",,,4.00,,"Please note that travel to these parts of Alaska take a lot of extra time due to available flights.",0.00,$3745.57
+443,"Paula Fischer","3eaf71","Vancouver","WA ",,,4.00,,"Please note that travel to these parts of Alaska take a lot of extra time due to available flights.",0.00,$3780.57
 444,"Mark","8a237c","MABLETON","GA",,,3.00,,"Includes round trip from home and travel between inspections",300.00,$235.00
-445,"Paula Fischer","c7cf5c","Vancouver","WA",,,7.00,,,0.00,$2378.35
+445,"Paula Fischer","c7cf5c","Vancouver","WA",,,7.00,,,0.00,$2413.35
 446,"Jerry L Peal","4c599a","Alamo","TN",,,4.00,,,1423.00,$1905.24
 447,"Thad J Desormeaux ","e4dc1e","Webster","TX","New Iberia","LA",3.00,"70560","This report includes the last night on the hotel receipt for Webster TX and the hotel receipt for Jennings LA. I am sending receipts in separately as they could not be properly attached. I have full permission diem for day 1 and dispute 50 mile subtractio",312.00,$656.27
 448,"Thad J Desormeaux ","802bce","New Iberia","LA",,,2.00,,"The hotel receipt is sent separately since it would not attach.",390.00,$466.99
 449,"Homer Windfield","3f2e03","CINCINNATI","OH","BECKLEY","WV",5.00,"25801","THIS EXPENSE IS CONTINUOUS AWAY FROM HOME (Jackson, MS) TRAVEL TO INCLUDE WEEKEND.",531.00,$1659.18
 450,"Don Crook","c0d0ff","Nocona","Texas",,,1.00,,"Air &amp; bus transportation is not a practical or cost-efficient alternative for trips under 300 miles in this area due to time involved and driving distance to commercial airports.",224.00,$193.80
-451,"Claston A Bernard","35ac28","Detroit","MI",,,2.00,,,0.00,$1246.23
+451,"Claston A Bernard","35ac28","Detroit","MI",,,2.00,,,0.00,$1281.23
 452,"Quenton Jackson","4137c4","Zachary","LA",,,2.00,,"slept in my car at the Love's Truck Stop 4/14-4/16",994.00,$830.80
-453,"Thad J Desormeaux ","f5df4a","New Iberia","LA","Presque Isle ","ME",4.00,"04769","The hotels in central Maine do not honor government rates and change them radically almost daily. There isn’t much choice and they’re often sold out. Per diem is charged full rate as continuing to move straight to other inspections. Airline tickets and ca",0.00,$1500.99
+453,"Thad J Desormeaux ","f5df4a","New Iberia","LA","Presque Isle ","ME",4.00,"04769","The hotels in central Maine do not honor government rates and change them radically almost daily. There isn’t much choice and they’re often sold out. Per diem is charged full rate as continuing to move straight to other inspections. Airline tickets and ca",0.00,$1535.99
 454,"Ronald W Johnson","b6b2e4","Zachary","Louisiana",,,1.00,,,370.00,$452.49
 455,"Ronald W Johnson","edf0d4","Zachary","Louisiana",,,1.00,,,640.00,$591.08
 456,"Benjamin Russoniello","2a3852","North Abington Township","PA",,,6.00,,,835.00,$1470.66
 457,"William R. Brooks III","3251b2","Cleveland ","Ohio",,,5.00,,,730.00,$814.52
 459,"Brent Aversano","fce96b","Lake In The Hills","ILLINOIS",,,1.00,,,123.00,$107.90
 460,"Anthony Castaldo","3b3ed3","Little Egg Harbor Tw","New Jersey",,,8.00,,"This is one (1) invoice out of two (2). Cannot add more than 7 days on this form. Second form will have the Lodging Receipt included for the corresponding days. Total trip was 9 days. Included is the Cost Comparison form.",641.00,$2016.75
-461,"Marcella Magnelli-Middleton","7b331b","Land O Lakes","FL",,,1.00,,"Public HA inspection scheduled for 3 days. I flew in Tuesday evening to start work Wednesday morning. Finished inspection on Thursday. Flight was scheduled to leave Saturday at 6 am. Flight cost was higher than usual because the inspection was rescheduled",0.00,$1720.13
-462,"Thad J Desormeaux ","7415c5","Bangor","ME","Augusta","ME",5.00,"04330","Full per diem is included for first and last day as I am traveling directly from and to other NSPIRE inspections. The receipts for hotels and gas would not attach and are being sent separately. The hotel rate for the first night on this expense reimbursem",0.00,$1079.30
+461,"Marcella Magnelli-Middleton","7b331b","Land O Lakes","FL",,,1.00,,"Public HA inspection scheduled for 3 days. I flew in Tuesday evening to start work Wednesday morning. Finished inspection on Thursday. Flight was scheduled to leave Saturday at 6 am. Flight cost was higher than usual because the inspection was rescheduled",0.00,$1755.13
+462,"Thad J Desormeaux ","7415c5","Bangor","ME","Augusta","ME",5.00,"04330","Full per diem is included for first and last day as I am traveling directly from and to other NSPIRE inspections. The receipts for hotels and gas would not attach and are being sent separately. The hotel rate for the first night on this expense reimbursem",0.00,$1114.30
 463,"Gregory Bradle","ae4e6f","Eureka","IL",,,2.00,,,515.00,$554.48
 464,"Clint Cave","af562c","Stamford","CT",,,4.00,,,454.00,$1622.05
 465,"Eric Aycock","9e5bce","Morrisonville","NY","Sacramento","CA",3.00,"95815","This is a one way trip to Sacramento as I will be conducting inspections in the greater Sacramento area till May 9, 2025.  There are no tolls included in this actual expense as the toll charges have not yet hit my EZ-pass account but the comparison shows ",3151.00,$3551.67
@@ -452,10 +452,10 @@ There are no direct commercial flights between Little Rock, Arkansas, and Russel
 471,"Jordan Theodore","a25ccd","South Abington Township","PA",,,7.00,,"Tolls 2.15",758.00,$1108.65
 472,"Jordan Theodore","15d374","South Abington Township","PA",,,1.00,,"no tolls, no receipts",447.00,$342.40
 473,"Chris Chamberlin","33e851","Union","MS",,,2.00,,,324.00,$242.80
-474,"Matt Dewey","f23eac","South Abington Township","PA","El Paso","TX",3.00,"79930","Day 7 is a weekend but it is cheaper to stay over the weekend than to get roundtrip flight back to PA so full per diem is charged.  Roundtrip flight is $758 vs Hotel at $72.64 *2 and $136 per diem and $94 for rental car for a total of $375.24 total cost o",0.00,$2145.23
-475,"Matt Dewey","d47b5b","El Paso","TX","South Abington Township","PA",2.00,"18411","Airfare was expensed on previous report, Rental car fuel was on previous report, Rental car charged 141.15 on this report and balance on previous report, Day 1 using full per diem because day before was in a hotel.  Stayed over weekend to save costs.  Rou",0.00,$719.70
+474,"Matt Dewey","f23eac","South Abington Township","PA","El Paso","TX",3.00,"79930","Day 7 is a weekend but it is cheaper to stay over the weekend than to get roundtrip flight back to PA so full per diem is charged.  Roundtrip flight is $758 vs Hotel at $72.64 *2 and $136 per diem and $94 for rental car for a total of $375.24 total cost o",0.00,$2180.23
+475,"Matt Dewey","d47b5b","El Paso","TX","South Abington Township","PA",2.00,"18411","Airfare was expensed on previous report, Rental car fuel was on previous report, Rental car charged 141.15 on this report and balance on previous report, Day 1 using full per diem because day before was in a hotel.  Stayed over weekend to save costs.  Rou",0.00,$754.70
 477,"Matt Dewey","1b875c","South Abington Township","PA",,,1.00,,"Inspector slept in car to save expenses.  Work was assigned very late in process so high flight price result of that in comparison.",1089.00,$912.30
-478,"Anthony Castaldo","c3f711","Little Egg Harbor Tw","New Jersey",,,3.00,,"This is the second part of the total invoice for the trip of 4/9/2025-4/17/2025. ",0.00,$232.42
+478,"Anthony Castaldo","c3f711","Little Egg Harbor Tw","New Jersey",,,3.00,,"This is the second part of the total invoice for the trip of 4/9/2025-4/17/2025. ",0.00,$267.42
 480,"Jerry Peal","76c303","Alamo","TN",,,2.00,,,618.00,$970.44
 481,"William Freeman","2482fe","Little Rock","AR",,,4.00,,"Did 4 inspections in Texas.  Start from Home and returned to home.  Returned home thursday night.  Roomed was booked for 2 nights and check out  late that evening so was charged for the full day.  Rental car information was from Perpexity   Tolls were fro",877.00,$1380.19
 482,"Marcella Magnelli-Middleton","cdefda","Land O Lakes","FL",,,2.00,,,353.00,$502.08
@@ -467,18 +467,18 @@ There are no direct commercial flights between Little Rock, Arkansas, and Russel
 488,"David A Casal","46fed6","South Abington Township","PA",,,6.00,,"02917 could not find hotel under allowed rate, airport parking 65.25, Uber 47.11+ 40.89 (saved having to get rental car in NY City), tolls `16.60",624.00,$1966.82
 489,"Don Crook","022f07","Nocona","Texas",,,1.00,,"There is no viable option for commercial air or vehicle option from my rural location for these one-day, short mileage trips. MY location is an hour plus POV travel time from any commercial outlet.",242.00,
 490,"Don Crook","b79632","Nocona","Texas",,,1.00,,"There is no practical commercial travel option for these one-day, short mileage trips from my rural location. IT is an hour plus POV travel to any viable commercial option. That is half the distance to the inspection.",242.00,$209.40
-491,"Thad J Desormeaux ","b5d1b9","New Iberia","LA","Bangor Road","ME",3.00,"04401","Hotel fees for 4/15/25 will be included on next reimbursement request. Full per diem for last day is included because I am proceeding to another inspection. There are limited hotel accommodations in Bangor ME and Presque ME and none honor Government rates",0.00,$1300.07
-492,"Thad J Desormeaux ","753cf6","Bangor","ME","Augusta","ME",4.00,"04330","Only the hotel in Augusta ME honors Government rates. Full per diem is taken on last day because I proceeded directly to another inspection. Car rental and round trip airline tickets will be addressed on last submittal for State of Maine.",0.00,$1281.09
+491,"Thad J Desormeaux ","b5d1b9","New Iberia","LA","Bangor Road","ME",3.00,"04401","Hotel fees for 4/15/25 will be included on next reimbursement request. Full per diem for last day is included because I am proceeding to another inspection. There are limited hotel accommodations in Bangor ME and Presque ME and none honor Government rates",0.00,$1335.07
+492,"Thad J Desormeaux ","753cf6","Bangor","ME","Augusta","ME",4.00,"04330","Only the hotel in Augusta ME honors Government rates. Full per diem is taken on last day because I proceeded directly to another inspection. Car rental and round trip airline tickets will be addressed on last submittal for State of Maine.",0.00,$1316.09
 493,"Thomas Schaul","73d05e","Hanover Park ","IL",,,2.00,,,355.00,$299.81
 494,"Bernard Rupnik","2df78e","Ashland","Wisconsin","Washington","Pennsylvania",1.00,"15301","No City Pair estimates for travel Duluth, MN to Columbus, OH. The numbers are actual Airline-airfare estimates (fare=$529, Rental Car=$409). The travel estimate form includes 2 extra days 4/22 &amp; 4/26 because no airline seats were available other than ",998.00,$1221.99
 495,"Benjamin Russoniello","f47a76","North Abington Township","PA",,,4.00,,"Hotel parking is shown on hotel receipt.",701.00,$1073.45
-496,"Peter M Wade","0031c9","ROCHESTER","NY",,,2.00,,,0.00,$1798.50
+496,"Peter M Wade","0031c9","ROCHESTER","NY",,,2.00,,,0.00,$1833.50
 497,"Benjamin Russoniello","24936a","North Abington Township","PA",,,1.00,,,473.00,$521.30
 498,"Eric Aycock","dffcf6","Sacramento","CA","Fairfield","CA",4.00,"94534","This is a continuation of travel therefore the first day on this travel reimbursement claim is still full per Diem.",323.00,$1694.59
 499,"Bill Tsudama","e259c1","Corralitos","CA",,,1.00,,,140.00,$114.00
-500,"Joseph Cornell ","650a42","PHILADELPHIA","Pennsylvania",,,1.00,,,0.00,$743.44
-501,"Joseph Cornell ","9f97c8","PHILADELPHIA","Pennsylvania",,,1.00,,,0.00,$749.37
-503,"Joseph Cornell ","96486d","PHILADELPHIA","Pennsylvania",,,2.00,,,0.00,$817.59
+500,"Joseph Cornell ","650a42","PHILADELPHIA","Pennsylvania",,,1.00,,,0.00,$778.44
+501,"Joseph Cornell ","9f97c8","PHILADELPHIA","Pennsylvania",,,1.00,,,0.00,$784.37
+503,"Joseph Cornell ","96486d","PHILADELPHIA","Pennsylvania",,,2.00,,,0.00,$852.59
 504,"Joseph Cornell ","d90a80","PHILADELPHIA","Pennsylvania",,,3.00,,,308.00,$862.87
 506,"Joseph Cornell ","823864","PHILADELPHIA","Pennsylvania",,,1.00,,"Tolls 22.80
 PARKING 24.00",154.00,$638.26
@@ -489,7 +489,7 @@ PARKING 24.00",154.00,$638.26
 511,"Thomas Feehan","1c86c5","South Bend","Indiana",,,3.00,,,719.00,$1060.26
 512,"Amanda Harper","edccba","Sioux City","IA",,,2.00,,,194.00,$1793.28
 513,"Jerry Peal","8e3871","Alamo","TN",,,1.00,,,122.00,$101.40
-514,"Thad J Desormeaux ","c8d1a5","Augusta","ME","Rockland ","ME",3.00,"04841","First day of per diem was taken on previous Expense Submittal. Full per diem taken on last day as proceeding directly to another inspection city. Expense receipts will not attach either as photos or PDFs. While beginning address and ending address is the ",0.00,$1277.83
+514,"Thad J Desormeaux ","c8d1a5","Augusta","ME","Rockland ","ME",3.00,"04841","First day of per diem was taken on previous Expense Submittal. Full per diem taken on last day as proceeding directly to another inspection city. Expense receipts will not attach either as photos or PDFs. While beginning address and ending address is the ",0.00,$1312.83
 515,"Byron Matthews","bc946c","Memphis","TN",,,1.00,,"I’m not submitting any receipts because fuel cost was less than $50.",157.50,$126.25
 516,"David Cianci","c354b1","South Abington Township","PA",,,3.00,,,788.00,$714.60
 517,"Jordan Theodore","40d189","South Abington Township","PA",,,1.00,,"no hotels, tolls 31.97",455.00,$366.47
@@ -500,7 +500,7 @@ PARKING 24.00",154.00,$638.26
 522,"Robert Davis","56040c","San Diego","CA",,,1.00,,,228.00,$175.60
 523,"Karyn Melton","3cd899","Jonesboro","AR",,,1.00,,"The flight would have been from Memphis to DFW, and then would have to board a regional flight to Shreveport LA and then rent a car from there. So this trip by air would have been 2 flights and a rental car.  Or fly to DFW and rent a car for a 3 hour driv",609.00,$617.60
 524,"Anthony Castaldo","d4ff82","Little Egg Harbor Tw","New Jersey",,,6.00,,,630.00,$1374.69
-526,"Joseph Cornell ","983873","PHILADELPHIA","Pennsylvania",,,,,,0.00,$720.62
+526,"Joseph Cornell ","983873","PHILADELPHIA","Pennsylvania",,,,,,0.00,$755.62
 527,"Ronald W Johnson","cf7f78","Zachary","Louisiana",,,3.00,,,220.00,$1853.47
 528,"David Crawford","7e8815","MANITOU SPRINGS","CO",,,1.00,,,150.00,$913.22
 529,"Kameron Ahankoob","06a054","Moorpark","CA",,,2.00,,,76.00,$82.70
@@ -515,9 +515,9 @@ PARKING 24.00",154.00,$638.26
 The cost comparison sheet shows a rental car cost as reflected in the previous two claims of a Toyota c0rolla with a daily rate of $42.25 + taxes of $19.35 and Insurance of $",588.00,$1325.01
 539,"Jeff Margett","0a9ec3","SNOHOMISH","WA",,,2.00,,,850.00,$1073.35
 540,"Claston A Bernard","d5d63d","Four Oaks","NC",,,3.00,,,884.00,$1304.80
-541,"William Freeman","7a275f","Little Rock","AR",,,1.00,,"Trip to Uvalde tx  from Little Rock f or 1 inspection.  On the return flight My flight to Little Rock was cancelled while I was in San Antonia tx with the next avaliable flight to arkansas 3 days later.  So I flew into Memphis and had someone come pick me",0.00,$916.84
+541,"William Freeman","7a275f","Little Rock","AR",,,1.00,,"Trip to Uvalde tx  from Little Rock f or 1 inspection.  On the return flight My flight to Little Rock was cancelled while I was in San Antonia tx with the next avaliable flight to arkansas 3 days later.  So I flew into Memphis and had someone come pick me",0.00,$951.84
 542,"Benjamin Russoniello","fe97e4","North Abington Township","PA",,,7.00,,,991.00,$1891.50
-543,"Thad J Desormeaux ","0f6041","Augusta","Maine","Westbrook ","Maine",5.00,"04092","The first and last day per diem are expensed at full rate because I am moving directly from one group of inspections to another group of inspections.",0.00,$1344.72
+543,"Thad J Desormeaux ","0f6041","Augusta","Maine","Westbrook ","Maine",5.00,"04092","The first and last day per diem are expensed at full rate because I am moving directly from one group of inspections to another group of inspections.",0.00,$1379.72
 544,"Don Crook","24bb5f","Nocona","Texas",,,1.00,,"Property was scattered site, 6112 Walraven &amp; 4625 China Rose. Second stop was on return path. No additional mileage to from 1st stop to second stop.",220.00,$194.00
 545,"Don Crook","39124e","Nocona","Texas",,,1.00,,,220.00,$194.00
 546,"Jessica Jackson","d4bb3c","Tryon","NC",,,1.00,,,101.00,$95.70
@@ -539,7 +539,7 @@ The cost comparison sheet shows a rental car cost as reflected in the previous t
 564,"Robert Davis","583ef1","San Diego","CA",,,1.00,,,170.00,$121.50
 565,"Ronald W Johnson","9ee0ba","Zachary","Louisiana",,,7.00,,"The rental car expense total includes the rental car fee of $278.41 and the rental car vehicle insurance in the amount of $55.00. The total of thew rental car expense is $333.41",220.00,$1792.06
 566,"Homer Windfield","0ef008","SALEM "," VA","RICHMOND","VA",7.00,"23233",,443.00,$1670.28
-567,"Lou Jerome","068134","Smithfield","UT",,,2.00,,,0.00,$1549.77
+567,"Lou Jerome","068134","Smithfield","UT",,,2.00,,,0.00,$1584.77
 568,"Kameron Ahankoob","844d39","Moorpark","CA",,,1.00,,"10 Scattered stites&#58; 
 4022 Michigan Ave, Los Angeles, CA 90063. 
 1262 S Brannick Ave, Los Angeles, CA 90023. 
@@ -587,8 +587,8 @@ The cost comparison sheet shows a rental car cost as reflected in the previous t
 610,"Byron Matthews","78b1c2","Memphis","TN","","",4.00,"","I attached hotel receipts. I did not attach fuel receipts. There were less than $50 each. ",701.00,$1167.35
 611,"Homer Windfield","8b0655","RICHMOND","VA","NORFORK","VA",6.00,"23502",,305.00,$1632.23
 612,"Bill Tsudama","451fe1","Corralitos","CA","","",1.00,"",,342.00,$480.71
-613,"Thad J Desormeaux ","352b0c","Portland","Maine","New Iberia","Louisiana ",3.00,"70560","This submittal includes the rental car and the round trip airfare that was needed for this and the previous 4 expense requests. These fees have not been addressed before. It does include for this submittal time frame only. The first day per diem was charg",0.00,$3283.47
-614,"Thad J Desormeaux ","ba1578","New Iberia","Louisiana ","Rio Rancho","New Mexico",4.00,"87124","The car rental expense will be included on the expense submittals that concludes inspections in this area. The photos will be sent separately due to link not allowing me to attach to it.",0.00,$1358.99
+613,"Thad J Desormeaux ","352b0c","Portland","Maine","New Iberia","Louisiana ",3.00,"70560","This submittal includes the rental car and the round trip airfare that was needed for this and the previous 4 expense requests. These fees have not been addressed before. It does include for this submittal time frame only. The first day per diem was charg",0.00,$3318.47
+614,"Thad J Desormeaux ","ba1578","New Iberia","Louisiana ","Rio Rancho","New Mexico",4.00,"87124","The car rental expense will be included on the expense submittals that concludes inspections in this area. The photos will be sent separately due to link not allowing me to attach to it.",0.00,$1393.99
 615,"Bernard Rupnik","93c040","Ashland","Wisconsin","Reno","Nevada",2.00,"89502","All total figures on this form are estimates. Estimate includes 1 less day of Per Diem, $5 per day parking at hotel, $4 dollar parking at 1st inspection at meter, and $8 per day x5 at airport. POV miles are to airport and return. Included is an explanatio",150.00,$2083.76
 616,"Tyler Long","d1f084","South Abington Township","PA","","",1.00,"",,282.00,$259.01
 617,"Caden Casal","3c27d1","South Abington Township","PA","","",5.00,"","Hotel parking $10, tolls $6.90",939.00,$1707.21
@@ -598,8 +598,8 @@ The cost comparison sheet shows a rental car cost as reflected in the previous t
 Day 4 -$115 allowable hotel expense which is fine for that to be the reimbursement rate.  Stayed in Philadelphia because meeting friend.",1603.00,$2397.79
 621,"Jordan Theodore","1d2948","South Abington Township","PA","","",3.00,"","Night of 5/5-5/6 inspector slept in his vehicle to save costs.",811.00,$880.09
 622,"Jordan Theodore","75921c","South Abington Township","PA","","",5.00,"","Tolls $5",1079.00,$1617.70
-623,"Clint Cave","fe5de0","Stamford","CT","","",5.00,"","The rental car weekly rate was much cheaper than renting for a few days. The weekly rate was much higher due to graduation weekend. An additional day was added to eliminate the cost of an Uber from White Plains, NY back to Stamford, CT and from Stamford t",0.00,$1395.28
-624,"Clint Cave","2b7b6a","Stamford","CT","","",6.00,"","Los Angeles car insurance is much higher than usual, will go with Priceline moving forward for Rental Cars in the area to get third party insurance prior to pick up. No travel comparison needed for this submission. Rental Car and Rental Car Insurance rece",0.00,$2648.97
+623,"Clint Cave","fe5de0","Stamford","CT","","",5.00,"","The rental car weekly rate was much cheaper than renting for a few days. The weekly rate was much higher due to graduation weekend. An additional day was added to eliminate the cost of an Uber from White Plains, NY back to Stamford, CT and from Stamford t",0.00,$1430.28
+624,"Clint Cave","2b7b6a","Stamford","CT","","",6.00,"","Los Angeles car insurance is much higher than usual, will go with Priceline moving forward for Rental Cars in the area to get third party insurance prior to pick up. No travel comparison needed for this submission. Rental Car and Rental Car Insurance rece",0.00,$2683.97
 625,"Drew Jacobs","3b8343","South Abington Township","PA","","",1.00,"","Hotel night of inspection on travel home because it was very late in the day.",574.00,$599.90
 626,"David Cianci","0c5ce6","South Abington Township","PA","","",1.00,"","31967 was a 2 day inspection",293.00,$434.19
 627,"David Cianci","eacb05","South Abington Township","PA","","",1.00,"",,269.00,$214.80
@@ -607,7 +607,7 @@ Day 4 -$115 allowable hotel expense which is fine for that to be the reimburseme
 629,"Matt Dewey","d98028","South Abington Township","PA","","",5.00,"","Night 1 slept in car to reduce expenses, Night 2 slept at relative house 64 Sherwood Terrace, Portsmouth RI 02871, ",878.00,$805.30
 630,"Matt Dewey","b0be5e","South Abington Township","PA","","",1.00,"","17.56 tolls",284.00,$250.36
 631,"Matt Dewey","2cf762","South Abington Township","PA","","",2.00,"","Tolls 3.10",814.00,$802.09
-632,"Jessica Jackson","398731","Tryon","NC","","",4.00,"","Day 1 inspection was a 2 day inspection.  ",0.00,$2038.20
+632,"Jessica Jackson","398731","Tryon","NC","","",4.00,"","Day 1 inspection was a 2 day inspection.  ",0.00,$2073.20
 633,"Kristopher Gray","378303","Morton Grove","IL","","",1.00,"",,210.00,$167.70
 634,"Kristopher Gray","9a594b","Morton Grove","IL","","",1.00,"",,112.00,$99.10
 635,"Kristopher Gray","952a7e","Morton Grove","IL","","",1.00,"",,140.00,$118.70
@@ -623,18 +623,18 @@ Day 4 -$115 allowable hotel expense which is fine for that to be the reimburseme
 650,"Bernard Rupnik","68cbec","Reno","Nevada","Palmdale","California",2.00,"93551","Started on continuous duty and ended period on continuous duty. Attached is &quot;Cost Comp 5-18 thru 5-24-2025&quot; with Estimated and Actual Expenses. A second attached document is labeled &quot;2-estimate Travel Voucher&quot; and is a continuation wit",652.00,$1912.69
 651,"Bill Tsudama","eead5d","Corralitos","CA","","",1.00,"","The invoice is for multiple nites but the one nite noted here is correct.  Thank you.",332.00,$430.71
 653,"Don Crook","59f480","Nocona","Texas","","",1.00,"","Inspector was called by site manager while enroute to site. Manager said they were cancelling inspection and would not be on site due to severe weather conditions in the area.",140.00,$114.00
-654,"Don Crook","b5403d","Nocona","Texas","","",1.00,"","First of 2 inspections on trip.",35.00,$40.50
+654,"Don Crook","b5403d","Nocona","Texas","","",1.00,"","First of 2 inspections on trip.",35.00,$51.00
 655,"Don Crook","34fcb6","Nocona","Texas","","",1.00,"","None",292.00,$403.74
 657,"William Freeman","028636","Little Rock","AR","","",2.00,"","Trip to Wichita KS for 2 inspections that lasted 2 days each,    Went thru OK and KS Toll roads.  ",950.00,$1384.38
-658,"Thad J Desormeaux ","d4396f","Belen","New Mexico","Grants","New Mexico",2.00,"87020","Full per diem is taken on first and last days because I am leaving from an inspection city and traveling directly to another inspection city, the last day is the exact same. The receipt photo is sent separately due to the program not allowing me to attach",0.00,$802.95
+658,"Thad J Desormeaux ","d4396f","Belen","New Mexico","Grants","New Mexico",2.00,"87020","Full per diem is taken on first and last days because I am leaving from an inspection city and traveling directly to another inspection city, the last day is the exact same. The receipt photo is sent separately due to the program not allowing me to attach",0.00,$837.95
 659,"Louis Jerome","c525a1","Smithfield","UT","","",5.00,"",,1017.00,$1589.49
 660,"TACIE GODWIN","cc04aa","IRVINGTON","Alabama","","",2.00,"",,802.00,$757.70
 661,"Luis Correa","333426","Rio Grande","PR","Colorado","CO",4.00,"80249","Car rental, gas and airfare are included in the invoice posted to this one.
 Per diem on day 6 applies 100% since the property was inspected and traveled.",50.00,$1110.22
-662,"Clint Cave","2d775b","Stamford","CT","","",8.00,"","This week rental car was much cheaper than last week and includes insurance. The toll receipt did not come in as yet, if it does will upload in the next reimbursement. ",0.00,$2094.67
+662,"Clint Cave","2d775b","Stamford","CT","","",8.00,"","This week rental car was much cheaper than last week and includes insurance. The toll receipt did not come in as yet, if it does will upload in the next reimbursement. ",0.00,$2129.67
 664,"David Cianci","87e0f1","South Abington Township","PA","","",3.00,"",,647.00,$832.10
 665,"Ronald W Johnson","bdb783","Zachary","Louisiana","","",4.00,"",,220.00,$2370.89
-666,"Luis Correa","cad6ba","Rio Grande","PR","Colorado","CO",6.00,"80249",,0.00,$3465.43
+666,"Luis Correa","cad6ba","Rio Grande","PR","Colorado","CO",6.00,"80249",,0.00,$3500.43
 668,"Jessica Jackson","7329e1","Tryon","NC","","",1.00,"","Scattered sites",116.00,$97.20
 669,"Marcella Magnelli-Middleton","5eb6d9","Land O Lakes","FL","","",3.00,"",,422.00,$790.38
 670,"Marcella Magnelli-Middleton","1d3a8f","Land O Lakes","FL","","",1.00,"",,278.00,$234.60
@@ -647,7 +647,7 @@ Per diem on day 6 applies 100% since the property was inspected and traveled.",5
 677,"David Cianci","f26786","South Abington Township","PA","","",1.00,"","Tolls 29.62",223.00,$210.71
 678,"David Cianci","22904d","South Abington Township","PA","","",1.00,"",,286.00,$262.54
 679,"Peter M Wade","70f759","ROCHESTER","NY","","",2.00,"","The hotels.com receipt is confusing. However I paid 558.52 as shown. Job #2 was required for 2 days scheduling.",50.00,$1977.38
-680,"Peter M Wade","92eb48","ROCHESTER","NY","","",4.00,"",,0.00,$1209.61
+680,"Peter M Wade","92eb48","ROCHESTER","NY","","",4.00,"",,0.00,$1244.61
 681,"Jerry L Peal","fd0973","Alamo","TN","","",2.00,"",,1014.00,$1455.33
 682,"Homer Windfield","5eb8fb","GREENVILLE","NC","CLEMSON","SC",6.00,"29631","The attached submission is part of a continuous trip that is linked to another submission.",617.00,$1597.44
 683,"Chris Chamberlin","33d5bf","Union","MS","","",1.00,"","Travel from union Mississippi to Birmingham Alabama Airport Took the airplane to St Louis Missouri got a rental car and traveled to IL Travel From St Louis back to Birmingham Alabama and home",330.00,$1020.09
@@ -680,12 +680,12 @@ Per diem on day 6 applies 100% since the property was inspected and traveled.",5
 710,"Jordan Theodore","530168","South Abington Township","PA","","",4.00,"","Tolls 12.97",764.00,$918.17
 711,"David Cianci","c4ba84","South Abington Township","PA","","",1.00,"",,476.00,$569.35
 712,"David Cianci","c46ef1","South Abington Township","PA","","",1.00,"","Tolls 40.36",265.00,$259.86
-713,"Thad J Desormeaux ","175cfc","Santa Rosa","New Mexico ","Santa Fe","New Mexico ",4.00,"87501","Full per diem is taken on first and last days as I was coming directly from an inspection and afterwards going directly to an inspection. The photos of expenses are sent separately due to issue with the link.",0.00,$2843.56
+713,"Thad J Desormeaux ","175cfc","Santa Rosa","New Mexico ","Santa Fe","New Mexico ",4.00,"87501","Full per diem is taken on first and last days as I was coming directly from an inspection and afterwards going directly to an inspection. The photos of expenses are sent separately due to issue with the link.",0.00,$2878.56
 714,"Matt Dewey","ff591c","South Abington Township","PA","","",8.00,"","Hotel parking $3, Only paid for hotel 2 nights which are listed.  Stayed with friend other nights.",1489.00,$1608.98
 715,"Matt Dewey","8bc067","South Abington Township","PA","","",1.00,"","Tolls 8.45",615.00,$472.94
 716,"Matt Dewey","c68a3f","South Abington Township","PA","","",1.00,"","Tolls 1.65",472.00,$348.05
-717,"Caden D Casal","a594f5","South Abington Townshi","PA","","",3.00,"","First and Last day full per diem because both run into the next travel day.  Stayed weekend to save money&#58; Trip home cost = flight CO to AVP $657, Flight from AVP to Dallas $550 total $1207.  Actual flight CO to DFW $173 plus hotel $592 saving $615.  ",0.00,$2909.38
-718,"Ronald W Johnson","af4a50","Zachary","Louisiana","","",2.00,"",,0.00,$740.26
+717,"Caden D Casal","a594f5","South Abington Townshi","PA","","",3.00,"","First and Last day full per diem because both run into the next travel day.  Stayed weekend to save money&#58; Trip home cost = flight CO to AVP $657, Flight from AVP to Dallas $550 total $1207.  Actual flight CO to DFW $173 plus hotel $592 saving $615.  ",0.00,$2944.38
+718,"Ronald W Johnson","af4a50","Zachary","Louisiana","","",2.00,"",,0.00,$775.26
 719,"Don Crook","582a93","Nocona","Texas","","",2.00,"",,434.00,$487.92
 720,"Thomas Schaul","6f3ff1","Hanover Park ","IL","","",1.00,"","Inspection lasted 2.75 days.No lodging $$ as I stayed at home each night instead of Chicago hotel costs.",243.00,$372.00
 721,"Thomas Schaul","8d11a8","Hanover Park","IL","","",1.00,"","No lodging costs as I stayed at home instead of incurring Chicago hotel costs.",136.00,$202.25
@@ -695,15 +695,15 @@ Per diem on day 6 applies 100% since the property was inspected and traveled.",5
 729,"Thomas Feehan","ef3190","South Bend","Indiana","","",1.00,"",,650.00,$1043.94
 730,"Caden Casal","9831b7","South Abington Township","PA","","",9.00,"","
 
-ATTACHEMENTS SENT SEPARATELY PER ERICK DUE TO TECH ISSUE WITH FORM&#58; Travel on 5/17 because flight was 292.07 vs 654 the following day.  In addition, I was concerned that if I flew here on Sunday and there was a delay I would have to cancel inspectio",0.00,$2722.75
+ATTACHEMENTS SENT SEPARATELY PER ERICK DUE TO TECH ISSUE WITH FORM&#58; Travel on 5/17 because flight was 292.07 vs 654 the following day.  In addition, I was concerned that if I flew here on Sunday and there was a delay I would have to cancel inspectio",0.00,$2757.75
 731,"David A Casal","8474e9","South Abington Township","PA","","",1.00,"","Scattered site property resulting in additional miles during the inspection",612.00,$495.40
 732,"Jordan Theodore","a3ab37","South Abington Township","PA","","",2.00,"","Parking 10, tolls 3",632.00,$829.35
 733,"Jordan Theodore","de76ff","South Abington Township","PA","","",2.00,"","Tolls 43.69",1332.00,$1622.71
-734,"Peter M Wade","823905","ROCHESTER","NY","","",5.00,"",,0.00,$1900.37
+734,"Peter M Wade","823905","ROCHESTER","NY","","",5.00,"",,0.00,$1935.37
 735,"TACIE GODWIN","82b414","IRVINGTON","Alabama","Miamisburg","Ohio",3.00,"45342","I have continuous work in/near Dayton OH for the next 2 weeks. ",792.30,$1805.99
 736,"CYNTHIA W WILLIAMS","f6d773","Indianapolis","IN","","",3.00,"",,222.00,$436.00
 737,"Homer Windfield","100d25","CLEMSON","SC","ATLANTA","GA",4.00,"30328","This travel is part of a continuous trip that's linked to another submission.",258.00,$1452.31
-738,"Thad J Desormeaux ","8d95a3","Albuquerque ","New Mexico ","New Iberia","Louisiana ",1.00,"70560","The first day of per diem is invoiced at full rate because I left one inspection and traveled directly to another inspection. The receipts are sent separately because the link does not allow attaching to the report.",0.00,$1832.83
+738,"Thad J Desormeaux ","8d95a3","Albuquerque ","New Mexico ","New Iberia","Louisiana ",1.00,"70560","The first day of per diem is invoiced at full rate because I left one inspection and traveled directly to another inspection. The receipts are sent separately because the link does not allow attaching to the report.",0.00,$1867.83
 739,"Cynthia W. Williams","6f095b","Indianapolis","Indiana","","",3.00,"","The hotel charges included a $4.73 fee.  I did not see an area in the reimbursement form to note the required charge, given the required use of a credit card.  ",222.00,$436.00
 742,"Bernard Rupnik","2c4729","Porter Ranch","California","Columbus","Ohio",3.00,"43219","Started in continuous duty in and around Los Angeles County, CA. See attached &quot;Cost Comp 6-1 thru 6-5-2025&quot;.",2191.00,$2649.55
 743,"Benjamin Russoniello","7a3cbd","North Abington Township","PA","","",1.00,"","There is a detour on i-80 southbound due to a sinkhole in New Jersey that is causing heavy traffic.",284.00,$228.30
