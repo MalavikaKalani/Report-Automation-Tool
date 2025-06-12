@@ -87,9 +87,9 @@
 98,"Tacie Godwin","90d963","Irvington","Al",,,1.00,,,600.00,$487.00
 99,"Jeff Margett","1720c0","SNOHOMISH","WA",,,1.00,,,140.00,$114.00
 101,"Eric Aycock","056407","Morrisonville","NY",,,2.00,,,79.00,$110.00
-104,"Laurel Elliott","ac5ccf","Kansas","OK",,,1.00,,,172.00,
-105,"Laurel Elliott","163098","Kansas","OK",,,1.00,,,152.00,
-106,"Laurel Elliott","1ddeb9","Kansas","OK",,,1.00,,"<div>Revised due to did not include return trip in first invoice</div>",488.00,
+104,"Laurel Elliott","ac5ccf","Kansas","OK",,,1.00,,,172.00,$85.40
+105,"Laurel Elliott","163098","Kansas","OK",,,1.00,,,152.00,$71.40
+106,"Laurel Elliott","1ddeb9","Kansas","OK",,,1.00,,"<div>Revised due to did not include return trip in first invoice</div>",488.00,$306.60
 107,"Melinda Stark","ff7872","Orange City","FL",,,1.00,,,266.00,$348.76
 108,"Melinda Stark","0a3da0","Orange City","FL",,,1.00,,,24.00,$185.16
 109,"Melinda Stark","cba195","Kendall","FL",,,1.00,,,14.40,$185.16
@@ -310,7 +310,7 @@ Tolls 65.84
 326,"Tacie Godwin","3786df","Irvington","AL",,,1.00,,"Hotel receipt and cost comparison sheet is attached ",1481.80,$1681.28
 327,"ROBERT A DAVIS","ee8ef9","San Diego","CA",,,1.00,,,63.00,$26.35
 328,"Jessica Jackson","f75557","Tryon","NC",,,2.00,,"no over night",258.00,$205.60
-329,"Jessica Jackson","99504e","Tryon","NC",,,1.00,,,154.00,
+329,"Jessica Jackson","99504e","Tryon","NC",,,1.00,,,154.00,$72.80
 330,"Jessica Jackson","d9ac1b","Tryon","NC",,,3.00,,,169.00,$143.30
 331,"Jessica Jackson","26bcf2","Tryon","NC",,,1.00,,,128.00,$105.60
 332,"Jessica Jackson","9b1615","Tryon","NC",,,1.00,,,154.00,$123.80
@@ -336,7 +336,7 @@ Tolls 65.84
 353,"Benjamin Russoniello","034467","North Abington Township","PA",,,1.00,,"Cost comparison sheet attached.  Three days rental.  Pick up the day prior, return the day after inspection.  ",211.00,$163.70
 354,"Benjamin Russoniello","0f29dc","North Abington Township","PA",,,2.00,,"Cost comparison sheet attached. ",295.00,$240.38
 355,"Benjamin Russoniello","a65f1b","North Abington Township","PA",,,2.00,,"Cost comparison sheet emailed separately to Ali.  Cannot submit more than one attachment here.  Each additional attachment overwrites the first.",318.00,$781.76
-356,"Peter Franklin Vang Dean","6125e2","Saint Paul","MN",,,7.00,,"A round-trip flight would not have been feasible for this looping itinerary.  Cost comparison sheet includes lunch and dinner.  Due to time &amp; dietary constraints, I brought my own food (except for free hotel breakfasts), much of it in a cooler, so I a",1372.00,
+356,"Peter Franklin Vang Dean","6125e2","Saint Paul","MN",,,7.00,,"A round-trip flight would not have been feasible for this looping itinerary.  Cost comparison sheet includes lunch and dinner.  Due to time &amp; dietary constraints, I brought my own food (except for free hotel breakfasts), much of it in a cooler, so I a",1372.00,$1417.33
 357,"Benjamin Russoniello","2e422d","North Abington Township","PA",,,1.00,,"Flight receipt attached.  Other receipts emailed to Ali.  Unable to attach all receipts.  Additional receipts overwrite the previous one in the system.  These expenses are submitted separately from travel to/from airport, hotel and per diem expenses for t",0.00,$1358.70
 358,"William R. Brooks III","046a75","Cleveland ","Ohio",,,6.00,,,799.00,$951.22
 359,"Andrew J Clay","b7f668","Chippewa Falls","Wisconsin",,,3.00,,,567.00,$659.87
@@ -346,13 +346,13 @@ Tolls 65.84
 364,"Gregory Bradle","ce0696","Eureka","IL",,,1.00,,,380.00,$295.50
 365,"Jerry Peal","8c4b1d","Alamo","TN",,,1.00,,,407.00,$300.90
 366,"David A Casal","12a035","South Abington Township","PA",,,3.00,,"Day 2 was travel day.  ",1352.00,$1200.04
-367,"Michael Graves","7a0bdb","Durham","NC",,,1.00,,"One day trip total 608 miles round trip.",608.00,
+367,"Michael Graves","7a0bdb","Durham","NC",,,1.00,,"One day trip total 608 miles round trip.",608.00,$390.60
 368,"Onesimo Garza lll","97d416","Mesick","MI",,,1.00,,"traveled to and from home to Muskegon in one day.",238.00,$182.60
 369,"David Cianci","95f4aa","South Abington Township","PA",,,2.00,,"Two additional inspections completed this week but not on expense report because within 50 miles of home",329.00,$300.30
 370,"Eric Aycock","d23d12","Morrisonville","NY","Lincoln","NH",6.00,"03251","There is no Lodging reimbursement requested as I used a Timeshare that I had access to at no cost.",673.00,$935.60
 371,"Kameron Ahankoob","25bec0","Moorpark","CA",,,1.00,,"Scattered sites across East Los Angeles, La Puente, and Whittier ",179.00,$154.80
 372,"Mark","d5095a","MABLETON","GA",,,1.00,,,258.00,$205.60
-373,"Jerry Peal","68c075","Alamo","TN",,,1.00,,,314.00,
+373,"Jerry Peal","68c075","Alamo","TN",,,1.00,,,314.00,$184.80
 374,"TACIE GODWIN","2725be","IRVINGTON","AL",,,1.00,,"Only invoicing for per diem and mileage. ",626.40,$454.48
 377,"Joseph Peter Cornell","cb41a9","Philadelphia","PA",,,1.00,,"TOLLS 12.00
 GAS 18.33",0.00,$606.36
@@ -711,8 +711,8 @@ ATTACHEMENTS SENT SEPARATELY PER ERICK DUE TO TECH ISSUE WITH FORM&#58; Travel o
 744,"Louis Jerome","c82e81","Smithfield","UT","","",6.00,"",,2034.00,$2404.42
 746,"Robert Davis","ca10de","San Diego","CA","","",1.00,"","inspection took 1.5 days due to sample not being downloaded morning of inspection, had to wait for download and TAC approval to begin inspection as new download had 1 extra unit listed, 6 and 32 as to prop verified and previous download of 6 and 31",134.00,$123.30
 747,"Chris Chamberlin","3fd57e","Union","MS","","",1.00,"","Drove from home to airport in Birmingham and back home 330 miles.",330.00,$1997.67
-748,"Karyn Melton","47a164","Jonesboro","AR","","",1.00,"","No way to take any type of common carrier to this inspection.  ",126.00,
-749,"Karyn Melton","5eedee","Jonesboro","AR","","",1.00,"","no way possible to take any common carrier plane or train to this property",120.00,
+748,"Karyn Melton","47a164","Jonesboro","AR","","",1.00,"","No way to take any type of common carrier to this inspection.  ",126.00,$53.20
+749,"Karyn Melton","5eedee","Jonesboro","AR","","",1.00,"","no way possible to take any common carrier plane or train to this property",120.00,$49.00
 750,"Thad J Desormeaux ","0a94f5","New Iberia","LA","Cincinnati ","Ohio",1.00,"45232","The first day per diem is taken as per requirements and the last day is taken at 100% as I am traveling from one inspection directly to another inspection.",0.00,$1664.41
 751,"Claston Bernard","f9b891","Linwood","NC","","",5.00,"",,884.00,$1351.80
 752,"Jerry L Peal","81dcec","Alamo","TN","","",2.00,"",,1095.00,$1171.65
