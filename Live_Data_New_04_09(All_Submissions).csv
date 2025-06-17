@@ -1,5 +1,6 @@
 "Submission Num","Inspector Name","Reimbursement RequestID","Depart City","Depart State","Dest City","Dest State","Total Inspections","Dest Zip","Comments","Miles Driven","Total Reimbursement"
 13,"Peter M Wade","5409da","ROCHESTER","NY",,,1.00,,,50.00,$60.00
+771,"Thomas Feehan","5b66aa","South Bend","Indiana","","",2.00,"","This receipt is for toll charges for the the travel to Ashtabula, Ohio. ",0.00,$24.95
 686,"William A Harding JR ","8d6494","Wilmington ","North Carolina ","","",4.00,"","Hello, here is my travel expense report for the month of May. I had drove my personal vehicle from Wilmington NC to Ralegh NC since its only 2-hour drive.  ",1084.00,$723.80
 741,"Andrew J Clay","95ad6f","Chippewa Falls","Wisconsin","","",1.00,"",,256.00,$145.20
 22,"Karyn Melton","ba6e89","Jonesboro","AR",,,1.00,,,792.00,$970.90
@@ -740,10 +741,14 @@ Toll Return 54.21",491.00,$1307.89
 774,"Joseph Cornell ","ed7cc8","PHILADELPHIA","Pennsylvania","","",1.00,"","Tolls 24.14 each way 
 20. 00 per day paeking",233.00,$732.16
 775,"Joseph Cornell ","7ff7c4","PHILADELPHIA","Pennsylvania","","",1.00,"","Tolls 4.85 each way plus 6.00 return only",131.00,$351.49
-776,"Joseph Cornell ","eedaef","Egg Harbor ","New Jersey","","",2.00,"","Tolls 26.29",253.00,$616.89
-777,"Joseph Cornell ","b7f6e8","PHILADELPHIA","Pennsylvania","","",1.00,"","Tolls 48.21Each Way and 6.00 for return toll",389.00,$908.90
-778,"Joseph Cornell ","2dff8f","PHILADELPHIA","Pennsylvania","","",2.00,"","Tolls 11.58 Each way",220.00,$580.16
+776,"Joseph Cornell ","eedaef","Egg Harbor ","New Jersey","","",2.00,"","Tolls 26.29",253.00,$676.89
+777,"Joseph Cornell ","b7f6e8","PHILADELPHIA","Pennsylvania","","",1.00,"","Tolls 48.21Each Way and 6.00 for return toll",389.00,$973.40
+778,"Joseph Cornell ","2dff8f","PHILADELPHIA","Pennsylvania","","",2.00,"","Tolls 11.58 Each way",220.00,$780.66
 779,"Brent Aversano","0d093a","Lake In The Hills","ILLINOIS","","",2.00,"",,197.00,$162.90
 780,"Brent Aversano","a98220","Lake In The Hills","ILLINOIS","","",1.00,"",,361.00,$274.50
 781,"Clint Cave","792e79","Stamford","CT","","",6.00,"","These inspections were in multiple locations so there are three lodging receipts. Parking is on the last lodging receipt for $52, the balance is for tolls.",0.00,$2173.65
+782,"Clint Cave","02270e","Stamford","CT","","",4.00,"","The rental car and insurance receipts are seperate. ",0.00,$1412.53
+783,"Bill Tsudama","c34925","Corralitos","CA","","",3.00,"",,284.00,$902.93
+784,"Clint Cave","644e7f","Stamford","CT","","",8.00,"","This travel invoice includes separate receipts for the rental car, insurance, airfare and baggage costs. ",0.00,$2112.51
+785,"Claston Bernard","e77c78","Linwood","NC","","",3.00,"",,786.00,$1237.83
 999,"Erick Torres","testing","Philadelphia","PA",,,3.00,,,500.00,$1275.00
