@@ -1,6 +1,6 @@
 "Submission Num","Inspector Name","Reimbursement RequestID","Depart City","Depart State","Dest City","Dest State","Total Inspections","Dest Zip","Comments","Miles Driven","Total Reimbursement"
 13,"Peter M Wade","5409da","ROCHESTER","NY",,,1.00,,,50.00,$60.00
-771,"Thomas Feehan","5b66aa","South Bend","Indiana","","",2.00,"","This receipt is for toll charges for the the travel to Ashtabula, Ohio. ",0.00,$24.95
+771,"Thomas Feehan","5b66aa","South Bend","Indiana","","",2.00,"","This receipt is for toll charges for the the travel to Ashtabula, Ohio. ",0.00,$23.95
 686,"William A Harding JR ","8d6494","Wilmington ","North Carolina ","","",4.00,"","Hello, here is my travel expense report for the month of May. I had drove my personal vehicle from Wilmington NC to Ralegh NC since its only 2-hour drive.  ",1084.00,$723.80
 741,"Andrew J Clay","95ad6f","Chippewa Falls","Wisconsin","","",1.00,"",,256.00,$145.20
 22,"Karyn Melton","ba6e89","Jonesboro","AR",,,1.00,,,792.00,$970.90
@@ -751,4 +751,11 @@ Toll Return 54.21",491.00,$1307.89
 783,"Bill Tsudama","c34925","Corralitos","CA","","",3.00,"",,284.00,$902.93
 784,"Clint Cave","644e7f","Stamford","CT","","",8.00,"","This travel invoice includes separate receipts for the rental car, insurance, airfare and baggage costs. ",0.00,$2112.51
 785,"Claston Bernard","e77c78","Linwood","NC","","",3.00,"",,786.00,$1237.83
+786,"Quenton Jackson","906396","Zachary","Louisiana","","",2.00,"","I've tried attaching the other receipts, but I kept getting a red strikethrough. The lodging, car rentals, gas, and parking receipts have been emailed to Ali and Meg. ",172.00,$2791.28
+787,"Ronald W Johnson","24fdc3","Zachary","Louisiana","","",3.00,"",,360.00,$447.09
+788,"Ronald W Johnson","eb9fcf","Zachary","Louisiana","","",1.00,"","No overnight stay was needed for this inspection as I traveled up and back on the same day.",360.00,$217.00
+789,"Ronald W Johnson","af5f6d","Zachary","Louisiana","","",1.00,"","No overnight stay was needed as I traveled up and back on the same day.",190.00,$98.00
+790,"Ronald W Johnson","fc4edf","Zachary","Louisiana","","",4.00,"",,436.00,$677.80
+791,"Bernard Rupnik","a22076","Columbus","Ohio","Ashland","Wisconsin",4.00,"54806","No City Pair Duluth-Columbus. Estimates are actual airfare from Delta plus $70.00 for baggage fee (35 ew). Started on-duty at location in Columbus, OH. Actual expenses with POV travel are less.",895.00,$1805.90
+792,"Amanda Harper","5366ab","Sioux City","IA","","",1.00,"",,996.00,$1031.21
 999,"Erick Torres","testing","Philadelphia","PA",,,3.00,,,500.00,$1275.00
