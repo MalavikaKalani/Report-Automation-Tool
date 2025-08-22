@@ -10,8 +10,8 @@
 19.00,"Bill Tsudama","5343b8","Corralitos","CA",,,1.00,,,186.00,$309.54
 20.00,"Robert Davis","4fa0d7","San Diego","CA",,,1.00,,"<div>clutch failed on way home and had to get a tow truck for last 16 miles</div>",216.00,$417.20
 21.00,"Thomas Feehan","892124","South Bend","IN",,,3.00,,,582.00,$921.42
-22.00,"Karyn Melton","ba6e89","Jonesboro","AR",,,1.00,,,792.00,$1197.62
 22.00,"Karyn Melton","ba6e89","Jonesboro","AR",,,1.00,,,792.00,$746.12
+22.00,"Karyn Melton","ba6e89","Jonesboro","AR",,,1.00,,,792.00,$1197.62
 23.00,"Karyn Melton","68abdb","Jonesboro","AR",,,1.00,,,602.00,$610.22
 24.00,"Bill Tsudama","5dc2dc","Corralitos","CA",,,1.00,,,280.00,$895.44
 25.00,"Joseph Peter Cornell","f5452f","Philadelphia","PA",,,3.00,,"<div>Gas was 13.43 and 52.81
@@ -707,8 +707,8 @@ ATTACHEMENTS SENT SEPARATELY PER ERICK DUE TO TECH ISSUE WITH FORM&#58; Travel o
 741.00,"Andrew J Clay","95ad6f","Chippewa Falls","Wisconsin",,,1.00,,,256.00,$145.20
 742.00,"Bernard Rupnik","2c4729","Porter Ranch","California","Columbus","Ohio",3.00,"43219","Started in continuous duty in and around Los Angeles County, CA. See attached &quot;Cost Comp 6-1 thru 6-5-2025&quot;.",2191.00,$2649.55
 743.00,"Benjamin Russoniello","7a3cbd","North Abington Township","PA",,,1.00,,"There is a detour on i-80 southbound due to a sinkhole in New Jersey that is causing heavy traffic.",284.00,$228.30
-744.00,"Louis Jerome","c82e81","Smithfield","UT",,,6.00,,,2034.00,$1388.80
 744.00,"Louis Jerome","c82e81","Smithfield","UT",,,6.00,,,2034.00,$2404.42
+744.00,"Louis Jerome","c82e81","Smithfield","UT",,,6.00,,,2034.00,$1388.80
 746.00,"Robert Davis","ca10de","San Diego","CA",,,1.00,,"inspection took 1.5 days due to sample not being downloaded morning of inspection, had to wait for download and TAC approval to begin inspection as new download had 1 extra unit listed, 6 and 32 as to prop verified and previous download of 6 and 31",134.00,$123.30
 747.00,"Chris Chamberlin","3fd57e","Union","MS",,,1.00,,"Drove from home to airport in Birmingham and back home 330 miles.",330.00,$1997.67
 748.00,"Karyn Melton","47a164","Jonesboro","AR",,,1.00,,"No way to take any type of common carrier to this inspection.  ",126.00,$53.20
@@ -783,8 +783,8 @@ Additional Miles Scattered Site",183.00,$554.26
 814.00,"Claston Bernard","905e26","Emporia","VA","GONZALES","LA",1.00,"70737","traveling back home after being on the road for a month.",1162.00,$1223.38
 815.00,"Louis Jerome","7e5e49","Smithfield","UT",,,2.00,,,121.00,$100.70
 816.00,"William Freeman","bf26ca","Little Rock","AR",,,1.00,,"One   trip to Stuttgart ar to complete 1 inspection",128.00,$105.60
-817.00,"Thomas Feehan","a36256","South Bend","Indiana",,,1.00,,"Attached is the hotel receipt and the cost comparison sheet.",476.00,$298.20
 817.00,"Thomas Feehan","a36256","South Bend","Indiana",,,1.00,,"Attached is the hotel receipt and the cost comparison sheet.",476.00,$509.96
+817.00,"Thomas Feehan","a36256","South Bend","Indiana",,,1.00,,"Attached is the hotel receipt and the cost comparison sheet.",476.00,$298.20
 818.00,"Peter M Wade","83fe9e","ROCHESTER","NY",,,2.00,,,740.00,$961.24
 819.00,"Jerry L Peal","9eb6f8","Alamo","TN",,,2.00,,,1088.00,$1596.56
 820.00,"Mark","dd0c81","MABLETON","GA",,,2.00,,,292.00,$220.40
@@ -1050,8 +1050,22 @@ PL",0.00,$2227.97
 1048.00,"Eric Aycock","67879f","Morrisonville","NY",,,8.00,,,1301.00,$1809.31
 1049.00,"Joseph Cornell ","9751ac","PHILADELPHIA","Pennsylvania",,,2.00,,"91.32 Tolls 
 Parking 18.00
-Additonal miles per road closures and traffic accidents",663.00,$1877.06
+Additonal miles per road closures and traffic accidents",663.00,$1946.06
 1050.00,"Homer Windfield","40ab32","Jackson","MS",,,1.00,,,0.00,$1609.12
 1052.00,"Melinda B Stark","ffd295","Orange City","FL",,,1.00,,,104.00,$157.80
 1053.00,"Bernard Rupnik","fadc4b","Ashland","Wisconsin","Kalispell","Montana",2.00,"59901","See attached travel compare.",1394.00,$2664.96
 1054.00,"Bernard Rupnik","478a32","Kalispell","Montana","Ashland","Wisconsin",1.00,"54806","See attached travel compare.",1265.00,$1277.30
+1058.00,"Thomas Schaul","0906d7","Hanover Park ","IL",,,1.00,,,72.00,$86.30
+1059.00,"Thomas Schaul","649403","Hanover Park ","IL",,,1.00,,"3 day job; No lodging as I stayed at my home",204.00,$343.50
+1060.00,"Thomas Schaul","bb6b6a","Hanover Park ","IL",,,1.00,,,81.00,$92.60
+1061.00,"Luis Correa","5072a8","Rio Grande","PR",,,3.00,,"Rental Car will be included in the last invoice.",0.00,$1553.01
+1062.00,"Thomas Schaul","1150f6","Hanover Park ","IL",,,1.00,,,98.00,$106.05
+1063.00,"Luis Correa","57e311","Rio Grande","PR",,,4.00,,"Rental Car will be included in the last invoice.",0.00,$1650.05
+1064.00,"Luis Correa","e671ff","Rio Grande","PR",,,1.00,,"Flight from Florida to Colorado will be included in Colorado invoices.",0.00,$1648.85
+1065.00,"Luis Correa","113934","Rio Grande","PR",,,1.00,,"Correcting Submission ID- e671ff
+Flight from Florida to Colorado will be included in Colorado invoices.",0.00,$1648.85
+1066.00,"Jerome Singleton","2757e6","Summerville","SC",,,2.00,,"Traveled from Summerville SC to Mobile AL- Mobile AL to Northport AL- Northport AL to Summerville SC.  The travel mileage also included the mileage from the hotel to the site.",1302.70,
+1067.00,"Thomas Feehan","67d916","South Bend","Indiana",,,1.00,,,170.00,$135.00
+1055.00,"Thomas Schaul","56d1c3","Hanover Park ","IL",,,1.00,,"2day job; No lodging as I stayed at my home",134.00,$200.60
+1056.00,"Thomas Schaul","d5a22b","Hanover Park ","IL",,,1.00,,,81.00,$92.60
+1057.00,"Luis Correa","5ee8c8","Rio Grande","PR","Denver","Colorado",3.00,"80249","Rental Car will be included in the last invoice.",0.00,$1802.80
