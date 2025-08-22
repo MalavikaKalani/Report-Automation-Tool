@@ -10,8 +10,8 @@
 19.00,"Bill Tsudama","5343b8","Corralitos","CA",,,1.00,,,186.00,$309.54
 20.00,"Robert Davis","4fa0d7","San Diego","CA",,,1.00,,"<div>clutch failed on way home and had to get a tow truck for last 16 miles</div>",216.00,$417.20
 21.00,"Thomas Feehan","892124","South Bend","IN",,,3.00,,,582.00,$921.42
-22.00,"Karyn Melton","ba6e89","Jonesboro","AR",,,1.00,,,792.00,$746.12
 22.00,"Karyn Melton","ba6e89","Jonesboro","AR",,,1.00,,,792.00,$1197.62
+22.00,"Karyn Melton","ba6e89","Jonesboro","AR",,,1.00,,,792.00,$746.12
 23.00,"Karyn Melton","68abdb","Jonesboro","AR",,,1.00,,,602.00,$610.22
 24.00,"Bill Tsudama","5dc2dc","Corralitos","CA",,,1.00,,,280.00,$895.44
 25.00,"Joseph Peter Cornell","f5452f","Philadelphia","PA",,,3.00,,"<div>Gas was 13.43 and 52.81
@@ -651,8 +651,8 @@ Per diem on day 6 applies 100% since the property was inspected and traveled.",5
 683.00,"Chris Chamberlin","33d5bf","Union","MS",,,1.00,,"Travel from union Mississippi to Birmingham Alabama Airport Took the airplane to St Louis Missouri got a rental car and traveled to IL Travel From St Louis back to Birmingham Alabama and home",330.00,$1020.09
 684.00,"Chris Chamberlin","4b565b","Union","MS",,,2.00,,"Traveled from home to Decatur Al, 212 miles, Decatur Al to Birmingham AL, to Madison 90 miles, from Madison AL to Union MS 279 miles.  Lodged with family no hotel stay.",675.00,$539.50
 685.00,"Ronald W Johnson","17a5a7","Zachary","Louisiana",,,1.00,,,750.00,$716.30
-686.00,"William A Harding JR ","8d6494","Wilmington ","North Carolina ",,,4.00,,"Hello, here is my travel expense report for the month of May. I had drove my personal vehicle from Wilmington NC to Ralegh NC since its only 2-hour drive.  ",1084.00,$978.80
 686.00,"William A Harding JR ","8d6494","Wilmington ","North Carolina ",,,4.00,,"Hello, here is my travel expense report for the month of May. I had drove my personal vehicle from Wilmington NC to Ralegh NC since its only 2-hour drive.  ",1084.00,$723.80
+686.00,"William A Harding JR ","8d6494","Wilmington ","North Carolina ",,,4.00,,"Hello, here is my travel expense report for the month of May. I had drove my personal vehicle from Wilmington NC to Ralegh NC since its only 2-hour drive.  ",1084.00,$978.80
 687.00,"Andrew J Clay","03eeb4","Chippewa Falls","Wisconsin",,,1.00,,,190.00,$98.00
 688.00,"Andrew J Clay","ce7b43","Chippewa Falls","Wisconsin",,,1.00,,,257.00,$144.90
 689.00,"David Crawford","2638df","MANITOU SPRINGS","CO",,,1.00,,,132.00,$126.40
@@ -783,8 +783,8 @@ Additional Miles Scattered Site",183.00,$554.26
 814.00,"Claston Bernard","905e26","Emporia","VA","GONZALES","LA",1.00,"70737","traveling back home after being on the road for a month.",1162.00,$1223.38
 815.00,"Louis Jerome","7e5e49","Smithfield","UT",,,2.00,,,121.00,$100.70
 816.00,"William Freeman","bf26ca","Little Rock","AR",,,1.00,,"One   trip to Stuttgart ar to complete 1 inspection",128.00,$105.60
-817.00,"Thomas Feehan","a36256","South Bend","Indiana",,,1.00,,"Attached is the hotel receipt and the cost comparison sheet.",476.00,$509.96
 817.00,"Thomas Feehan","a36256","South Bend","Indiana",,,1.00,,"Attached is the hotel receipt and the cost comparison sheet.",476.00,$298.20
+817.00,"Thomas Feehan","a36256","South Bend","Indiana",,,1.00,,"Attached is the hotel receipt and the cost comparison sheet.",476.00,$509.96
 818.00,"Peter M Wade","83fe9e","ROCHESTER","NY",,,2.00,,,740.00,$961.24
 819.00,"Jerry L Peal","9eb6f8","Alamo","TN",,,2.00,,,1088.00,$1596.56
 820.00,"Mark","dd0c81","MABLETON","GA",,,2.00,,,292.00,$220.40
@@ -1025,7 +1025,7 @@ Multiple lodging receipts are provided and numbered for reference. The trip comm
 1030.00,"Joseph Peter Cornell","655892","Philadelphia","PA",,,2.00,,"Had to switch hotels for Brooklyn inspection gov rate not available for Friday night
 Tolls 8.40 + 42 +42 +6 =98.40",200.00,$1151.27
 1031.00,"Joseph Peter Cornell","441865","Philadelphia","PA",,,2.00,,"Tolls 44.68
-Parking 55.20 on Hotel Receipt",383.00,$1387.42
+Parking 55.20 on Hotel Receipt",383.00,$1451.92
 1032.00,"Brent Aversano","63e639","Lake In The Hills","ILLINOIS",,,1.00,,,185.00,$154.50
 1033.00,"Brent Aversano","c3c9c6","Lake In The Hills","ILLINOIS",,,1.00,,,241.00,$184.70
 1034.00,"Brent Aversano","90d872","Lake In The Hills","ILLINOIS",,,1.00,,,175.00,$147.50
@@ -1069,3 +1069,4 @@ Flight from Florida to Colorado will be included in Colorado invoices.",0.00,$16
 1055.00,"Thomas Schaul","56d1c3","Hanover Park ","IL",,,1.00,,"2day job; No lodging as I stayed at my home",134.00,$200.60
 1056.00,"Thomas Schaul","d5a22b","Hanover Park ","IL",,,1.00,,,81.00,$92.60
 1057.00,"Luis Correa","5ee8c8","Rio Grande","PR","Denver","Colorado",3.00,"80249","Rental Car will be included in the last invoice.",0.00,$1802.80
+1068.00,"Onesimo Garza lll","ca9108","Mesick","MI",,,1.00,,,386.00,$286.20
