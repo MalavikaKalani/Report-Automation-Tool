@@ -10,8 +10,8 @@
 19.00,"Bill Tsudama","5343b8","Corralitos","CA",,,1.00,,,186.00,$309.54
 20.00,"Robert Davis","4fa0d7","San Diego","CA",,,1.00,,"<div>clutch failed on way home and had to get a tow truck for last 16 miles</div>",216.00,$417.20
 21.00,"Thomas Feehan","892124","South Bend","IN",,,3.00,,,582.00,$921.42
-22.00,"Karyn Melton","ba6e89","Jonesboro","AR",,,1.00,,,792.00,$1197.62
 22.00,"Karyn Melton","ba6e89","Jonesboro","AR",,,1.00,,,792.00,$746.12
+22.00,"Karyn Melton","ba6e89","Jonesboro","AR",,,1.00,,,792.00,$1197.62
 23.00,"Karyn Melton","68abdb","Jonesboro","AR",,,1.00,,,602.00,$610.22
 24.00,"Bill Tsudama","5dc2dc","Corralitos","CA",,,1.00,,,280.00,$895.44
 25.00,"Joseph Peter Cornell","f5452f","Philadelphia","PA",,,3.00,,"<div>Gas was 13.43 and 52.81
@@ -651,8 +651,8 @@ Per diem on day 6 applies 100% since the property was inspected and traveled.",5
 683.00,"Chris Chamberlin","33d5bf","Union","MS",,,1.00,,"Travel from union Mississippi to Birmingham Alabama Airport Took the airplane to St Louis Missouri got a rental car and traveled to IL Travel From St Louis back to Birmingham Alabama and home",330.00,$1020.09
 684.00,"Chris Chamberlin","4b565b","Union","MS",,,2.00,,"Traveled from home to Decatur Al, 212 miles, Decatur Al to Birmingham AL, to Madison 90 miles, from Madison AL to Union MS 279 miles.  Lodged with family no hotel stay.",675.00,$539.50
 685.00,"Ronald W Johnson","17a5a7","Zachary","Louisiana",,,1.00,,,750.00,$716.30
-686.00,"William A Harding JR ","8d6494","Wilmington ","North Carolina ",,,4.00,,"Hello, here is my travel expense report for the month of May. I had drove my personal vehicle from Wilmington NC to Ralegh NC since its only 2-hour drive.  ",1084.00,$723.80
 686.00,"William A Harding JR ","8d6494","Wilmington ","North Carolina ",,,4.00,,"Hello, here is my travel expense report for the month of May. I had drove my personal vehicle from Wilmington NC to Ralegh NC since its only 2-hour drive.  ",1084.00,$978.80
+686.00,"William A Harding JR ","8d6494","Wilmington ","North Carolina ",,,4.00,,"Hello, here is my travel expense report for the month of May. I had drove my personal vehicle from Wilmington NC to Ralegh NC since its only 2-hour drive.  ",1084.00,$723.80
 687.00,"Andrew J Clay","03eeb4","Chippewa Falls","Wisconsin",,,1.00,,,190.00,$98.00
 688.00,"Andrew J Clay","ce7b43","Chippewa Falls","Wisconsin",,,1.00,,,257.00,$144.90
 689.00,"David Crawford","2638df","MANITOU SPRINGS","CO",,,1.00,,,132.00,$126.40
@@ -831,8 +831,8 @@ Gas receipt dated 5/8/25
 850.00,"Don Crook","3d01ef","Nocona","Texas",,,1.00,,"No rental car agency in inspectors hometown. Round trip Uber transportation to nearest rental agency makes commercial option impractical.",176.00,$148.20
 851.00,"Onesimo Garza lll","d7e910","Mesick","MI",,,1.00,,,186.00,$155.20
 852.00,"Onesimo Garza lll","b03368","Mesick","MI",,,1.00,,,476.00,$418.20
-853.00,"Onesimo Garza lll","07dbc9","Mesick","MI",,,2.00,,,662.00,$548.40
 853.00,"Onesimo Garza lll","07dbc9","Mesick","MI",,,2.00,,,662.00,$431.40
+853.00,"Onesimo Garza lll","07dbc9","Mesick","MI",,,2.00,,,662.00,$548.40
 856.00,"Onesimo Garza lll","3957c1","Mesick","MI",,,1.00,,,240.00,$184.00
 857.00,"Caden","d78c14","Baltiore","MD","South Abington Township","PA",2.00,"18411","6/30 full day per diem charged b/c previous day was in the field and stayed in hotel but it was billed to another contractor, $59 hotel parking 7/1, $31.67 tolls",269.00,$835.16
 858.00,"Peter M Wade","53fa05","ROCHESTER","NY",,,1.00,,,0.00,$1184.36
@@ -1005,8 +1005,8 @@ Multiple lodging receipts are provided and numbered for reference. The trip comm
 1011.00,"Sarah bFoster","7756e4","Desoto","Tx",,,2.00,,,0.00,$1497.79
 1012.00,"Tyrone Linen","9f1999","Hollywood","SC",,,1.00,,,674.00,$487.80
 1013.00,"Tyrone Linen","fcaf02","Hollywood","SC",,,1.00,,,695.00,$502.50
-1014.00,"Kenneth Papson","d054ea","Chesterfield","MI",,,3.00,,"This is a round trip of a 2 week inspection this is 2 of 2.",3362.00,$3554.78
 1014.00,"Kenneth Papson","d054ea","Chesterfield","MI",,,3.00,,"This is a round trip of a 2 week inspection this is 2 of 2.",3362.00,$2318.40
+1014.00,"Kenneth Papson","d054ea","Chesterfield","MI",,,3.00,,"This is a round trip of a 2 week inspection this is 2 of 2.",3362.00,$3554.78
 1015.00,"Claston Bernard","19c381","GONZALES","LA",,,2.00,,,1374.00,$1300.10
 1016.00,"Jerry Peal","916a98","Alamo","TN",,,3.00,,,735.00,$1559.57
 1017.00,"William Freeman","05a4cf","Little Rock","AR",,,1.00,,"Travel to Camden AR for a 2 day inspection.  Spend the night in Camden before returning home after trip",230.00,$343.75
@@ -1070,3 +1070,16 @@ Flight from Florida to Colorado will be included in Colorado invoices.",0.00,$16
 1056.00,"Thomas Schaul","d5a22b","Hanover Park ","IL",,,1.00,,,81.00,$92.60
 1057.00,"Luis Correa","5ee8c8","Rio Grande","PR","Denver","Colorado",3.00,"80249","Rental Car will be included in the last invoice.",0.00,$1802.80
 1068.00,"Onesimo Garza lll","ca9108","Mesick","MI",,,1.00,,,386.00,$286.20
+1070.00,"Claston Bernard","ec5907","GONZALES","LA",,,2.00,,,0.00,$1291.08
+1071.00,"Jerry Peal","4e4b27","Alamo","TN",,,5.00,,,1461.00,$1976.96
+1072.00,"Thad J Desormeaux","d863e4","Cincinnate","OH","New Iberia","LA",2.00,"70560","1- Flight Insurance cost $124.26 not included in Request  /  2- Car Rental expense is for 6/3/25 through 6/13/25 (None has been expensed before / 3- Day 1 Per Diem taken as full day as I was already in Cincinnati for a previous inspection / 4- Comps are p",0.00,$3397.05
+1073.00,"Ronald W Johnson","0c18f3","Zachary","Louisiana",,,1.00,,,462.00,$511.40
+1069.00,"Paula Fischer","d39ace","Vancouver","WA",,,7.00,,"$23 was for a taxi from the airport to the Turo car rental location.",0.00,$4548.61
+1074.00,"Tyrone Linen","a5b419","Hollywood","SC",,,1.00,,"No cars available for Thursday only must rent two or more days ",747.00,$543.40
+1075.00,"Brent Aversano","ebeddf","Lake In The Hills","ILLINOIS",,,1.00,,,181.00,$151.70
+1076.00,"Brent Aversano","92c2c9","Lake In The Hills","ILLINOIS",,,2.00,,,286.00,$220.10
+1077.00,"Brent Aversano","1e55e3","Lake In The Hills","ILLINOIS",,,1.00,,,121.00,$100.70
+1078.00,"Peter M Wade","3f5c50","ROCHESTER","NY",,,1.00,,,0.00,$770.58
+1079.00,"Kameron Ahankoob","465c43","Moorpark","CA",,,4.00,,,0.00,$1646.99
+1080.00,"Benjamin Russoniello","1c80f5","North Abington Township","PA",,,1.00,,,639.00,$737.28
+1081.00,"Louis Jerome","8a4cdf","Smithfield","UT",,,5.00,,,195.00,$2263.55
