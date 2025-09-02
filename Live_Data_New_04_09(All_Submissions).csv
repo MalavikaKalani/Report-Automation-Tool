@@ -549,8 +549,8 @@ There are no direct commercial flights between Little Rock, Arkansas, and Russel
 576.00,"Marcella Magnelli-Middleton","b9bf4f","Land O Lakes","FL",,,2.00,,,408.00,$334.60
 484.00,"Caden Casal","ba0ebc","South Abington Township","PA",,,4.00,,"Tolls $3.05, last night of hotel was personal use so not included in exp report",662.00,$1042.35
 614.00,"Thad J Desormeaux ","ba1578","New Iberia","Louisiana ","Rio Rancho","New Mexico",4.00,"87124","The car rental expense will be included on the expense submittals that concludes inspections in this area. The photos will be sent separately due to link not allowing me to attach to it.",0.00,$1393.99
-22.00,"Karyn Melton","ba6e89","Jonesboro","AR",,,1.00,,,792.00,$746.12
 22.00,"Karyn Melton","ba6e89","Jonesboro","AR",,,1.00,,,792.00,$1197.62
+22.00,"Karyn Melton","ba6e89","Jonesboro","AR",,,1.00,,,792.00,$746.12
 560.00,"Joseph Cornell ","ba91e3","PHILADELPHIA","Pennsylvania",,,1.00,,"6.00 toll",114.00,$472.98
 415.00,"Bill Tsudama","bb28ce","Corralitos","CA",,,4.00,,,370.00,$903.74
 156.00,"Ronald W Johnson","bbcb92","Zachary","Louisiana",,,4.00,,"Car rental includes insurance and car rental rate. The insurance was $44, and the car rental was $189.35. The return flight from Louisville to New Orleans was purchased with points and tax of $5.60 was paid. The total flight amount was $223.60.",220.00,$1136.99
@@ -644,8 +644,8 @@ GAS 18.33",0.00,$606.36
 <br>Gas 38.52 
 <br>both under 75.00</div>",0.00,$1431.97
 418.00,"Quenton Jackson","d8b2b2","Zachary","LA",,,3.00,,"I slept in my car Sunday night and Monday night. Paid for a hotel Tuesday night. Used points for a hotel Wednesday night ",1370.00,$1339.52
-767.00,"Homer Windfield","d8d50f","ATLANTA","GA","Jackson","MS",2.00,"39211","This travel is part of a continuous trip that's linked to another submission and will terminate on 6/12/25.",532.00,$1264.88
 767.00,"Homer Windfield","d8d50f","ATLANTA","GA","Jackson","MS",2.00,"39211","This travel is part of a continuous trip that's linked to another submission and will terminate on 6/12/25.",532.00,$337.40
+767.00,"Homer Windfield","d8d50f","ATLANTA","GA","Jackson","MS",2.00,"39211","This travel is part of a continuous trip that's linked to another submission and will terminate on 6/12/25.",532.00,$1264.88
 504.00,"Joseph Cornell ","d90a80","PHILADELPHIA","Pennsylvania",,,3.00,,,308.00,$862.87
 629.00,"Matt Dewey","d98028","South Abington Township","PA",,,5.00,,"Night 1 slept in car to reduce expenses, Night 2 slept at relative house 64 Sherwood Terrace, Portsmouth RI 02871, ",878.00,$805.30
 330.00,"Jessica Jackson","d9ac1b","Tryon","NC",,,3.00,,,169.00,$143.30
@@ -783,8 +783,8 @@ Flights and rental car much more costly than personal mileage. ",1207.00,$1234.5
 302.00,"Onesimo Garza lll","fffda5","Mesick","MI",,,1.00,,,134.00,$109.80
 815.00,"Louis Jerome","7e5e49","Smithfield","UT",,,2.00,,,121.00,$100.70
 816.00,"William Freeman","bf26ca","Little Rock","AR",,,1.00,,"One   trip to Stuttgart ar to complete 1 inspection",128.00,$105.60
-817.00,"Thomas Feehan","a36256","South Bend","Indiana",,,1.00,,"Attached is the hotel receipt and the cost comparison sheet.",476.00,$298.20
 817.00,"Thomas Feehan","a36256","South Bend","Indiana",,,1.00,,"Attached is the hotel receipt and the cost comparison sheet.",476.00,$509.96
+817.00,"Thomas Feehan","a36256","South Bend","Indiana",,,1.00,,"Attached is the hotel receipt and the cost comparison sheet.",476.00,$298.20
 818.00,"Peter M Wade","83fe9e","ROCHESTER","NY",,,2.00,,,740.00,$961.24
 819.00,"Jerry L Peal","9eb6f8","Alamo","TN",,,2.00,,,1088.00,$1596.56
 821.00,"Brent Aversano","271e78","Lake In The Hills","ILLINOIS",,,1.00,,,179.00,$141.30
@@ -1005,8 +1005,8 @@ Multiple lodging receipts are provided and numbered for reference. The trip comm
 1011.00,"Sarah bFoster","7756e4","Desoto","Tx",,,2.00,,,0.00,$1497.79
 1012.00,"Tyrone Linen","9f1999","Hollywood","SC",,,1.00,,,674.00,$487.80
 1013.00,"Tyrone Linen","fcaf02","Hollywood","SC",,,1.00,,,695.00,$502.50
-1014.00,"Kenneth Papson","d054ea","Chesterfield","MI",,,3.00,,"This is a round trip of a 2 week inspection this is 2 of 2.",3362.00,$3554.78
 1014.00,"Kenneth Papson","d054ea","Chesterfield","MI",,,3.00,,"This is a round trip of a 2 week inspection this is 2 of 2.",3362.00,$2318.40
+1014.00,"Kenneth Papson","d054ea","Chesterfield","MI",,,3.00,,"This is a round trip of a 2 week inspection this is 2 of 2.",3362.00,$3554.78
 1015.00,"Claston Bernard","19c381","GONZALES","LA",,,2.00,,,1374.00,$1300.10
 1016.00,"Jerry Peal","916a98","Alamo","TN",,,3.00,,,735.00,$1559.57
 1017.00,"William Freeman","05a4cf","Little Rock","AR",,,1.00,,"Travel to Camden AR for a 2 day inspection.  Spend the night in Camden before returning home after trip",230.00,$343.75
@@ -1140,3 +1140,20 @@ Gallup NM to Kansas OK 855
 1121.00,"William Freeman","5b3eab","Little Rock","AR",,,2.00,,"Trip to atlanta for 2 inspections that lasted 2  days each.",0.00,$1760.96
 1122.00,"Claston Bernard","51a3c6","GONZALES","LA",,,3.00,,,0.00,$2078.75
 1123.00,"Drew Jacobs","e6e88b","South Abington Township","PA",,,5.00,,"Drove personal car to ferry to island then had to get rental car on island.  Could not transport personal vehicle to island because no availability on the ferry.  I did try to reserve a vehicle spot on the ferry 30 days in advance but they were full. $99 ",732.00,$2864.80
+1124.00,"Jerome Singleton","04e7b9","Summerville","SC",,,1.00,,"The site was a scattered site.  Traveled from Summerville SC to Rocky Mount NC (08/28/25), From the Site to Hotel 
+From Hotel to Site, and From Rocky Mount NC to Summerville SC  08/29/2025",609.00,$603.93
+1125.00,"Tyrone Linen","ac30ad","Hollywood","SC",,,1.00,,,743.00,$549.60
+1126.00,"Tyrone Linen","7e23e0","Hollywood","SC",,,1.00,,"INSP changed to 59149, INSP was 44416. Don't know if this went through the first time so submitting it again.",621.00,$455.20
+1127.00,"Tyrone Linen","3bf5d7","Hollywood","SC",,,1.00,,,737.00,$545.40
+1128.00,"Onesimo Garza lll","e8d375","Mesick","MI",,,1.00,,"The receipt submitted under AIRb&amp;b is for a higher amount, i submitted only what was allowed per the standard, If you have any questions please let me know. And Tolls have not been received yet .",1770.00,$2085.22
+1129.00,"Jerry Peal","a3a01a","Alamo","TN",,,3.00,,,1339.00,$2089.57
+1130.00,"TACIE GODWIN","dec266","Amarillo","Texas",,,2.00,,"This trip is associated with an ongoing trip with another vendor. This is only expenses incurred for inspections associated with SP Group. ",0.00,$1645.50
+1131.00,"Eric Aycock","c23628","Morrisonville","NY",,,1.00,,,194.00,
+1132.00,"Eric Aycock","8beb6f","Morrisonville","NY",,,2.00,,,317.00,$428.59
+1133.00,"Louis Jerome","dfc940","Smithfield","UT",,,4.00,,"Tolls are 38.80, no receipt. ",1712.00,$2573.22
+1134.00,"Peter M Wade","1c0260","ROCHESTER","NY",,,8.00,,,0.00,$1741.18
+1135.00,"Thomas Feehan","b4f1e1","South Bend","Indiana",,,2.00,,"Cost Comparison Sheet is attached along with the hotel receipt.",777.00,$742.90
+1136.00,"Thad Desormeaux","60a033","New Iberia","LA",,,1.00,,"On the first day partial per diem is taken. Second day of inspection I took red eye flight out so took full day perdiem. The cost of the flight is the total of the return flight plus half of the flight to the location as it was part of a round trip ticket",0.00,$1290.94
+1137.00,"Thad Desormeaux","0e75f4","New Iberia","LA","Boston","MA",3.00,"02128","On the last day of this Expense request I was still in St. Croix, VI.",0.00,$4907.23
+1138.00,"Thad Desormeaux","f6a7b3","St. Croix","Virgin Islands","New Iberia","LA",1.00,"70560","The flight from St. Croix VI was included on previous expense request. There was no hotel charge for 7/1/25 because I was forced to sleep at airport due to no transporttion to hotel. Unable to attach receipts so they are sent seperatly.",0.00,$828.06
+1139.00,"Kameron Ahankoob","c1256f","Moorpark","CA",,,1.00,,,120.00,$113.50
