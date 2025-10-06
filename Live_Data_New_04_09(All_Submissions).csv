@@ -585,8 +585,8 @@ There are no direct commercial flights between Little Rock, Arkansas, and Russel
 186.00,"William Freeman","c6c6ec","Little Rock","AR",,,1.00,,,271.00,$313.56
 508.00,"Gregory Bradle","c781f2","Eureka","IL",,,1.00,,,109.00,$92.30
 445.00,"Paula Fischer","c7cf5c","Vancouver","WA",,,7.00,,,0.00,$2413.35
-744.00,"Louis Jerome","c82e81","Smithfield","UT",,,6.00,,,2034.00,$2404.42
 744.00,"Louis Jerome","c82e81","Smithfield","UT",,,6.00,,,2034.00,$1388.80
+744.00,"Louis Jerome","c82e81","Smithfield","UT",,,6.00,,,2034.00,$2404.42
 723.00,"Thomas Schaul","c82f82","Hanover Park","IL",,,1.00,,,598.00,$615.20
 259.00,"Louis Jerome","c83dc4","Smithfield","UT",,,4.00,,,1038.00,$988.78
 690.00,"David Crawford","c8a1c1","MANITOU SPRINGS","CO",,,1.00,,,432.00,$318.40
@@ -783,8 +783,8 @@ Flights and rental car much more costly than personal mileage. ",1207.00,$1234.5
 302.00,"Onesimo Garza lll","fffda5","Mesick","MI",,,1.00,,,134.00,$109.80
 815.00,"Louis Jerome","7e5e49","Smithfield","UT",,,2.00,,,121.00,$100.70
 816.00,"William Freeman","bf26ca","Little Rock","AR",,,1.00,,"One   trip to Stuttgart ar to complete 1 inspection",128.00,$105.60
-817.00,"Thomas Feehan","a36256","South Bend","Indiana",,,1.00,,"Attached is the hotel receipt and the cost comparison sheet.",476.00,$509.96
 817.00,"Thomas Feehan","a36256","South Bend","Indiana",,,1.00,,"Attached is the hotel receipt and the cost comparison sheet.",476.00,$298.20
+817.00,"Thomas Feehan","a36256","South Bend","Indiana",,,1.00,,"Attached is the hotel receipt and the cost comparison sheet.",476.00,$509.96
 818.00,"Peter M Wade","83fe9e","ROCHESTER","NY",,,2.00,,,740.00,$961.24
 819.00,"Jerry L Peal","9eb6f8","Alamo","TN",,,2.00,,,1088.00,$1596.56
 821.00,"Brent Aversano","271e78","Lake In The Hills","ILLINOIS",,,1.00,,,179.00,$141.30
@@ -831,8 +831,8 @@ Total expenses of the flight fare on this invoice",0.00,$2081.67
 850.00,"Don Crook","3d01ef","Nocona","Texas",,,1.00,,"No rental car agency in inspectors hometown. Round trip Uber transportation to nearest rental agency makes commercial option impractical.",176.00,$148.20
 851.00,"Onesimo Garza lll","d7e910","Mesick","MI",,,1.00,,,186.00,$155.20
 852.00,"Onesimo Garza lll","b03368","Mesick","MI",,,1.00,,,476.00,$418.20
-853.00,"Onesimo Garza lll","07dbc9","Mesick","MI",,,2.00,,,662.00,$431.40
 853.00,"Onesimo Garza lll","07dbc9","Mesick","MI",,,2.00,,,662.00,$548.40
+853.00,"Onesimo Garza lll","07dbc9","Mesick","MI",,,2.00,,,662.00,$431.40
 854.00,"Louis Jerome","f96f21","Smithfield","UT",,,2.00,,,662.00,$589.12
 855.00,"Clint Cave","8b454f","North Renton","WA","Issaquah","WA",3.00,"98027","The ground transportation is the one way ferry cost from Bremerton to Seattle on July 2, 2025. The commute was over 2hrs vs a 40min ferry ride. ",0.00,$1558.28
 856.00,"Onesimo Garza lll","3957c1","Mesick","MI",,,1.00,,,240.00,$184.00
@@ -1262,6 +1262,7 @@ This is the last of three travel reimbursements. This is a continuous trip. Per 
 1230.00,"Luis Correa","996bd5","Rio Grande","PR",,,1.00,,"Car was rented because personal vehicle was in mechanic's shop.",0.00,
 1231.00,"Luis Correa","c72297","Rio Grande","PR",,,1.00,,"Car was rented because personal vehicle was mechanic's shop.
 ",0.00,$232.49
+1232.00,"Sarah  Foster","4cab89","Desoto","Tx",,,4.00,,,0.00,$1593.68
 1232.00,"Sarah  Foster","4cab89","Desoto","Tx",,,4.00,,,0.00,$2445.80
 1233.00,"Patrice","731272","Quincy","MA","Revere","MA",4.00,"02151","Week 8 of multi – month trip that started on 7/3/25 (first day) and will end on 9/19/25 (last day), drove POV and stayed on site as it was the most cost-effective method.",208.00,$2117.08
 1234.00,"Patrice","4d4df8","Revere","MA",,,4.00,,"Week 9 of multi – month trips that started on 9/3/25 (first day) and will end on 9/19/25 (last day), drove POV and stayed on site as it was the most cost-effective method.",206.00,$2494.21
