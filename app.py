@@ -140,6 +140,24 @@ def fix_zip(row):
             return '00000'
     return str(zip_code).zfill(5)
 
+def fix_propertyzip(row):
+    """
+    Fixes property zip incase of incorrect zip submitted by inspector.
+
+    Returns:
+        string: 5-digit zip code
+
+    """
+    val = row['PropertyZip']
+
+    if pd.isna(val):
+        return pd.NA
+
+    try:
+        return str(int(val)).zfill(5)[:5]
+    except (ValueError, TypeError):
+        return pd.NA
+
 def process_data(submission_num):
     """
     Processes inspection, per diem, and expense data for a given submission number.
@@ -252,8 +270,7 @@ def process_data(submission_num):
             on='InspectionID', 
             how='left'
         )
-        print("PRINTING NOWWWWWWWWW")
-        print(df_inspections)
+
         # MERGE INSPECTION WITH PER DIEM 
         merged_df = pd.merge(
             df_inspections,
@@ -262,11 +279,11 @@ def process_data(submission_num):
             how='right'
         )
 
-        print(merged_df)
+        
 
         # GROUP BY DAY NUMBER AND AGGREGATE INSPECTIONS IDS USING A SET
         final_df = (
-            merged_df.groupby("Day Number")
+            merged_df.groupby("Day Number", as_index=False)
             .agg({
                 "Day Number": "first",
                 "InspectionID": list,  
@@ -283,12 +300,15 @@ def process_data(submission_num):
             })
             # .reset_index()
         )
+        print("FINAL DF COLUMNS")
+        print(final_df.columns.tolist())
 
         # print(final_df.dtypes)
         # print(final_df)
         final_df['Zip Code'] =  final_df.apply(fix_zip, axis=1)
-        zip_codes = set(final_df['Zip Code'])
-
+        final_df['PropertyZip'] =  final_df.apply(fix_propertyzip, axis=1)
+        zip_codes = set(final_df['Zip Code']).union(set(final_df['PropertyZip'].dropna().tolist()))
+        
         gsa_df, gsa_dict = get_perdiem_by_zip(zip_codes, inspection_months)
 
         # ADD DATE COLUMN BY MAPPING DAY NUMBER TO DATE
@@ -300,7 +320,7 @@ def process_data(submission_num):
         final_df['GSA Lodging Rate'] = final_df['Lodging Rate'] # set to new rates from API
 
         # CLEAN UP HELPER COLUMNS
-        final_df.drop(columns=['Month', 'Lodging Rate', 'PropertyZip'], inplace=True)
+        final_df.drop(columns=['Month', 'Lodging Rate'], inplace=True)
  
         pov_mileage = df_submissions["Miles Driven"].iloc[0]
         pov_mileage_expense = 0 if pov_mileage == 0 else (pov_mileage - 50) * 0.70
@@ -320,7 +340,7 @@ def process_data(submission_num):
         # RENAME AND REORDER FOR CONSISTENCY
         final_df.rename(columns={"Inspection Date": "Date of Inspection", "PropertyType": "Program", "PropertyName": "Property Name",
         "PropertyStreetAddress" : "Property Address", "CityState" : "Property City, State", "Zip Code": "Zip Code",
-         "Lodging Cost": "Actual Lodging Cost", "Lodging Taxes": "Lodging Rate Tax"}, inplace=True)
+         "Lodging Cost": "Actual Lodging Cost", "Lodging Taxes": "Lodging Rate Tax","PropertyZip": "Property Zip"}, inplace=True)
 
         final_df['GSA Lodging Rate'] = final_df['GSA Lodging Rate'].apply(
         lambda x: float(str(x).replace('$', '').replace(',', '').strip()) if pd.notna(x) else 0.0)
@@ -330,7 +350,7 @@ def process_data(submission_num):
         )
 
         final_df = final_df[['Day Number', 'Date of Inspection', 'InspectionID', 'PropertyID', 'Program', 'Property Name', 'Property Address', 'Property City, State',
-                        'Per Diem', 'GSA Lodging Rate', 'Actual Lodging Cost', 'Lodging Rate Tax', 'Zip Code'
+                        'Per Diem', 'GSA Lodging Rate', 'Actual Lodging Cost', 'Lodging Rate Tax', 'Zip Code','Property Zip'
                             ]]
 
         
